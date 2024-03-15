@@ -1,5 +1,4 @@
 # Atlaspad Chatbox-AI (NLP/Telegram-Launchpad)
-# telegram-superb-bot-with-broker
 hata verirse import pika kaldırabilirsin veya RabbitMQ indirmeye bakıp indirebilir. <br>
 rabbitMQ'da queue'da mesaj birikirse bir anda tüm mesajlar yollanır consume olunca. <br>
 ❗ O yüzden bug durumunda mesajları temizlemek lazım.
