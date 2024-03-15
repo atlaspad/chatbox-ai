@@ -75,7 +75,7 @@ if __name__ == '__main__':
     print("polling...")
     app.run_polling(poll_interval=3)
 """
-
+import asyncio
 
 #!/usr/bin/env python
 # pylint: disable=unused-argument
@@ -125,10 +125,10 @@ def main() -> None:
                 # "Gas Price 🚰", "Funding 💰"],
                 #     ["Main Menu 📑"],
                 MessageHandler(
-                    filters.Regex("^(Funding 💰)$"), select_funding
+                    filters.Regex("^Funding 💰$"), select_funding
                 ),
                 MessageHandler(
-                    filters.Regex("^(Main Menu 📑)$"), go_main_menu
+                    filters.Regex("^Main Menu 📑$"), go_main_menu
                 ),
             ],
             TYPING_CHOICE: [
@@ -147,6 +147,7 @@ def main() -> None:
     )
 
     application.add_handler(conv_handler)
+    # asyncio.create_task(consume_coin())
 
     # Run the bot until the user presses Ctrl-C
     application.run_polling(allowed_updates=Update.ALL_TYPES)
