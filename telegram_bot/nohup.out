@@ -1,0 +1,33 @@
+Traceback (most recent call last):
+  File "consumer.py", line 4, in <module>
+    from telegram import Bot
+ModuleNotFoundError: No module named 'telegram'
+Traceback (most recent call last):
+  File "main.py", line 95, in <module>
+    from functions import *
+  File "/home/ubuntu/telegramBot/telegram_bot/functions.py", line 4, in <module>
+    from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove, Update, Bot
+ModuleNotFoundError: No module named 'telegram'
+2024-03-15 20:55:59,235 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+2024-03-15 20:55:59,237 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 45830), raddr=('127.0.0.1', 5672)>
+2024-03-15 20:55:59,239 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7facadfaaa60>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7facadfaaa60> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-03-15 20:55:59,247 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7facadfaaa60> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-03-15 20:55:59,247 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7facadfaaa60> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-03-15 20:55:59,248 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7facadfaaa60> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-03-15 20:55:59,248 - pika.adapters.blocking_connection - INFO - Created channel=1
+2024-03-15 21:00:20,275 - telegram.ext.Application - INFO - Application started
+2024-03-15 21:08:25,980 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2024-03-15 21:08:25,980 - telegram.ext.Application - INFO - Application.stop() complete
+['nft 🖼️']
+NFT 🖼️
+['nft 🖼️', 'nft 🖼️']
+Track 🐾
+track selected
+['nft 🖼️', 'nft 🖼️', 'track 🐾']
+Pool 🏊
+gas selected
+['nft 🖼️', 'nft 🖼️', 'track 🐾', 'gas price 🚰']
+Funding 💰
+main menu selected
+['nft 🖼️', 'nft 🖼️', 'track 🐾', 'gas price 🚰', 'main menu 📑']
+2024-03-15 21:12:02,818 - telegram.ext.Application - INFO - Application started
