@@ -1,7 +1,7 @@
 import logging
 from typing import Dict
-
-from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove, Update
+from consumer import *
+from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove, Update, Bot
 from telegram.ext import (
     Application,
     CommandHandler,
@@ -34,6 +34,10 @@ reply_keyboard = [
 markup = ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=False)
 
 
+async def message_sender():
+    await bot.send_message(chat_id=1359422473, text="asd")
+
+
 def facts_to_str(user_data: Dict[str, str]) -> str:
     """Helper function for formatting the gathered user info."""
     facts = [f"{key} - {value}" for key, value in user_data.items()]
@@ -43,10 +47,10 @@ def facts_to_str(user_data: Dict[str, str]) -> str:
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     """Start the conversation and ask user for input."""
     await update.message.reply_text(
-        "Hi! My name is Doctor Botter. I will hold a more complex conversation with you. "
-        "Why don't you tell me something about yourself?",
+        "Your document sending process has been completed successfully.",
         reply_markup=markup,
     )
+    # await bot.send_message(chat_id=1359422473, text="asd")
 
     return CHOOSING
 
@@ -57,8 +61,10 @@ async def select_nft(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     global tracked_coins
 
     text = update.message.text
+    chat_id = update.message.chat_id
+
     context.user_data["choice"] = text
-    await update.message.reply_text(f"Your {text.lower()}? Yes, I would love to hear about that!")
+    await update.message.reply_text(f"chat id: {chat_id}")
 
     tracked_coins.append(text.lower())
 
