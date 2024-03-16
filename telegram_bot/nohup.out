@@ -31,3 +31,44 @@ Funding 💰
 main menu selected
 ['nft 🖼️', 'nft 🖼️', 'track 🐾', 'gas price 🚰', 'main menu 📑']
 2024-03-15 21:12:02,818 - telegram.ext.Application - INFO - Application started
+2024-03-15 22:35:51,998 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/telegram/ext/_application.py", line 1264, in process_update
+    await coroutine
+  File "/usr/local/lib/python3.8/dist-packages/telegram/ext/_handlers/conversationhandler.py", line 857, in handle_update
+    new_state: object = await handler.handle_update(
+  File "/usr/local/lib/python3.8/dist-packages/telegram/ext/_handlers/basehandler.py", line 157, in handle_update
+    return await self.callback(update, context)
+  File "/home/ubuntu/telegramBot/telegram_bot/functions.py", line 189, in received_information
+    text = update.message.text
+AttributeError: 'NoneType' object has no attribute 'text'
+2024-03-16 15:06:00,561 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2024-03-16 15:06:00,562 - telegram.ext.Application - INFO - Application.stop() complete
+['nft 🖼️']
+Pool 🏊
+track selected
+['nft 🖼️', 'track 🐾']
+NFT 🖼️
+['nft 🖼️', 'track 🐾', 'nft 🖼️']
+Main Menu 📑
+pool selectedd
+['nft 🖼️', 'track 🐾', 'nft 🖼️', 'pool 🏊']
+Track 🐾
+gas selected
+['nft 🖼️', 'track 🐾', 'nft 🖼️', 'pool 🏊', 'gas price 🚰']
+My Tracks 👞
+['nft 🖼️', 'track 🐾', 'nft 🖼️', 'pool 🏊', 'gas price 🚰', 'nft 🖼️']
+NFT 🖼️
+['nft 🖼️', 'track 🐾', 'nft 🖼️', 'pool 🏊', 'gas price 🚰', 'nft 🖼️', 'nft 🖼️']
+NFT 🖼️
+['nft 🖼️', 'track 🐾', 'nft 🖼️', 'pool 🏊', 'gas price 🚰', 'nft 🖼️', 'nft 🖼️', 'nft 🖼️']
+2024-03-16 15:10:27,558 - telegram.ext.Application - INFO - Application started
+2024-03-16 15:28:28,132 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2024-03-16 15:28:28,133 - telegram.ext.Application - INFO - Application.stop() complete
+['nft 🖼️']
+NFT 🖼️
+['nft 🖼️', 'nft 🖼️']
+Track 🐾
+['nft 🖼️', 'nft 🖼️', 'nft 🖼️']
+Track 🐾
+2024-03-16 15:29:06,017 - telegram.ext.Application - INFO - Application started

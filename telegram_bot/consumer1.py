@@ -35,19 +35,20 @@ import asyncio
 import pika
 import json
 
-COIN_QUEUE_MINUTE_BASED = "coin_queue_minute_based"
 
-def send_mes(data):
+async def send_mes(data):
+    bot = Bot('7192726917:AAHbXfJlu6dgb2IhdVTtozzQ1CM6t8tfcBo')
     print('sending')
     # Assuming bot is an asynchronous object that can send messages
-    bot.send_message(chat_id=1359422473, text=data['data'])
+    await bot.send_message(chat_id=1359422473, text=data['data'])
     print('message sent')
 
 # release the wolves
 def coin_event(ch, method, properties, body: bytes):
+    print('event')
     try:
         data = json.loads(body.decode("utf-8"))
-        send_mes(data)  # Run the asynchronous function with an event loop
+        asyncio.run(send_mes(data))  # Run the asynchronous function with an event loop
         print("Task created for:", data)
     except Exception as e:
         print("Error processing message:", e)
