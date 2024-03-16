@@ -1,7 +1,8 @@
+import tryi
 import pika
 from typing import Final
 import json
-from configs import *
+import configs
 
 
 class Producer:
