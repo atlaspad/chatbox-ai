@@ -89,7 +89,7 @@ def min_based_check_timeout(url, previous_coins_based_usdt):
     once_set_empty = True
     coins_over_limit_increase = []
     coins_change_rates = []
-    limit = 1.5  # LIMIT
+    limit = 3  # LIMIT
 
     # symbol is name of coin, data is price
     for symbol_and_price in extracted_data:
@@ -133,7 +133,7 @@ def min_based_check_timeout(url, previous_coins_based_usdt):
 
 
 # stage by stage working
-def check_stages(change_time):  # change time is in minute
+def check_stages(time_change):  # change time is in minute
 
     previous_coins_based_usdt = []
     while True:
@@ -144,10 +144,13 @@ def check_stages(change_time):  # change time is in minute
         time.sleep(5*60)
         # await asyncio.sleep(change_time)
         if len(coins_over_limit_increase) > 0:
-            producer.produce_coin(coins_over_limit_increase)
+            print('[x] over limit change', coins_over_limit_increase, rates)
+            producer.produce_coin(coins_over_limit_increase, rates)
 
             # send into queue
 
 
 # fonsiyon x 5 dk dk dk dk dk dk dk dk dk dk dk
 # 5 dk 5 dk
+print('[x] Starting tracker. ')
+check_stages(1)
