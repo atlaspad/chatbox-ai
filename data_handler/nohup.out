@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "tracker.py", line 10, in <module>
+    from producer import *
+  File "/home/ubuntu/telegramBot/data_handler/producer.py", line 5, in <module>
+    from configs import *
+ModuleNotFoundError: No module named 'configs'
