@@ -92,13 +92,18 @@ Send /start to initiate the conversation.
 Press Ctrl-C on the command line or send a signal to the process to stop the
 bot.
 """
+# here is telegram bot configuration to acquire user specifics
+# event handling and event sending is another matter's problem, message handler
 from functions import *
 
 
 def main() -> None:
     """Run the bot."""
     # Create the Application and pass it your bot's token.
-    application = Application.builder().token("7192726917:AAHbXfJlu6dgb2IhdVTtozzQ1CM6t8tfcBo").build()
+
+    my_persistence = PicklePersistence(filepath='persistence')
+
+    application = Application.builder().token("7192726917:AAHbXfJlu6dgb2IhdVTtozzQ1CM6t8tfcBo").persistence(persistence=my_persistence).build()
 
     # Add conversation handler with the states CHOOSING, TYPING_CHOICE and TYPING_REPLY
     conv_handler = ConversationHandler(
