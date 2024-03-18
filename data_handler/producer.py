@@ -1,8 +1,15 @@
-import tryi
+# import tryi
+import sys
+import os
+
+# Add the root directory of your project to the Python path to import from parent directory
+# to fix configs import problem
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from configs import *
 import pika
 from typing import Final
 import json
-import configs
 
 
 class Producer:
@@ -13,9 +20,9 @@ class Producer:
     # producer function
 
     @staticmethod   # add values to literal
-    def _produce(coins_over_limit: list, queue_name: str):
+    def _produce(data: dict, queue_name: str):
         """RabbitMQ Producer for triggering an event on bot(event: message)"""
-        data = {"data": coins_over_limit}
+
         # localhost is for testing, change it to other server
         connection: Final = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
         channel: Final = connection.channel()
@@ -27,13 +34,17 @@ class Producer:
 
         connection.close()
 
-    def produce_coin(self, coin_data):
+    def produce_coin(self, coin_data: list, rates: list):
         # process data
         ...
         print('coin produced')
 
-        # send into production
-        self._produce(coin_data, COIN_QUEUE_MINUTE_BASED)
+        # create dict
+        for coin, rate in zip(coin_data, rates):
+            message = {'coin': coin, 'rate': rate}
+
+            # send into production
+            self._produce(message, COIN_QUEUE_MINUTE_BASED)
 
     def produce_gas_fee(self, gas_data):
         # process data
