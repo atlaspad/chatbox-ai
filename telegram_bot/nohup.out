@@ -72,3 +72,6 @@ Track 🐾
 ['nft 🖼️', 'nft 🖼️', 'nft 🖼️']
 Track 🐾
 2024-03-16 15:29:06,017 - telegram.ext.Application - INFO - Application started
+2024-03-17 13:53:37,123 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2024-03-17 13:53:37,123 - telegram.ext.Application - INFO - Application.stop() complete
+2024-03-17 22:56:52,302 - telegram.ext.Application - INFO - Application started
