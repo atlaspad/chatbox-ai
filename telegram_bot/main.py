@@ -106,10 +106,16 @@ def main() -> None:
     application = Application.builder().token("7192726917:AAHbXfJlu6dgb2IhdVTtozzQ1CM6t8tfcBo").persistence(persistence=my_persistence).build()
 
     # Add conversation handler with the states CHOOSING, TYPING_CHOICE and TYPING_REPLY
+    # ConversationHandler()
     conv_handler = ConversationHandler(
         entry_points=[CommandHandler("start", start)],
         states={
+            # MessageHandler(),
+            # button clicked
             CHOOSING: [
+                MessageHandler(
+                    filters.Regex("^/start$"), start
+                ),
                 MessageHandler(
                     filters.Regex("^(NFT 🖼️)$"), select_nft
                 ),
@@ -130,12 +136,13 @@ def main() -> None:
                 # "Gas Price 🚰", "Funding 💰"],
                 #     ["Main Menu 📑"],
                 MessageHandler(
-                    filters.Regex("^Funding 💰$"), select_funding
+                        filters.Regex("^Funding 💰$"), select_funding
                 ),
                 MessageHandler(
                     filters.Regex("^Main Menu 📑$"), go_main_menu
                 ),
             ],
+            # button returns
             TYPING_CHOICE: [
                 MessageHandler(
                     filters.TEXT & ~(filters.COMMAND | filters.Regex("^Done$")), select_nft
@@ -147,6 +154,41 @@ def main() -> None:
                     received_information,
                 )
             ],
+            # CHOOSING, TYPING_REPLY, TYPING_CHOICE, TRACK_CHOICE, FUNDING_CHOICE, GAS_CHOICE, NFT_CHOICE, POOL_CHOICE
+            # --------- do_nothin part test. remove me with chaning them --------
+            POOL_CHOICE: [
+                MessageHandler(
+                    filters.TEXT & ~(filters.COMMAND | filters.Regex("^Done$")),
+                    do_nothin,
+                )
+            ],
+            TRACK_CHOICE: [
+                MessageHandler(
+                    filters.TEXT & ~(filters.COMMAND | filters.Regex("^Done$")),
+                    track_action,
+                ),
+                CallbackQueryHandler(
+                    conv_handle, 'm1'
+                )
+            ],
+            FUNDING_CHOICE: [
+                MessageHandler(
+                    filters.TEXT & ~(filters.COMMAND | filters.Regex("^Done$")),
+                    do_nothin,
+                )
+            ],
+            GAS_CHOICE: [
+                MessageHandler(
+                    filters.TEXT & ~(filters.COMMAND | filters.Regex("^Done$")),
+                    do_nothin,
+                )
+            ],
+            NFT_CHOICE: [
+                MessageHandler(
+                    filters.TEXT & ~(filters.COMMAND | filters.Regex("^Done$")),
+                    do_nothin,
+                )
+            ],
         },
         fallbacks=[MessageHandler(filters.Regex("^Done$"), done)],
     )
@@ -155,6 +197,8 @@ def main() -> None:
     # asyncio.create_task(consume_coin())
 
     # Run the bot until the user presses Ctrl-C
+    # asyncio.create_task(keep_funding_updated()) # can't make thread
+
     application.run_polling(allowed_updates=Update.ALL_TYPES)
 
 
