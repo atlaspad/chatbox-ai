@@ -1,3 +1,4 @@
+import asyncio
 import json
 import logging
 from typing import Dict
@@ -9,15 +10,19 @@ from telegram.ext import (
     ConversationHandler,
     MessageHandler,
     filters,
+    CallbackQueryHandler
 )
 from telegram.ext import PicklePersistence
+
 # local imports
 from menu_keyboards import *
 from changable_configs import *
 from key_configs import *
+from main_tasks.get_funding import *
+from json_imps import WritersJson
 
-my_persistence = PicklePersistence(filepath='persistence')
-
+my_persistence = PicklePersistence(filepath='persistence')  # Django ORM...
+bot = Bot('7192726917:AAHbXfJlu6dgb2IhdVTtozzQ1CM6t8tfcBo')
 # storage for testing -> get to db later on
 tracked_coins = []
 
@@ -29,14 +34,22 @@ logging.getLogger("httpx").setLevel(logging.WARNING)
 
 logger = logging.getLogger(__name__)
 
-CHOOSING, TYPING_REPLY, TYPING_CHOICE = range(3)
+CHOOSING, TYPING_REPLY, TYPING_CHOICE, TRACK_CHOICE, FUNDING_CHOICE, GAS_CHOICE, NFT_CHOICE, POOL_CHOICE = range(8)
 
 # different from inlinekeyboardmarkup not inline but reply
 markup = ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=False)
 
+writer_json = WritersJson()
+
+
+async def do_nothin(update: Update, context: ContextTypes.DEFAULT_TYPE):
+
+    return CHOOSING
+
 
 def store_coin(coin_name):
-    json_file = open('coins.json', 'r')
+    json_file = open('../coins.json', 'r')
+
     coin_data = json_file.read()
     coin_data = json.loads(coin_data)
     json_file.close()
@@ -50,10 +63,11 @@ def facts_to_str(user_data: Dict[str, str]) -> str:
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     """Start the conversation and ask user for input."""
+    print(update.message.chat_id)
 
     await update.message.reply_text(
         START_RETURN_TEXT,
-        # reply_markup=main_menu_keyboard(),
+        reply_markup=markup,
     )
     # await bot.send_message(chat_id=1359422473, text="asd")
 
@@ -69,7 +83,8 @@ async def select_nft(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     context.user_data["choice"] = text
     await update.message.reply_text(NFT_RETURN_TEXT)
 
-    return TYPING_REPLY
+    return CHOOSING
+
 
 # pool selection
 async def select_pool(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
@@ -79,7 +94,7 @@ async def select_pool(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int
     context.user_data["choice"] = text
     await update.message.reply_text(POOL_RETURN_TEXT)
 
-    return TYPING_REPLY
+    return CHOOSING
 
 
 # gas price selection
@@ -89,7 +104,41 @@ async def select_gas(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     context.user_data["choice"] = text
     await update.message.reply_text(GAS_PRICE_RETURN_TEXT, reply_markup=add_menu_keyboard())
 
-    return TYPING_REPLY
+    return CHOOSING
+
+
+async def conv_handle(update: Update, context: ContextTypes.DEFAULT_TYPE):
+
+    callback_data = update.callback_query.data
+
+    await update.callback_query.answer()
+    chat_id = update.callback_query.message.chat_id
+    print('------------', chat_id)
+
+    bot = Bot('7192726917:AAHbXfJlu6dgb2IhdVTtozzQ1CM6t8tfcBo')
+
+    await remove_last_message(bot, chat_id)
+
+    return CHOOSING
+
+
+async def track_action(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    """Ask the user for info about the selected predefined choice."""
+    print('I ran')
+
+    text = update.message.text
+    chat_id = update.message.chat_id
+    context.user_data["choice"] = text
+
+    print(text)
+    result, station = writer_json.add_into_tracked_coins(text, str(chat_id))
+
+    await update.message.reply_text(result, reply_markup=track_keyboard())
+
+    if station:
+        return CHOOSING
+    else:
+        return TRACK_CHOICE
 
 
 # track selection
@@ -100,7 +149,7 @@ async def select_track(update: Update, context: ContextTypes.DEFAULT_TYPE) -> in
 
     await update.message.reply_text(TRACKER_RETURN_TEXT, reply_markup=track_keyboard())
 
-    return TYPING_REPLY
+    return TRACK_CHOICE
 
 
 # show my tracks
@@ -113,13 +162,26 @@ async def show_my_tracks(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
     return TYPING_REPLY
 
 
+async def remove_last_message(bot1, chat_id):
+    # Get the ID of the last message sent by the bot
+    last_message_id = await bot1.get_updates()[-1].message.message_id
+
+    # Delete the last message
+    await bot1.delete_message(chat_id=chat_id, message_id=last_message_id)
+
+
 async def select_funding(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     """Ask the user for info about the selected predefined choice."""
     text = update.message.text
     context.user_data["choice"] = text
     await update.message.reply_text(FUNDING_RETURN_TEXT)
 
-    return TYPING_REPLY
+    funding: list = get_funding()
+    print(' got funding ')
+    for i in funding:
+        await bot.send_message(chat_id=1359422473, text=i)
+
+    return CHOOSING
 
 
 # over selection
@@ -154,10 +216,6 @@ async def received_information(update: Update, context: ContextTypes.DEFAULT_TYP
     category = user_data["choice"]
     user_data[category] = text
     del user_data["choice"]
-
-    json_file = open('darasave.json', 'w')
-    json_file.write(json.dumps(user_data))
-    json_file.close()
 
     await update.message.reply_text(
         "Neat! Just so you know, this is what you already told me:"
