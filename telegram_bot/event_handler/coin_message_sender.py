@@ -56,6 +56,8 @@ def consume_coin():
     channel.start_consuming()
 
 
+# consumes are here and run them here collectively using asyncio.create_task
+# rabbitMQ consumer start
 consume_coin()
 
 
