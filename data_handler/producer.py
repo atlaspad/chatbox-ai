@@ -18,7 +18,6 @@ class Producer:
         ...
 
     # producer function
-
     @staticmethod   # add values to literal
     def _produce(data: dict, queue_name: str):
         """RabbitMQ Producer for triggering an event on bot(event: message)"""
@@ -41,7 +40,7 @@ class Producer:
 
         # create dict
         for coin, rate in zip(coin_data, rates):
-            message = {'coin': coin, 'rate': rate}
+            message = {'coin': coin, 'rate': str(rate)}
 
             # send into production
             self._produce(message, COIN_QUEUE_MINUTE_BASED)
