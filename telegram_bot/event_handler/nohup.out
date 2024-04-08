@@ -1,0 +1,4495 @@
+ [*] Waiting for messages. To exit press CTRL+C
+event
+sending
+message sent
+Task created for: {'coin': 'ACAUSDT', 'rate': '3.6756126021003506'}
+event
+sending
+message sent
+Task created for: {'coin': 'BOMEUSDT', 'rate': '3.21081537811576'}
+event
+sending
+message sent
+Task created for: {'coin': 'CYBERUSDT', 'rate': '3.456579151778781'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '3.1837360951285114'}
+event
+sending
+message sent
+Task created for: {'coin': 'LTOUSDT', 'rate': '4.673539518900345'}
+event
+sending
+message sent
+Task created for: {'coin': 'LTOUSDT', 'rate': '10.046573519627414'}
+event
+sending
+message sent
+Task created for: {'coin': 'OMUSDT', 'rate': '4.040905613785525'}
+event
+sending
+message sent
+Task created for: {'coin': 'VANRYUSDT', 'rate': '3.566706333465545'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '4.9991136323346925'}
+event
+sending
+message sent
+Task created for: {'coin': 'WANUSDT', 'rate': '3.875709989976612'}
+event
+sending
+message sent
+Task created for: {'coin': 'ERNUSDT', 'rate': '6.019047619047622'}
+event
+sending
+message sent
+Task created for: {'coin': 'LTOUSDT', 'rate': '3.3104309806371015'}
+event
+sending
+message sent
+Task created for: {'coin': 'AMPUSDT', 'rate': '5.1714601769911575'}
+event
+sending
+message sent
+Task created for: {'coin': 'JTOUSDT', 'rate': '3.2545931758530164'}
+event
+sending
+message sent
+Task created for: {'coin': 'CLVUSDT', 'rate': '3.4307065217391317'}
+event
+sending
+message sent
+Task created for: {'coin': 'DATAUSDT', 'rate': '3.635979283373849'}
+event
+sending
+message sent
+Task created for: {'coin': 'CLVUSDT', 'rate': '3.6416424720033107'}
+event
+sending
+message sent
+Task created for: {'coin': 'LTOUSDT', 'rate': '5.95160235448005'}
+event
+sending
+message sent
+Task created for: {'coin': 'OMUSDT', 'rate': '4.874994129342339'}
+event
+sending
+message sent
+Task created for: {'coin': 'PEOPLEUSDT', 'rate': '3.2801161103047862'}
+event
+sending
+message sent
+Task created for: {'coin': 'ERNUSDT', 'rate': '5.3520394907768125'}
+event
+sending
+message sent
+Task created for: {'coin': 'OMUSDT', 'rate': '3.1601556046200843'}
+event
+sending
+message sent
+Task created for: {'coin': 'DATAUSDT', 'rate': '3.0372423767626784'}
+event
+sending
+message sent
+Task created for: {'coin': 'DATAUSDT', 'rate': '3.426934097421211'}
+event
+sending
+message sent
+Task created for: {'coin': 'AMPUSDT', 'rate': '3.9117071807767556'}
+event
+sending
+message sent
+Task created for: {'coin': 'DATAUSDT', 'rate': '3.4023668639053333'}
+event
+sending
+message sent
+Task created for: {'coin': 'OMUSDT', 'rate': '3.007190123754527'}
+event
+sending
+message sent
+Task created for: {'coin': 'CLVUSDT', 'rate': '3.760282021151585'}
+event
+sending
+message sent
+Task created for: {'coin': 'ETHFIUSDT', 'rate': '3.5667963683527844'}
+event
+sending
+message sent
+Task created for: {'coin': 'OGUSDT', 'rate': '4.026575397624325'}
+event
+sending
+message sent
+Task created for: {'coin': 'SANTOSUSDT', 'rate': '7.264787614132586'}
+event
+sending
+message sent
+Task created for: {'coin': 'DEXEUSDT', 'rate': '5.459010200226683'}
+event
+sending
+message sent
+Task created for: {'coin': 'PHAUSDT', 'rate': '3.701165181631246'}
+event
+sending
+message sent
+Task created for: {'coin': 'SANTOSUSDT', 'rate': '4.927837732414517'}
+event
+sending
+message sent
+Task created for: {'coin': 'LAZIOUSDT', 'rate': '3.447132913490225'}
+event
+sending
+message sent
+Task created for: {'coin': 'BARUSDT', 'rate': '3.6673215455140835'}
+event
+sending
+message sent
+Task created for: {'coin': 'DEXEUSDT', 'rate': '3.366820526744501'}
+event
+sending
+message sent
+Task created for: {'coin': 'SANTOSUSDT', 'rate': '3.2078807779742418'}
+event
+sending
+message sent
+Task created for: {'coin': 'DEXEUSDT', 'rate': '9.475945017182127'}
+event
+sending
+message sent
+Task created for: {'coin': 'LTOUSDT', 'rate': '4.377564979480176'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '5.826086956521737'}
+event
+sending
+message sent
+Task created for: {'coin': 'ERNUSDT', 'rate': '3.2389804252922185'}
+event
+sending
+message sent
+Task created for: {'coin': 'PHAUSDT', 'rate': '5.059829059829072'}
+event
+sending
+message sent
+Task created for: {'coin': 'PHAUSDT', 'rate': '10.64106736088513'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '6.828193832599115'}
+event
+sending
+message sent
+Task created for: {'coin': 'ACAUSDT', 'rate': '3.4116331096196992'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '4.460431654676246'}
+event
+sending
+message sent
+Task created for: {'coin': 'AMPUSDT', 'rate': '3.4618713337820872'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '10.192837465564745'}
+event
+sending
+message sent
+Task created for: {'coin': 'ACAUSDT', 'rate': '4.2122538293216705'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '8.312342569269514'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '6.646058732612076'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '9.888579387186622'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '5.348837209302334'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '4.999999999999992'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '5.867819641754175'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '5.414746543778797'}
+event
+sending
+message sent
+Task created for: {'coin': 'OPUSDT', 'rate': '4.205607476635518'}
+event
+sending
+message sent
+Task created for: {'coin': 'SKLUSDT', 'rate': '3.3010563380281717'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '3.3976833976833873'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '6.85920577617327'}
+event
+sending
+message sent
+Task created for: {'coin': 'PHAUSDT', 'rate': '3.4394085503053637'}
+event
+sending
+message sent
+Task created for: {'coin': 'WIFUSDT', 'rate': '3.2428621783574147'}
+event
+sending
+message sent
+Task created for: {'coin': 'AMPUSDT', 'rate': '3.1156842004038814'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '3.0757097791798227'}
+event
+sending
+message sent
+Task created for: {'coin': 'VANRYUSDT', 'rate': '3.021851827547738'}
+event
+sending
+message sent
+Task created for: {'coin': 'DATAUSDT', 'rate': '8.935968753698663'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '10.563882940756608'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '3.022339027595265'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '16.13944480309877'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '7.3979591836734695'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '9.85915492957747'}
+event
+sending
+message sent
+Task created for: {'coin': 'DEXEUSDT', 'rate': '3.87958642144752'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '4.110468850353236'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '4.109589041095887'}
+event
+sending
+message sent
+Task created for: {'coin': 'DATAUSDT', 'rate': '3.507749679524529'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '5.166051660516617'}
+event
+sending
+message sent
+Task created for: {'coin': 'DEXEUSDT', 'rate': '3.1274918047311044'}
+event
+sending
+message sent
+Task created for: {'coin': 'PHAUSDT', 'rate': '5.268050821196162'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '3.0264817150063044'}
+event
+sending
+message sent
+Task created for: {'coin': 'DATAUSDT', 'rate': '4.062394792952544'}
+event
+sending
+message sent
+Task created for: {'coin': 'DATAUSDT', 'rate': '3.2502470626990276'}
+event
+sending
+message sent
+Task created for: {'coin': 'POLYXUSDT', 'rate': '3.3347056401811432'}
+event
+sending
+message sent
+Task created for: {'coin': 'SSVUSDT', 'rate': '3.8933559035124916'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '3.136762860727732'}
+event
+sending
+message sent
+Task created for: {'coin': 'PEPEUSDT', 'rate': '3.0261348005502122'}
+event
+sending
+message sent
+Task created for: {'coin': 'POLYXUSDT', 'rate': '3.637090327737809'}
+event
+sending
+message sent
+Task created for: {'coin': 'TRUUSDT', 'rate': '4.414978872213325'}
+event
+sending
+message sent
+Task created for: {'coin': 'POLYXUSDT', 'rate': '3.844660194174765'}
+event
+sending
+message sent
+Task created for: {'coin': 'TRUUSDT', 'rate': '3.5046076514939934'}
+event
+sending
+message sent
+Task created for: {'coin': 'RLCUSDT', 'rate': '4.24008810572687'}
+event
+sending
+message sent
+Task created for: {'coin': 'POLYXUSDT', 'rate': '3.5333087964666903'}
+event
+sending
+message sent
+Task created for: {'coin': 'SKLUSDT', 'rate': '3.7029563111694004'}
+event
+sending
+message sent
+Task created for: {'coin': 'ETHFIUSDT', 'rate': '3.7173666288308675'}
+event
+sending
+message sent
+Task created for: {'coin': 'POLYXUSDT', 'rate': '4.340092493774454'}
+event
+sending
+message sent
+Task created for: {'coin': 'ETHFIUSDT', 'rate': '3.026245313336904'}
+event
+sending
+message sent
+Task created for: {'coin': 'POLYXUSDT', 'rate': '3.538175046554938'}
+event
+sending
+message sent
+Task created for: {'coin': 'VICUSDT', 'rate': '8.115299334811523'}
+event
+sending
+message sent
+Task created for: {'coin': 'ETHFIUSDT', 'rate': '3.263530051672562'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '5.317769130998693'}
+event
+sending
+message sent
+Task created for: {'coin': 'SKLUSDT', 'rate': '3.9643110615431523'}
+event
+sending
+message sent
+Task created for: {'coin': 'AEVOUSDT', 'rate': '3.0303030303030236'}
+event
+sending
+message sent
+Task created for: {'coin': 'RAYUSDT', 'rate': '6.977204173465868'}
+event
+sending
+message sent
+Task created for: {'coin': 'VITEUSDT', 'rate': '13.452593917710207'}
+event
+sending
+message sent
+Task created for: {'coin': 'BOMEUSDT', 'rate': '3.013112619734024'}
+event
+sending
+message sent
+Task created for: {'coin': 'VITEUSDT', 'rate': '3.4401349072512653'}
+event
+sending
+message sent
+Task created for: {'coin': 'API3USDT', 'rate': '3.855959209687699'}
+event
+sending
+message sent
+Task created for: {'coin': 'RONINUSDT', 'rate': '5.846153846153845'}
+event
+sending
+message sent
+Task created for: {'coin': 'VITEUSDT', 'rate': '4.053589831672967'}
+event
+sending
+message sent
+Task created for: {'coin': 'ETHFIUSDT', 'rate': '3.445469343461753'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '4.357298474945538'}
+event
+sending
+message sent
+Task created for: {'coin': 'UFTUSDT', 'rate': '4.596977329974812'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '4.706399824059827'}
+event
+sending
+message sent
+Task created for: {'coin': 'TROYUSDT', 'rate': '7.276657060518746'}
+event
+sending
+message sent
+Task created for: {'coin': 'PHAUSDT', 'rate': '4.682383759004578'}
+event
+sending
+message sent
+Task created for: {'coin': 'ETHFIUSDT', 'rate': '3.5191369124068963'}
+event
+sending
+message sent
+Task created for: {'coin': 'TROYUSDT', 'rate': '10.967966573816163'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '3.3665835411471425'}
+event
+sending
+message sent
+Task created for: {'coin': 'WIFUSDT', 'rate': '3.1981981981981855'}
+event
+sending
+message sent
+Task created for: {'coin': 'TROYUSDT', 'rate': '3.3550154056829853'}
+event
+sending
+message sent
+Task created for: {'coin': 'BOMEUSDT', 'rate': '3.004872766648619'}
+event
+sending
+message sent
+Task created for: {'coin': 'TROYUSDT', 'rate': '5.1644736842105265'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '3.808180535966141'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '4.332129963898924'}
+event
+sending
+message sent
+Task created for: {'coin': 'FLOKIUSDT', 'rate': '3.0036851935988738'}
+event
+sending
+message sent
+Task created for: {'coin': 'WIFUSDT', 'rate': '4.5618903464513885'}
+event
+sending
+message sent
+Task created for: {'coin': 'TROYUSDT', 'rate': '6.536366549182946'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '4.101161995898822'}
+event
+sending
+Error processing message: Timed out
+event
+sending
+message sent
+Task created for: {'coin': 'FLOKIUSDT', 'rate': '4.127640036730936'}
+event
+sending
+message sent
+Task created for: {'coin': 'PEPEUSDT', 'rate': '3.603603603603591'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '5.022831050228311'}
+event
+sending
+message sent
+Task created for: {'coin': 'RUNEUSDT', 'rate': '4.0013449899125675'}
+event
+sending
+Error processing message: Timed out
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '3.5774410774410805'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '3.8410596026490067'}
+event
+sending
+message sent
+Task created for: {'coin': 'JOEUSDT', 'rate': '6.8201851035698615'}
+event
+sending
+message sent
+Task created for: {'coin': 'PHAUSDT', 'rate': '3.946587537091981'}
+event
+sending
+message sent
+Task created for: {'coin': 'ETHFIUSDT', 'rate': '3.391070992925109'}
+event
+sending
+message sent
+Task created for: {'coin': 'PHAUSDT', 'rate': '6.194690265486725'}
+event
+sending
+message sent
+Task created for: {'coin': 'AKROUSDT', 'rate': '3.092783505154639'}
+event
+sending
+message sent
+Task created for: {'coin': 'TRUUSDT', 'rate': '3.2979976442873933'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '4.013015184381773'}
+event
+sending
+message sent
+Task created for: {'coin': 'CLVUSDT', 'rate': '3.6376834973382692'}
+event
+sending
+message sent
+Task created for: {'coin': 'POLYXUSDT', 'rate': '6.2899106002554275'}
+event
+sending
+message sent
+Task created for: {'coin': 'ONTUSDT', 'rate': '4.776674937965251'}
+event
+sending
+message sent
+Task created for: {'coin': 'QKCUSDT', 'rate': '3.9821389356562555'}
+event
+sending
+message sent
+Task created for: {'coin': 'QKCUSDT', 'rate': '9.222104892643426'}
+event
+sending
+message sent
+Task created for: {'coin': 'POWRUSDT', 'rate': '3.064516129032264'}
+event
+sending
+message sent
+Task created for: {'coin': 'POLYXUSDT', 'rate': '6.445086705202324'}
+event
+sending
+message sent
+Task created for: {'coin': 'TRUUSDT', 'rate': '3.7628644939965685'}
+event
+sending
+message sent
+Task created for: {'coin': 'KDAUSDT', 'rate': '4.7089601046435625'}
+event
+sending
+message sent
+Task created for: {'coin': 'POLYXUSDT', 'rate': '3.0896551724137895'}
+event
+sending
+message sent
+Task created for: {'coin': 'SSVUSDT', 'rate': '3.2187271397220156'}
+event
+sending
+message sent
+Task created for: {'coin': 'AXLUSDT', 'rate': '3.9927749786101376'}
+event
+sending
+message sent
+Task created for: {'coin': 'TRUUSDT', 'rate': '5.953148506339985'}
+event
+sending
+message sent
+Task created for: {'coin': 'POLYXUSDT', 'rate': '3.9847715736040588'}
+event
+sending
+message sent
+Task created for: {'coin': 'LTOUSDT', 'rate': '4.57920792079209'}
+event
+sending
+message sent
+Task created for: {'coin': 'TRUUSDT', 'rate': '5.5658627087198544'}
+event
+sending
+message sent
+Task created for: {'coin': 'DUSKUSDT', 'rate': '3.032904148783977'}
+event
+sending
+message sent
+Task created for: {'coin': 'AUCTIONUSDT', 'rate': '3.487838458008268'}
+event
+sending
+message sent
+Task created for: {'coin': 'DUSKUSDT', 'rate': '3.4519956850053877'}
+event
+sending
+message sent
+Task created for: {'coin': 'DUSKUSDT', 'rate': '3.114663726571107'}
+event
+sending
+message sent
+Task created for: {'coin': 'DYMUSDT', 'rate': '4.471012119226985'}
+event
+sending
+message sent
+Task created for: {'coin': 'AERGOUSDT', 'rate': '3.6407766990291295'}
+event
+sending
+message sent
+Task created for: {'coin': 'DFUSDT', 'rate': '4.896193771626308'}
+event
+sending
+message sent
+Task created for: {'coin': 'DFUSDT', 'rate': '3.9434653638108497'}
+event
+sending
+message sent
+Task created for: {'coin': 'LTOUSDT', 'rate': '3.0624263839811436'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '3.188097768331565'}
+event
+sending
+message sent
+Task created for: {'coin': 'OOKIUSDT', 'rate': '4.381752701080441'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '3.2974427994616335'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '4.5929018789144065'}
+event
+sending
+message sent
+Task created for: {'coin': 'OOKIUSDT', 'rate': '5.601415094339624'}
+event
+sending
+message sent
+Task created for: {'coin': 'OOKIUSDT', 'rate': '3.740926856504746'}
+event
+sending
+message sent
+Task created for: {'coin': 'FISUSDT', 'rate': '3.4277664736265505'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '5.020080321285144'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '14.459049544994937'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '5.297532656023223'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '4.716379859783295'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '3.3887861983980314'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '6.078767123287667'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '3.713027061044675'}
+event
+sending
+message sent
+Task created for: {'coin': 'UTKUSDT', 'rate': '9.119251753702272'}
+event
+sending
+message sent
+Task created for: {'coin': 'FISUSDT', 'rate': '3.377790663960566'}
+event
+sending
+message sent
+Task created for: {'coin': 'POLYXUSDT', 'rate': '4.860050890585243'}
+event
+sending
+message sent
+Task created for: {'coin': 'JASMYUSDT', 'rate': '5.010786428711505'}
+event
+sending
+message sent
+Task created for: {'coin': 'LTOUSDT', 'rate': '5.686936936936935'}
+event
+sending
+message sent
+Task created for: {'coin': 'AKROUSDT', 'rate': '4.250200481154765'}
+event
+sending
+message sent
+Task created for: {'coin': 'POLYXUSDT', 'rate': '3.631778058007558'}
+event
+sending
+message sent
+Task created for: {'coin': 'ZRXUSDT', 'rate': '3.1257052584066867'}
+event
+sending
+message sent
+Task created for: {'coin': 'CYBERUSDT', 'rate': '3.25434913017396'}
+event
+sending
+message sent
+Task created for: {'coin': 'POLYXUSDT', 'rate': '4.542124542124544'}
+event
+sending
+message sent
+Task created for: {'coin': 'LTOUSDT', 'rate': '3.020496224379716'}
+event
+sending
+message sent
+Task created for: {'coin': 'UTKUSDT', 'rate': '5.411255411255416'}
+event
+sending
+message sent
+Task created for: {'coin': 'UTKUSDT', 'rate': '4.953998584571818'}
+event
+sending
+message sent
+Task created for: {'coin': 'ERNUSDT', 'rate': '3.1543274244004174'}
+event
+sending
+message sent
+Task created for: {'coin': 'BOMEUSDT', 'rate': '7.5229822046048795'}
+event
+sending
+message sent
+Task created for: {'coin': 'AKROUSDT', 'rate': '3.025374105400137'}
+event
+sending
+message sent
+Task created for: {'coin': 'BOMEUSDT', 'rate': '3.34928229665072'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '3.014553014553014'}
+event
+sending
+message sent
+Task created for: {'coin': 'TRUUSDT', 'rate': '5.212755454635198'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '5.078125000000002'}
+event
+sending
+message sent
+Task created for: {'coin': 'BOMEUSDT', 'rate': '4.042797095911349'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '3.9518900343642547'}
+event
+sending
+message sent
+Task created for: {'coin': 'BOMEUSDT', 'rate': '3.2352719885636887'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '3.46274921301154'}
+event
+sending
+message sent
+Task created for: {'coin': 'UTKUSDT', 'rate': '3.482210446631335'}
+event
+sending
+message sent
+Task created for: {'coin': 'OMUSDT', 'rate': '4.067380078392336'}
+event
+sending
+message sent
+Task created for: {'coin': 'BOMEUSDT', 'rate': '4.98194413737196'}
+event
+sending
+message sent
+Task created for: {'coin': 'OMUSDT', 'rate': '5.76770741476974'}
+event
+sending
+message sent
+Task created for: {'coin': 'DUSKUSDT', 'rate': '3.8512323943661877'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '4.78668054110301'}
+event
+sending
+message sent
+Task created for: {'coin': 'DUSKUSDT', 'rate': '4.305200341005967'}
+event
+sending
+message sent
+Task created for: {'coin': 'PENDLEUSDT', 'rate': '3.268254072950332'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '3.3430232558139483'}
+event
+sending
+message sent
+Task created for: {'coin': 'EPXUSDT', 'rate': '3.5138705416116247'}
+event
+sending
+message sent
+Task created for: {'coin': 'EPXUSDT', 'rate': '3.4217506631299703'}
+event
+sending
+message sent
+Task created for: {'coin': 'VTHOUSDT', 'rate': '3.106212424849699'}
+event
+sending
+message sent
+Task created for: {'coin': 'EPXUSDT', 'rate': '3.3200531208499426'}
+event
+sending
+message sent
+Task created for: {'coin': 'RPLUSDT', 'rate': '3.2496782496782664'}
+event
+sending
+message sent
+Task created for: {'coin': 'RSRUSDT', 'rate': '3.9853790826553444'}
+event
+sending
+message sent
+Task created for: {'coin': 'DIAUSDT', 'rate': '6.799567300262717'}
+event
+sending
+message sent
+Task created for: {'coin': 'DIAUSDT', 'rate': '3.034081463009148'}
+event
+sending
+message sent
+Task created for: {'coin': 'FIOUSDT', 'rate': '3.2120925838450636'}
+event
+sending
+message sent
+Task created for: {'coin': 'DIAUSDT', 'rate': '3.1598269306411444'}
+event
+sending
+message sent
+Task created for: {'coin': 'MLNUSDT', 'rate': '6.946386946386957'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '4.016620498614958'}
+event
+sending
+message sent
+Task created for: {'coin': 'DIAUSDT', 'rate': '4.12176724137932'}
+event
+sending
+message sent
+Task created for: {'coin': 'TRUUSDT', 'rate': '3.2861018993065976'}
+event
+sending
+message sent
+Task created for: {'coin': 'ENSUSDT', 'rate': '3.437064561077559'}
+event
+sending
+message sent
+Task created for: {'coin': 'KEYUSDT', 'rate': '3.4072416598860884'}
+event
+sending
+message sent
+Task created for: {'coin': 'POLYXUSDT', 'rate': '3.352514385789348'}
+event
+sending
+message sent
+Task created for: {'coin': 'POLYXUSDT', 'rate': '4.638036809815958'}
+event
+sending
+message sent
+Task created for: {'coin': 'HIFIUSDT', 'rate': '3.2751937984496173'}
+event
+sending
+message sent
+Task created for: {'coin': 'YGGUSDT', 'rate': '3.032415475775533'}
+event
+sending
+message sent
+Task created for: {'coin': 'POLYXUSDT', 'rate': '3.7249283667621724'}
+event
+sending
+message sent
+Task created for: {'coin': 'TRUUSDT', 'rate': '3.388532593088927'}
+event
+sending
+message sent
+Task created for: {'coin': 'AKROUSDT', 'rate': '3.157051282051284'}
+event
+sending
+message sent
+Task created for: {'coin': 'TRUUSDT', 'rate': '3.588405256780694'}
+event
+sending
+message sent
+Task created for: {'coin': 'DEXEUSDT', 'rate': '4.746317512274959'}
+event
+sending
+message sent
+Task created for: {'coin': 'TRUUSDT', 'rate': '5.439709882139624'}
+event
+sending
+message sent
+Task created for: {'coin': 'BAKEUSDT', 'rate': '3.3816425120772875'}
+event
+sending
+message sent
+Task created for: {'coin': 'OAXUSDT', 'rate': '3.5633484162895925'}
+event
+sending
+message sent
+Task created for: {'coin': 'BOMEUSDT', 'rate': '6.348556215441328'}
+event
+sending
+message sent
+Task created for: {'coin': 'RONINUSDT', 'rate': '3.177383037277953'}
+event
+sending
+message sent
+Task created for: {'coin': 'CKBUSDT', 'rate': '3.1085856174195508'}
+event
+sending
+message sent
+Task created for: {'coin': 'DEXEUSDT', 'rate': '3.960880195599027'}
+event
+sending
+message sent
+Task created for: {'coin': 'LQTYUSDT', 'rate': '3.247631935047364'}
+event
+sending
+message sent
+Task created for: {'coin': 'CKBUSDT', 'rate': '3.2301095759885565'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '3.324808184143211'}
+event
+sending
+message sent
+Task created for: {'coin': 'DIAUSDT', 'rate': '4.608425219112236'}
+event
+sending
+message sent
+Task created for: {'coin': 'AKROUSDT', 'rate': '3.3874709976798076'}
+event
+sending
+message sent
+Task created for: {'coin': 'XVSUSDT', 'rate': '3.17662007623887'}
+event
+sending
+message sent
+Task created for: {'coin': 'DEXEUSDT', 'rate': '3.1625906157890418'}
+event
+sending
+message sent
+Task created for: {'coin': 'MBLUSDT', 'rate': '3.260869565217391'}
+event
+sending
+message sent
+Task created for: {'coin': 'DEXEUSDT', 'rate': '8.295177045177057'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '3.148614609571791'}
+event
+sending
+message sent
+Task created for: {'coin': 'FORTHUSDT', 'rate': '5.035360678925033'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '3.242320819112626'}
+event
+sending
+message sent
+Task created for: {'coin': 'MLNUSDT', 'rate': '4.190309908336975'}
+event
+sending
+message sent
+Task created for: {'coin': 'MLNUSDT', 'rate': '3.0172413793103416'}
+event
+sending
+message sent
+Task created for: {'coin': 'MLNUSDT', 'rate': '7.166947723440146'}
+event
+sending
+message sent
+Task created for: {'coin': 'MLNUSDT', 'rate': '3.9030402629416567'}
+event
+sending
+message sent
+Task created for: {'coin': 'MLNUSDT', 'rate': '3.7095501183899025'}
+event
+sending
+message sent
+Task created for: {'coin': 'MLNUSDT', 'rate': '3.4259611724400543'}
+event
+sending
+message sent
+Task created for: {'coin': 'MLNUSDT', 'rate': '17.372101582627895'}
+event
+sending
+message sent
+Task created for: {'coin': 'MLNUSDT', 'rate': '4.174884944115711'}
+event
+sending
+message sent
+Task created for: {'coin': 'DCRUSDT', 'rate': '3.93338058114812'}
+event
+sending
+message sent
+Task created for: {'coin': 'MLNUSDT', 'rate': '8.3307036920164'}
+event
+sending
+message sent
+Task created for: {'coin': 'KP3RUSDT', 'rate': '5.378315609338701'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '3.0623485349195785'}
+event
+sending
+message sent
+Task created for: {'coin': 'FORTHUSDT', 'rate': '3.762484608017505'}
+event
+sending
+message sent
+Task created for: {'coin': 'CREAMUSDT', 'rate': '4.198800342759214'}
+event
+sending
+message sent
+Task created for: {'coin': 'MLNUSDT', 'rate': '5.242334322453028'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '3.766601349880261'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '3.0168776371308095'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '5.099324185951255'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '12.490257209664858'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '4.306569343065685'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '9.183859777250323'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '4.582396679923909'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '4.066073697585761'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '5.3691275167785175'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '4.828042328042328'}
+event
+sending
+message sent
+Task created for: {'coin': 'JOEUSDT', 'rate': '3.86552653156847'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '5.5205047318612035'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '5.470852017937214'}
+event
+sending
+message sent
+Task created for: {'coin': 'CREAMUSDT', 'rate': '3.3712600084281528'}
+event
+sending
+message sent
+Task created for: {'coin': 'MLNUSDT', 'rate': '3.1205673758865213'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '3.730249226258353'}
+event
+sending
+message sent
+Task created for: {'coin': 'DIAUSDT', 'rate': '3.2064128256512987'}
+event
+sending
+message sent
+Task created for: {'coin': 'PSGUSDT', 'rate': '3.6067481093659093'}
+event
+sending
+message sent
+Task created for: {'coin': 'CREAMUSDT', 'rate': '3.6620890553474785'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '3.2718120805369137'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '4.441624365482237'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '5.962059620596201'}
+event
+sending
+message sent
+Task created for: {'coin': 'CREAMUSDT', 'rate': '10.2368526696106'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '3.0056864337936595'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '4.1392448908901835'}
+event
+sending
+message sent
+Task created for: {'coin': 'CREAMUSDT', 'rate': '3.1141868512110675'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '3.839441535776616'}
+event
+sending
+message sent
+Task created for: {'coin': 'DEXEUSDT', 'rate': '3.3634311512415422'}
+event
+sending
+message sent
+Task created for: {'coin': 'MLNUSDT', 'rate': '4.088277858176552'}
+event
+sending
+message sent
+Task created for: {'coin': 'CREAMUSDT', 'rate': '3.8030424339471547'}
+event
+sending
+message sent
+Task created for: {'coin': 'SCRTUSDT', 'rate': '3.170770964107525'}
+event
+sending
+message sent
+Task created for: {'coin': 'FLOKIUSDT', 'rate': '6.694050735758776'}
+event
+sending
+message sent
+Task created for: {'coin': 'WIFUSDT', 'rate': '3.6460028833185976'}
+event
+sending
+message sent
+Task created for: {'coin': 'BOMEUSDT', 'rate': '4.052670080468183'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '3.0938833570412467'}
+event
+sending
+message sent
+Task created for: {'coin': 'FLOKIUSDT', 'rate': '3.1200770173289087'}
+event
+sending
+message sent
+Task created for: {'coin': 'BADGERUSDT', 'rate': '3.4270311898344232'}
+event
+sending
+message sent
+Task created for: {'coin': 'POLYXUSDT', 'rate': '3.63501483679525'}
+event
+sending
+message sent
+Task created for: {'coin': 'DEGOUSDT', 'rate': '5.432098765432097'}
+event
+sending
+message sent
+Task created for: {'coin': 'DEGOUSDT', 'rate': '3.1948881789137413'}
+event
+sending
+message sent
+Task created for: {'coin': 'MLNUSDT', 'rate': '3.9764868603042824'}
+event
+sending
+message sent
+Task created for: {'coin': 'CREAMUSDT', 'rate': '3.3089649865332937'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '3.5995886184436094'}
+event
+sending
+message sent
+Task created for: {'coin': 'MLNUSDT', 'rate': '4.8305937604830635'}
+event
+sending
+message sent
+Task created for: {'coin': 'DEGOUSDT', 'rate': '3.8743455497382238'}
+event
+sending
+message sent
+Task created for: {'coin': 'MLNUSDT', 'rate': '3.041203400915642'}
+event
+sending
+message sent
+Task created for: {'coin': 'FLOKIUSDT', 'rate': '3.054357204486623'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '3.710304601425799'}
+event
+sending
+message sent
+Task created for: {'coin': 'CREAMUSDT', 'rate': '4.4748520710059205'}
+event
+sending
+message sent
+Task created for: {'coin': 'LUNAUSDT', 'rate': '12.329642248722305'}
+event
+sending
+message sent
+Task created for: {'coin': 'LUNCUSDT', 'rate': '7.449836345524405'}
+event
+sending
+message sent
+Task created for: {'coin': 'USTCUSDT', 'rate': '4.951197010108343'}
+event
+sending
+message sent
+Task created for: {'coin': 'CREAMUSDT', 'rate': '4.023196810438563'}
+event
+sending
+message sent
+Task created for: {'coin': 'MLNUSDT', 'rate': '3.083700440528635'}
+event
+sending
+message sent
+Task created for: {'coin': 'FTTUSDT', 'rate': '5.877767383847844'}
+event
+sending
+message sent
+Task created for: {'coin': 'FORTHUSDT', 'rate': '3.559782608695646'}
+event
+sending
+message sent
+Task created for: {'coin': 'VICUSDT', 'rate': '3.7017338581001957'}
+event
+sending
+message sent
+Task created for: {'coin': 'VICUSDT', 'rate': '7.457175094881537'}
+event
+sending
+message sent
+Task created for: {'coin': 'MLNUSDT', 'rate': '6.174542945843404'}
+event
+sending
+message sent
+Task created for: {'coin': 'MLNUSDT', 'rate': '4.019138755980855'}
+event
+sending
+message sent
+Task created for: {'coin': 'CREAMUSDT', 'rate': '3.448275862068969'}
+event
+sending
+Error processing message: Timed out
+event
+sending
+message sent
+Task created for: {'coin': 'KP3RUSDT', 'rate': '4.8856548856548905'}
+event
+sending
+message sent
+Task created for: {'coin': 'OAXUSDT', 'rate': '3.86289445048966'}
+event
+sending
+message sent
+Task created for: {'coin': 'FIROUSDT', 'rate': '19.93849308047154'}
+event
+sending
+Error processing message: Timed out
+event
+sending
+Error processing message: Timed out
+event
+sending
+Error processing message: Timed out
+event
+sending
+message sent
+Task created for: {'coin': 'OOKIUSDT', 'rate': '4.432855280312902'}
+event
+sending
+message sent
+Task created for: {'coin': 'OAXUSDT', 'rate': '6.8777832756061335'}
+event
+sending
+message sent
+Task created for: {'coin': 'FIROUSDT', 'rate': '4.6330275229357785'}
+event
+sending
+message sent
+Task created for: {'coin': 'FORTHUSDT', 'rate': '4.243073216436891'}
+event
+sending
+message sent
+Task created for: {'coin': 'FIROUSDT', 'rate': '5.314256515074086'}
+event
+sending
+message sent
+Task created for: {'coin': 'FISUSDT', 'rate': '3.434210526315791'}
+event
+sending
+message sent
+Task created for: {'coin': 'OAXUSDT', 'rate': '13.203684749232353'}
+event
+sending
+message sent
+Task created for: {'coin': 'PDAUSDT', 'rate': '6.095791001451372'}
+event
+sending
+message sent
+Task created for: {'coin': 'OAXUSDT', 'rate': '4.139534883720927'}
+event
+sending
+message sent
+Task created for: {'coin': 'FIROUSDT', 'rate': '4.439140811455846'}
+event
+sending
+message sent
+Task created for: {'coin': 'POLYXUSDT', 'rate': '3.030998851894372'}
+event
+sending
+message sent
+Task created for: {'coin': 'OAXUSDT', 'rate': '3.84100044662797'}
+event
+sending
+Error processing message: Timed out
+event
+sending
+message sent
+Task created for: {'coin': 'OAXUSDT', 'rate': '4.716157205240176'}
+event
+sending
+message sent
+Task created for: {'coin': 'GLMUSDT', 'rate': '4.119138149556404'}
+event
+sending
+message sent
+Task created for: {'coin': 'PDAUSDT', 'rate': '3.0534351145038077'}
+event
+sending
+message sent
+Task created for: {'coin': 'BOMEUSDT', 'rate': '4.4288414798811795'}
+event
+sending
+message sent
+Task created for: {'coin': 'FIROUSDT', 'rate': '3.7518037518037444'}
+event
+sending
+message sent
+Task created for: {'coin': 'OAXUSDT', 'rate': '7.256637168141592'}
+event
+sending
+message sent
+Task created for: {'coin': 'OAXUSDT', 'rate': '6.270627062706267'}
+event
+sending
+message sent
+Task created for: {'coin': 'FIROUSDT', 'rate': '3.014842300556584'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '3.120759837177748'}
+event
+sending
+message sent
+Task created for: {'coin': 'LTOUSDT', 'rate': '8.374083129584363'}
+event
+sending
+message sent
+Task created for: {'coin': 'SNXUSDT', 'rate': '3.46901017576319'}
+event
+sending
+message sent
+Task created for: {'coin': 'SANDUSDT', 'rate': '3.3531473860691996'}
+event
+sending
+message sent
+Task created for: {'coin': 'FIOUSDT', 'rate': '3.8878416588124383'}
+event
+sending
+message sent
+Task created for: {'coin': 'ORNUSDT', 'rate': '3.056907610426225'}
+event
+sending
+message sent
+Task created for: {'coin': 'UTKUSDT', 'rate': '3.7593984962406046'}
+event
+sending
+message sent
+Task created for: {'coin': 'HARDUSDT', 'rate': '3.931901094446702'}
+event
+sending
+message sent
+Task created for: {'coin': 'BADGERUSDT', 'rate': '6.338160616889218'}
+event
+sending
+message sent
+Task created for: {'coin': 'ARUSDT', 'rate': '5.296350039066869'}
+event
+sending
+message sent
+Task created for: {'coin': 'ATAUSDT', 'rate': '6.246172688303727'}
+event
+sending
+message sent
+Task created for: {'coin': 'PHAUSDT', 'rate': '4.652754019842628'}
+event
+sending
+message sent
+Task created for: {'coin': 'VIDTUSDT', 'rate': '3.4428175702413895'}
+event
+sending
+message sent
+Task created for: {'coin': 'GALAUSDT', 'rate': '9.053717538242626'}
+event
+sending
+message sent
+Task created for: {'coin': 'YGGUSDT', 'rate': '9.649725274725267'}
+event
+sending
+message sent
+Task created for: {'coin': 'SYSUSDT', 'rate': '10.477600888559788'}
+event
+sending
+message sent
+Task created for: {'coin': 'LAZIOUSDT', 'rate': '4.908536585365855'}
+event
+sending
+message sent
+Task created for: {'coin': 'DARUSDT', 'rate': '3.3054431776388387'}
+event
+sending
+message sent
+Task created for: {'coin': 'APTUSDT', 'rate': '3.3883367107337117'}
+event
+sending
+message sent
+Task created for: {'coin': 'HIFIUSDT', 'rate': '6.844215349369977'}
+event
+sending
+message sent
+Task created for: {'coin': 'VIBUSDT', 'rate': '3.940781765896256'}
+event
+sending
+message sent
+Task created for: {'coin': 'GLMUSDT', 'rate': '3.1779661016949188'}
+event
+sending
+message sent
+Task created for: {'coin': 'PENDLEUSDT', 'rate': '6.643967431532204'}
+event
+sending
+message sent
+Task created for: {'coin': 'RONINUSDT', 'rate': '4.099190283400808'}
+event
+sending
+message sent
+Task created for: {'coin': 'PIXELUSDT', 'rate': '3.375700423670896'}
+event
+sending
+message sent
+Task created for: {'coin': 'AXLUSDT', 'rate': '3.0619986993279857'}
+event
+sending
+message sent
+Task created for: {'coin': 'WIFUSDT', 'rate': '4.670139689272056'}
+event
+sending
+message sent
+Task created for: {'coin': 'ETHFIUSDT', 'rate': '10.405257393209197'}
+event
+sending
+message sent
+Task created for: {'coin': 'MLNUSDT', 'rate': '3.5156249999999947'}
+event
+sending
+message sent
+Task created for: {'coin': 'SYSUSDT', 'rate': '3.013698630136997'}
+event
+sending
+message sent
+Task created for: {'coin': 'SYSUSDT', 'rate': '3.0860144451740052'}
+event
+sending
+message sent
+Task created for: {'coin': 'LUNAUSDT', 'rate': '5.307179129742122'}
+event
+sending
+message sent
+Task created for: {'coin': 'TRUUSDT', 'rate': '3.361495595901499'}
+event
+sending
+message sent
+Task created for: {'coin': 'LUNCUSDT', 'rate': '3.3942027017853595'}
+event
+sending
+message sent
+Task created for: {'coin': 'PHAUSDT', 'rate': '4.710375556970094'}
+event
+sending
+message sent
+Task created for: {'coin': 'LUNAUSDT', 'rate': '3.0564410275642193'}
+event
+sending
+message sent
+Task created for: {'coin': 'LUNCUSDT', 'rate': '3.3927655207798857'}
+event
+sending
+message sent
+Task created for: {'coin': 'BCHUSDT', 'rate': '3.1829631325853063'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '9.483259144571305'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '4.64910730068941'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '9.898010366159511'}
+event
+sending
+message sent
+Task created for: {'coin': 'MLNUSDT', 'rate': '3.0143180105501157'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '4.718543046357611'}
+event
+sending
+message sent
+Task created for: {'coin': 'BLZUSDT', 'rate': '3.2191376255168236'}
+event
+sending
+message sent
+Task created for: {'coin': 'XECUSDT', 'rate': '3.523371104815863'}
+event
+sending
+message sent
+Task created for: {'coin': 'BADGERUSDT', 'rate': '6.066563684875712'}
+event
+sending
+message sent
+Task created for: {'coin': 'RIFUSDT', 'rate': '4.007782101167305'}
+event
+sending
+message sent
+Task created for: {'coin': 'TRUUSDT', 'rate': '3.6000712885403683'}
+event
+sending
+message sent
+Task created for: {'coin': 'BADGERUSDT', 'rate': '3.1317632081476825'}
+event
+sending
+message sent
+Task created for: {'coin': 'TRUUSDT', 'rate': '3.251333218647851'}
+event
+sending
+message sent
+Task created for: {'coin': 'BTTCUSDT', 'rate': '5.479452054794526'}
+event
+sending
+message sent
+Task created for: {'coin': 'DCRUSDT', 'rate': '3.054032889584969'}
+event
+sending
+message sent
+Task created for: {'coin': 'IDEXUSDT', 'rate': '4.143126177024493'}
+event
+sending
+message sent
+Task created for: {'coin': 'SUPERUSDT', 'rate': '4.654118020808513'}
+event
+sending
+message sent
+Task created for: {'coin': 'ARPAUSDT', 'rate': '3.6404335532516603'}
+event
+sending
+message sent
+Task created for: {'coin': 'BADGERUSDT', 'rate': '5.833530946170274'}
+event
+sending
+message sent
+Task created for: {'coin': 'BADGERUSDT', 'rate': '3.6307053941908656'}
+event
+sending
+message sent
+Task created for: {'coin': 'ACAUSDT', 'rate': '3.0372492836676215'}
+event
+sending
+message sent
+Task created for: {'coin': 'ACAUSDT', 'rate': '5.679287305122487'}
+event
+sending
+message sent
+Task created for: {'coin': 'ACAUSDT', 'rate': '3.9515279241306676'}
+event
+sending
+message sent
+Task created for: {'coin': 'ACAUSDT', 'rate': '3.701772679874867'}
+event
+sending
+message sent
+Task created for: {'coin': 'ACAUSDT', 'rate': '3.368526897938669'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '3.000517330574251'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '6.328478151682562'}
+event
+sending
+message sent
+Task created for: {'coin': 'ONGUSDT', 'rate': '6.1822660098522055'}
+event
+sending
+message sent
+Task created for: {'coin': 'PDAUSDT', 'rate': '6.2992125984252025'}
+event
+sending
+message sent
+Task created for: {'coin': 'YGGUSDT', 'rate': '3.684779404539635'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '4.244455082176473'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '3.7312277442328545'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '5.058479532163737'}
+event
+sending
+message sent
+Task created for: {'coin': 'BADGERUSDT', 'rate': '3.504102905300498'}
+event
+sending
+message sent
+Task created for: {'coin': 'CHESSUSDT', 'rate': '3.160830492717691'}
+event
+sending
+message sent
+Task created for: {'coin': 'LTOUSDT', 'rate': '6.161395856052347'}
+event
+sending
+message sent
+Task created for: {'coin': 'ACAUSDT', 'rate': '3.328133125325007'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '4.333333333333339'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '7.445478538685927'}
+event
+sending
+message sent
+Task created for: {'coin': 'BADGERUSDT', 'rate': '3.545938597484996'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '3.373202526542133'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '3.613829093281156'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '3.3088235294117703'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '4.250852794542113'}
+event
+sending
+message sent
+Task created for: {'coin': 'MBOXUSDT', 'rate': '3.2901952182496066'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '3.698795180722899'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '3.2176219582516477'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '3.4748603351955323'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '6.417112299465237'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '6.715418683695544'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '10.658682634730537'}
+event
+sending
+message sent
+Task created for: {'coin': 'IDEXUSDT', 'rate': '3.576058772687979'}
+event
+sending
+message sent
+Task created for: {'coin': 'XECUSDT', 'rate': '4.218090923293231'}
+event
+sending
+message sent
+Task created for: {'coin': 'XECUSDT', 'rate': '3.447758956678162'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '3.200000000000003'}
+event
+sending
+message sent
+Task created for: {'coin': 'XECUSDT', 'rate': '4.1915296172318435'}
+event
+sending
+message sent
+Task created for: {'coin': 'XECUSDT', 'rate': '3.6154708520179457'}
+event
+sending
+message sent
+Task created for: {'coin': 'BETAUSDT', 'rate': '5.046495804037208'}
+event
+sending
+message sent
+Task created for: {'coin': 'IDEXUSDT', 'rate': '4.577006507592192'}
+event
+sending
+message sent
+Task created for: {'coin': 'IDEXUSDT', 'rate': '3.2541058859532774'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '3.546747967479668'}
+event
+sending
+message sent
+Task created for: {'coin': 'LTOUSDT', 'rate': '3.4773445732349813'}
+event
+sending
+message sent
+Task created for: {'coin': 'ACAUSDT', 'rate': '6.34291377601586'}
+event
+sending
+message sent
+Task created for: {'coin': 'IDEXUSDT', 'rate': '3.13138189244384'}
+event
+sending
+message sent
+Task created for: {'coin': 'STEEMUSDT', 'rate': '3.569131832797427'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '3.8384955752212337'}
+event
+sending
+message sent
+Task created for: {'coin': 'AMPUSDT', 'rate': '3.025964108438348'}
+event
+sending
+message sent
+Task created for: {'coin': 'AMPUSDT', 'rate': '6.494950430834802'}
+event
+sending
+message sent
+Task created for: {'coin': 'LUNAUSDT', 'rate': '4.126595558664114'}
+event
+sending
+message sent
+Task created for: {'coin': 'HIFIUSDT', 'rate': '3.1548250265111406'}
+event
+sending
+message sent
+Task created for: {'coin': 'COSUSDT', 'rate': '4.480804192065012'}
+event
+sending
+message sent
+Task created for: {'coin': 'COSUSDT', 'rate': '5.698380566801612'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '3.17460317460318'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '3.1294452347083834'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '3.2619775739041734'}
+event
+sending
+message sent
+Task created for: {'coin': 'WIFUSDT', 'rate': '3.7642782969885666'}
+event
+sending
+message sent
+Task created for: {'coin': 'SYNUSDT', 'rate': '3.6807208432506053'}
+event
+sending
+message sent
+Task created for: {'coin': 'ACAUSDT', 'rate': '4.460784313725503'}
+event
+sending
+message sent
+Task created for: {'coin': 'AGIXUSDT', 'rate': '3.1911020497323936'}
+event
+sending
+message sent
+Task created for: {'coin': 'RAYUSDT', 'rate': '3.034986651679077'}
+event
+sending
+message sent
+Task created for: {'coin': 'RAYUSDT', 'rate': '3.6229645646705824'}
+event
+sending
+message sent
+Task created for: {'coin': 'STEEMUSDT', 'rate': '5.328376703841403'}
+event
+sending
+message sent
+Task created for: {'coin': 'LSKUSDT', 'rate': '3.208020050125316'}
+event
+sending
+message sent
+Task created for: {'coin': 'IDEXUSDT', 'rate': '3.2613409662589987'}
+event
+sending
+message sent
+Task created for: {'coin': 'JOEUSDT', 'rate': '3.6648092584654957'}
+event
+sending
+message sent
+Task created for: {'coin': 'LUNCUSDT', 'rate': '3.1700110796503687'}
+event
+sending
+message sent
+Task created for: {'coin': 'POLYXUSDT', 'rate': '4.759493670886072'}
+event
+sending
+message sent
+Task created for: {'coin': 'CHRUSDT', 'rate': '3.688524590163938'}
+event
+sending
+message sent
+Task created for: {'coin': 'DUSKUSDT', 'rate': '3.8348748026167288'}
+event
+sending
+message sent
+Task created for: {'coin': 'CLVUSDT', 'rate': '6.885078065011525'}
+event
+sending
+message sent
+Task created for: {'coin': 'PDAUSDT', 'rate': '3.192584963954677'}
+event
+sending
+message sent
+Task created for: {'coin': 'ORNUSDT', 'rate': '3.713109729398371'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '4.041399704287833'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '3.8015158692562654'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '3.578898442946774'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '3.511330491361902'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '4.438642297650128'}
+event
+sending
+message sent
+Task created for: {'coin': 'SXPUSDT', 'rate': '3.0093624609897485'}
+event
+sending
+message sent
+Task created for: {'coin': 'COSUSDT', 'rate': '3.0211480362537757'}
+event
+sending
+message sent
+Task created for: {'coin': 'PHAUSDT', 'rate': '3.5162170354652917'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '3.2998565279770395'}
+event
+sending
+message sent
+Task created for: {'coin': 'FIDAUSDT', 'rate': '3.519281168101842'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '3.575659666128164'}
+event
+sending
+message sent
+Task created for: {'coin': 'ALTUSDT', 'rate': '3.387654134486483'}
+event
+sending
+message sent
+Task created for: {'coin': 'GMTUSDT', 'rate': '3.4294871794871757'}
+event
+sending
+message sent
+Task created for: {'coin': 'ENSUSDT', 'rate': '3.3348355114916557'}
+event
+sending
+message sent
+Task created for: {'coin': 'LTOUSDT', 'rate': '3.063666826232642'}
+event
+sending
+message sent
+Task created for: {'coin': 'ENSUSDT', 'rate': '5.3641517662450955'}
+event
+sending
+message sent
+Task created for: {'coin': 'LTOUSDT', 'rate': '4.31985294117648'}
+event
+sending
+message sent
+Task created for: {'coin': 'LTOUSDT', 'rate': '5.930656934306562'}
+event
+sending
+message sent
+Task created for: {'coin': 'LTOUSDT', 'rate': '6.933677863910424'}
+event
+sending
+message sent
+Task created for: {'coin': 'LTOUSDT', 'rate': '3.101087394281117'}
+event
+sending
+message sent
+Task created for: {'coin': 'OMUSDT', 'rate': '4.276161032327437'}
+event
+sending
+message sent
+Task created for: {'coin': 'OMUSDT', 'rate': '4.832342372826729'}
+event
+sending
+message sent
+Task created for: {'coin': 'OMUSDT', 'rate': '6.053624748018263'}
+event
+sending
+message sent
+Task created for: {'coin': 'OMUSDT', 'rate': '3.5078866172611773'}
+event
+sending
+message sent
+Task created for: {'coin': 'LTOUSDT', 'rate': '3.343207786711803'}
+event
+sending
+message sent
+Task created for: {'coin': 'QNTUSDT', 'rate': '4.101838755304089'}
+event
+sending
+message sent
+Task created for: {'coin': 'TRUUSDT', 'rate': '6.046511627906978'}
+event
+sending
+message sent
+Task created for: {'coin': 'YGGUSDT', 'rate': '4.884701214976438'}
+event
+sending
+message sent
+Task created for: {'coin': 'SHIBUSDT', 'rate': '3.897944720056696'}
+event
+sending
+message sent
+Task created for: {'coin': 'IDEXUSDT', 'rate': '4.014429747479416'}
+event
+sending
+message sent
+Task created for: {'coin': 'POLYXUSDT', 'rate': '3.5433953801300695'}
+event
+sending
+message sent
+Task created for: {'coin': 'POLYXUSDT', 'rate': '3.6170673597574163'}
+event
+sending
+message sent
+Task created for: {'coin': 'WIFUSDT', 'rate': '3.4071610529295158'}
+event
+sending
+message sent
+Task created for: {'coin': 'POLYXUSDT', 'rate': '5.463812436289499'}
+event
+sending
+message sent
+Task created for: {'coin': 'POLYXUSDT', 'rate': '4.465493910690124'}
+event
+sending
+message sent
+Task created for: {'coin': 'FTTUSDT', 'rate': '5.439688346239707'}
+event
+sending
+message sent
+Task created for: {'coin': 'XVSUSDT', 'rate': '3.2422123331214117'}
+event
+sending
+message sent
+Task created for: {'coin': 'XVSUSDT', 'rate': '4.310344827586224'}
+event
+sending
+message sent
+Task created for: {'coin': 'STXUSDT', 'rate': '3.786381109280619'}
+event
+sending
+message sent
+Task created for: {'coin': 'TRUUSDT', 'rate': '3.285983227793938'}
+event
+sending
+message sent
+Task created for: {'coin': 'TRUUSDT', 'rate': '9.420049710024847'}
+event
+sending
+message sent
+Task created for: {'coin': 'RSRUSDT', 'rate': '3.691923207997281'}
+event
+sending
+message sent
+Task created for: {'coin': 'TRUUSDT', 'rate': '3.605372712277105'}
+event
+sending
+message sent
+Task created for: {'coin': 'PHAUSDT', 'rate': '4.611128189363669'}
+event
+sending
+message sent
+Task created for: {'coin': 'BOMEUSDT', 'rate': '3.6936749288342794'}
+event
+sending
+message sent
+Task created for: {'coin': 'RSRUSDT', 'rate': '3.38473863408772'}
+event
+sending
+message sent
+Task created for: {'coin': 'COSUSDT', 'rate': '3.3634045891351203'}
+event
+sending
+message sent
+Task created for: {'coin': 'ANKRUSDT', 'rate': '3.0059707638459874'}
+event
+sending
+message sent
+Task created for: {'coin': 'RSRUSDT', 'rate': '3.097123383782703'}
+event
+sending
+message sent
+Task created for: {'coin': 'GHSTUSDT', 'rate': '9.135004042037185'}
+event
+sending
+message sent
+Task created for: {'coin': 'GHSTUSDT', 'rate': '3.6697247706422047'}
+event
+sending
+message sent
+Task created for: {'coin': 'KP3RUSDT', 'rate': '3.334032291885099'}
+event
+sending
+message sent
+Task created for: {'coin': 'RIFUSDT', 'rate': '3.3444816053511732'}
+event
+sending
+message sent
+Task created for: {'coin': 'GHSTUSDT', 'rate': '8.126259234385493'}
+event
+sending
+message sent
+Task created for: {'coin': 'LTOUSDT', 'rate': '3.4090909090909074'}
+event
+sending
+message sent
+Task created for: {'coin': 'JOEUSDT', 'rate': '3.263403263403269'}
+event
+sending
+message sent
+Task created for: {'coin': 'JOEUSDT', 'rate': '3.68104415213622'}
+event
+sending
+message sent
+Task created for: {'coin': 'KP3RUSDT', 'rate': '3.2096184004181842'}
+event
+sending
+message sent
+Task created for: {'coin': 'KP3RUSDT', 'rate': '15.74787190920145'}
+event
+sending
+message sent
+Task created for: {'coin': 'KP3RUSDT', 'rate': '3.5107686919979035'}
+event
+sending
+message sent
+Task created for: {'coin': 'CVCUSDT', 'rate': '3.9238315060588578'}
+event
+sending
+message sent
+Task created for: {'coin': 'CVCUSDT', 'rate': '13.204592901878923'}
+event
+sending
+message sent
+Task created for: {'coin': 'CVCUSDT', 'rate': '5.389492753623186'}
+event
+sending
+message sent
+Task created for: {'coin': 'CVCUSDT', 'rate': '8.819538670284947'}
+event
+sending
+message sent
+Task created for: {'coin': 'STMXUSDT', 'rate': '5.7670429684081554'}
+event
+sending
+message sent
+Task created for: {'coin': 'KP3RUSDT', 'rate': '3.3155994679840344'}
+event
+sending
+message sent
+Task created for: {'coin': 'CREAMUSDT', 'rate': '3.237540923972356'}
+event
+sending
+message sent
+Task created for: {'coin': 'CVCUSDT', 'rate': '4.862842892768087'}
+event
+sending
+message sent
+Task created for: {'coin': 'SCUSDT', 'rate': '3.3074518503579724'}
+event
+sending
+message sent
+Task created for: {'coin': 'AERGOUSDT', 'rate': '3.1487513572204127'}
+event
+sending
+message sent
+Task created for: {'coin': 'STMXUSDT', 'rate': '4.333470903838212'}
+event
+sending
+message sent
+Task created for: {'coin': 'FORTHUSDT', 'rate': '3.8611111111111054'}
+event
+sending
+message sent
+Task created for: {'coin': 'AERGOUSDT', 'rate': '3.473684210526313'}
+event
+sending
+message sent
+Task created for: {'coin': 'CVCUSDT', 'rate': '3.090234857849188'}
+event
+sending
+message sent
+Task created for: {'coin': 'CVCUSDT', 'rate': '4.640188753440809'}
+event
+sending
+message sent
+Task created for: {'coin': 'CVCUSDT', 'rate': '8.26756858323939'}
+event
+sending
+message sent
+Task created for: {'coin': 'CVCUSDT', 'rate': '4.547032280458174'}
+event
+sending
+message sent
+Task created for: {'coin': 'AERGOUSDT', 'rate': '9.657947686116696'}
+event
+sending
+message sent
+Task created for: {'coin': 'CVCUSDT', 'rate': '4.414382342470638'}
+event
+sending
+message sent
+Task created for: {'coin': 'KMDUSDT', 'rate': '3.3324722293980944'}
+event
+sending
+message sent
+Task created for: {'coin': 'AERGOUSDT', 'rate': '5.6801909307876'}
+event
+sending
+message sent
+Task created for: {'coin': 'CVCUSDT', 'rate': '6.979362101313323'}
+event
+sending
+message sent
+Task created for: {'coin': 'ETHFIUSDT', 'rate': '3.0362603757099023'}
+event
+sending
+message sent
+Task created for: {'coin': 'WAXPUSDT', 'rate': '4.996027893017917'}
+event
+sending
+message sent
+Task created for: {'coin': 'METISUSDT', 'rate': '3.1618773083505904'}
+event
+sending
+message sent
+Task created for: {'coin': 'DARUSDT', 'rate': '3.356972172974638'}
+event
+sending
+message sent
+Task created for: {'coin': 'CVCUSDT', 'rate': '3.308550185873592'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '4.443436862389483'}
+event
+sending
+message sent
+Task created for: {'coin': 'KP3RUSDT', 'rate': '3.847667781932687'}
+event
+sending
+message sent
+Task created for: {'coin': 'JASMYUSDT', 'rate': '4.623012328032864'}
+event
+sending
+message sent
+Task created for: {'coin': 'BNXUSDT', 'rate': '4.525902375163644'}
+event
+sending
+message sent
+Task created for: {'coin': 'POLYXUSDT', 'rate': '3.350683148991534'}
+event
+sending
+message sent
+Task created for: {'coin': 'POLYXUSDT', 'rate': '4.060269627279948'}
+event
+sending
+message sent
+Task created for: {'coin': 'LTOUSDT', 'rate': '3.333333333333341'}
+event
+sending
+message sent
+Task created for: {'coin': 'BNXUSDT', 'rate': '4.5918367346938815'}
+event
+sending
+message sent
+Task created for: {'coin': 'CVCUSDT', 'rate': '5.415405314497142'}
+event
+sending
+message sent
+Task created for: {'coin': 'ANKRUSDT', 'rate': '3.44052558782849'}
+event
+sending
+message sent
+Task created for: {'coin': 'ANKRUSDT', 'rate': '6.23433060337624'}
+event
+sending
+message sent
+Task created for: {'coin': 'TUSDT', 'rate': '3.7391913998597737'}
+event
+sending
+message sent
+Task created for: {'coin': 'RADUSDT', 'rate': '3.3758181191870436'}
+event
+sending
+message sent
+Task created for: {'coin': 'RADUSDT', 'rate': '3.7306041597887094'}
+event
+sending
+message sent
+Task created for: {'coin': 'WAXPUSDT', 'rate': '4.7197898423817914'}
+event
+sending
+message sent
+Task created for: {'coin': 'CREAMUSDT', 'rate': '3.2944406314344574'}
+event
+sending
+message sent
+Task created for: {'coin': 'CREAMUSDT', 'rate': '3.065794006200484'}
+event
+sending
+message sent
+Task created for: {'coin': 'TUSDT', 'rate': '3.0890642615557975'}
+event
+sending
+message sent
+Task created for: {'coin': 'ONGUSDT', 'rate': '3.237172428980399'}
+event
+sending
+message sent
+Task created for: {'coin': 'TRUUSDT', 'rate': '7.975460122699371'}
+event
+sending
+message sent
+Task created for: {'coin': 'RSRUSDT', 'rate': '3.743870237646169'}
+event
+sending
+message sent
+Task created for: {'coin': 'TUSDT', 'rate': '4.628393413440139'}
+event
+sending
+message sent
+Task created for: {'coin': 'TUSDT', 'rate': '4.172721610961189'}
+event
+sending
+message sent
+Task created for: {'coin': 'HBARUSDT', 'rate': '3.174603174603173'}
+event
+sending
+message sent
+Task created for: {'coin': 'TUSDT', 'rate': '4.509921828021652'}
+event
+sending
+message sent
+Task created for: {'coin': 'HBARUSDT', 'rate': '3.5541195476575242'}
+event
+sending
+message sent
+Task created for: {'coin': 'LTOUSDT', 'rate': '3.225806451612915'}
+event
+sending
+message sent
+Task created for: {'coin': 'TUSDT', 'rate': '3.450935029882398'}
+event
+sending
+message sent
+Task created for: {'coin': 'REQUSDT', 'rate': '10.772357723577233'}
+event
+sending
+message sent
+Task created for: {'coin': 'REQUSDT', 'rate': '5.07645259938838'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '3.6659877800407394'}
+event
+sending
+message sent
+Task created for: {'coin': 'REQUSDT', 'rate': '3.5776110790536544'}
+event
+sending
+message sent
+Task created for: {'coin': 'ARDRUSDT', 'rate': '3.6350677120456116'}
+event
+sending
+message sent
+Task created for: {'coin': 'REQUSDT', 'rate': '5.163797890061078'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '3.4848484848484795'}
+event
+sending
+message sent
+Task created for: {'coin': 'OMUSDT', 'rate': '5.742824908505544'}
+event
+sending
+message sent
+Task created for: {'coin': 'DODOUSDT', 'rate': '5.856164383561645'}
+event
+sending
+message sent
+Task created for: {'coin': 'REQUSDT', 'rate': '5.427251732101628'}
+event
+sending
+message sent
+Task created for: {'coin': 'STMXUSDT', 'rate': '3.2683350438146457'}
+event
+sending
+message sent
+Task created for: {'coin': 'REQUSDT', 'rate': '3.438713255684976'}
+event
+sending
+message sent
+Task created for: {'coin': 'REQUSDT', 'rate': '3.6461126005361937'}
+event
+sending
+message sent
+Task created for: {'coin': 'REQUSDT', 'rate': '4.242110708742893'}
+event
+sending
+message sent
+Task created for: {'coin': 'GHSTUSDT', 'rate': '4.081632653061228'}
+event
+sending
+message sent
+Task created for: {'coin': 'REQUSDT', 'rate': '5.33070088845015'}
+event
+sending
+message sent
+Task created for: {'coin': 'GHSTUSDT', 'rate': '3.093525179856126'}
+event
+sending
+message sent
+Task created for: {'coin': 'GHSTUSDT', 'rate': '5.255878284923933'}
+event
+sending
+message sent
+Task created for: {'coin': 'VIBUSDT', 'rate': '3.947817189631659'}
+event
+sending
+message sent
+Task created for: {'coin': 'REQUSDT', 'rate': '3.042805569881391'}
+event
+sending
+message sent
+Task created for: {'coin': 'WANUSDT', 'rate': '7.444444444444443'}
+event
+sending
+message sent
+Task created for: {'coin': 'REQUSDT', 'rate': '4.581673306772902'}
+event
+sending
+message sent
+Task created for: {'coin': 'REQUSDT', 'rate': '4.297440849830996'}
+event
+sending
+message sent
+Task created for: {'coin': 'REQUSDT', 'rate': '7.29118597138902'}
+event
+sending
+message sent
+Task created for: {'coin': 'REQUSDT', 'rate': '3.303571428571424'}
+event
+sending
+message sent
+Task created for: {'coin': 'ADXUSDT', 'rate': '3.3170391061452547'}
+event
+sending
+message sent
+Task created for: {'coin': 'ADXUSDT', 'rate': '6.860425819533621'}
+event
+sending
+message sent
+Task created for: {'coin': 'ADXUSDT', 'rate': '3.266331658291446'}
+event
+sending
+message sent
+Task created for: {'coin': 'CREAMUSDT', 'rate': '3.501945525291836'}
+event
+sending
+message sent
+Task created for: {'coin': 'TUSDT', 'rate': '3.3748420862660113'}
+event
+sending
+message sent
+Task created for: {'coin': 'RVNUSDT', 'rate': '3.1423290203327086'}
+event
+sending
+message sent
+Task created for: {'coin': 'TUSDT', 'rate': '4.38045375218151'}
+event
+sending
+message sent
+Task created for: {'coin': 'TUSDT', 'rate': '5.784985788329719'}
+event
+sending
+message sent
+Task created for: {'coin': 'HIVEUSDT', 'rate': '3.2685714285714242'}
+event
+sending
+message sent
+Task created for: {'coin': 'GLMUSDT', 'rate': '5.42720938760542'}
+event
+sending
+message sent
+Task created for: {'coin': 'IQUSDT', 'rate': '3.696498054474715'}
+event
+sending
+message sent
+Task created for: {'coin': 'HIVEUSDT', 'rate': '3.2536520584329454'}
+event
+sending
+message sent
+Task created for: {'coin': 'PDAUSDT', 'rate': '4.803493449781656'}
+event
+sending
+message sent
+Task created for: {'coin': 'POLYXUSDT', 'rate': '3.281277417090726'}
+event
+sending
+message sent
+Task created for: {'coin': 'ARDRUSDT', 'rate': '3.272980501392745'}
+event
+sending
+message sent
+Task created for: {'coin': 'TUSDT', 'rate': '4.161028416779438'}
+event
+sending
+message sent
+Task created for: {'coin': 'ARDRUSDT', 'rate': '7.14767363452463'}
+event
+sending
+message sent
+Task created for: {'coin': 'VIBUSDT', 'rate': '3.7907375643224763'}
+event
+sending
+message sent
+Task created for: {'coin': 'TUSDT', 'rate': '3.8224813735017826'}
+event
+sending
+message sent
+Task created for: {'coin': 'VIBUSDT', 'rate': '3.3586497890295455'}
+event
+sending
+message sent
+Task created for: {'coin': 'VIBUSDT', 'rate': '5.813193990855639'}
+event
+sending
+message sent
+Task created for: {'coin': 'SCUSDT', 'rate': '8.380315336837068'}
+event
+sending
+message sent
+Task created for: {'coin': 'VIBUSDT', 'rate': '4.935351624093336'}
+event
+sending
+message sent
+Task created for: {'coin': 'VIBUSDT', 'rate': '10.42073628850488'}
+event
+sending
+message sent
+Task created for: {'coin': 'UMAUSDT', 'rate': '6.628242074927942'}
+event
+sending
+message sent
+Task created for: {'coin': 'LTOUSDT', 'rate': '4.369992716678809'}
+event
+sending
+message sent
+Task created for: {'coin': 'UMAUSDT', 'rate': '3.471147468494363'}
+event
+sending
+message sent
+Task created for: {'coin': 'CREAMUSDT', 'rate': '3.379790940766559'}
+event
+sending
+message sent
+Task created for: {'coin': 'PDAUSDT', 'rate': '3.393351800554008'}
+event
+sending
+message sent
+Task created for: {'coin': 'LTOUSDT', 'rate': '3.253485877726134'}
+event
+sending
+message sent
+Task created for: {'coin': 'ANKRUSDT', 'rate': '3.5424598576394573'}
+event
+sending
+message sent
+Task created for: {'coin': 'PDAUSDT', 'rate': '3.488372093023252'}
+event
+sending
+message sent
+Task created for: {'coin': 'AUCTIONUSDT', 'rate': '3.4525277435265247'}
+event
+sending
+message sent
+Task created for: {'coin': 'LTOUSDT', 'rate': '5.104895104895106'}
+event
+sending
+message sent
+Task created for: {'coin': 'KEYUSDT', 'rate': '4.503025064822808'}
+event
+sending
+message sent
+Task created for: {'coin': 'SSVUSDT', 'rate': '5.383226653536836'}
+event
+sending
+message sent
+Task created for: {'coin': 'VIBUSDT', 'rate': '5.7581430175964075'}
+event
+sending
+message sent
+Task created for: {'coin': 'CREAMUSDT', 'rate': '3.340220385674939'}
+event
+sending
+message sent
+Task created for: {'coin': 'REQUSDT', 'rate': '3.7696335078533947'}
+event
+sending
+message sent
+Task created for: {'coin': 'GHSTUSDT', 'rate': '3.8107752956636034'}
+event
+sending
+message sent
+Task created for: {'coin': 'GMTUSDT', 'rate': '4.632867132867124'}
+event
+sending
+message sent
+Task created for: {'coin': 'GHSTUSDT', 'rate': '4.24050632911392'}
+event
+sending
+message sent
+Task created for: {'coin': 'PDAUSDT', 'rate': '3.0915576694411477'}
+event
+sending
+message sent
+Task created for: {'coin': 'ALTUSDT', 'rate': '3.2446705112421426'}
+event
+sending
+message sent
+Task created for: {'coin': 'WANUSDT', 'rate': '3.15975733063701'}
+event
+sending
+message sent
+Task created for: {'coin': 'LTOUSDT', 'rate': '3.3626289644631373'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '3.846514682427988'}
+event
+sending
+message sent
+Task created for: {'coin': 'OAXUSDT', 'rate': '3.636363636363634'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '4.222648752399234'}
+event
+sending
+message sent
+Task created for: {'coin': 'PDAUSDT', 'rate': '3.252551020408159'}
+event
+sending
+message sent
+Task created for: {'coin': 'FETUSDT', 'rate': '3.1062377551665312'}
+event
+sending
+message sent
+Task created for: {'coin': 'OCEANUSDT', 'rate': '12.271434376269811'}
+event
+sending
+message sent
+Task created for: {'coin': 'AGIXUSDT', 'rate': '5.963747849414142'}
+event
+sending
+message sent
+Task created for: {'coin': 'DUSKUSDT', 'rate': '3.4353741496598635'}
+event
+sending
+message sent
+Task created for: {'coin': 'OCEANUSDT', 'rate': '6.710097719869708'}
+event
+sending
+message sent
+Task created for: {'coin': 'OCEANUSDT', 'rate': '8.574141907475246'}
+event
+sending
+message sent
+Task created for: {'coin': 'AIUSDT', 'rate': '3.29793180547793'}
+event
+sending
+message sent
+Task created for: {'coin': 'OCEANUSDT', 'rate': '4.003887269193382'}
+event
+sending
+message sent
+Task created for: {'coin': 'NFPUSDT', 'rate': '3.7553636047905528'}
+event
+sending
+message sent
+Task created for: {'coin': 'VETUSDT', 'rate': '4.61642905634759'}
+event
+sending
+message sent
+Task created for: {'coin': 'IOTXUSDT', 'rate': '4.056057135156985'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '3.1928589820616264'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '3.6553750432077403'}
+event
+sending
+message sent
+Task created for: {'coin': 'AEVOUSDT', 'rate': '3.472222222222225'}
+event
+sending
+message sent
+Task created for: {'coin': 'PDAUSDT', 'rate': '3.4098816979819175'}
+event
+sending
+message sent
+Task created for: {'coin': 'ERNUSDT', 'rate': '4.009779951100252'}
+event
+sending
+message sent
+Task created for: {'coin': 'MBLUSDT', 'rate': '4.1896361631753125'}
+event
+sending
+message sent
+Task created for: {'coin': 'LDOUSDT', 'rate': '3.095775556272173'}
+event
+sending
+message sent
+Task created for: {'coin': 'WIFUSDT', 'rate': '3.566894758027068'}
+event
+sending
+message sent
+Task created for: {'coin': 'PENDLEUSDT', 'rate': '3.1170260669435144'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '4.31648850016197'}
+event
+sending
+message sent
+Task created for: {'coin': 'IOTXUSDT', 'rate': '3.1643907563025144'}
+event
+sending
+message sent
+Task created for: {'coin': 'CTXCUSDT', 'rate': '3.7613488975356617'}
+event
+sending
+message sent
+Task created for: {'coin': 'YGGUSDT', 'rate': '3.415443745632417'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '3.8972129493051755'}
+event
+sending
+message sent
+Task created for: {'coin': 'WANUSDT', 'rate': '3.1100478468899637'}
+event
+sending
+message sent
+Task created for: {'coin': 'DUSKUSDT', 'rate': '3.34520675236177'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '7.011011645409171'}
+event
+sending
+message sent
+Task created for: {'coin': 'WANUSDT', 'rate': '3.7886597938144306'}
+event
+sending
+message sent
+Task created for: {'coin': 'MLNUSDT', 'rate': '3.3509036144578332'}
+event
+sending
+message sent
+Task created for: {'coin': 'MLNUSDT', 'rate': '8.051001821493628'}
+event
+sending
+message sent
+Task created for: {'coin': 'BONDUSDT', 'rate': '3.0376403257759166'}
+event
+sending
+message sent
+Task created for: {'coin': 'DCRUSDT', 'rate': '4.273192111029955'}
+event
+sending
+message sent
+Task created for: {'coin': 'MLNUSDT', 'rate': '5.401844532279316'}
+event
+sending
+message sent
+Task created for: {'coin': 'TRUUSDT', 'rate': '6.04979811574697'}
+event
+sending
+message sent
+Task created for: {'coin': 'PDAUSDT', 'rate': '4.028132992327365'}
+event
+sending
+message sent
+Task created for: {'coin': 'TRUUSDT', 'rate': '4.016752332000763'}
+event
+sending
+message sent
+Task created for: {'coin': 'TWTUSDT', 'rate': '3.263735480652752'}
+event
+sending
+message sent
+Task created for: {'coin': 'OOKIUSDT', 'rate': '3.0631188118811923'}
+event
+sending
+message sent
+Task created for: {'coin': 'PENDLEUSDT', 'rate': '4.058277754534498'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '6.053249804228651'}
+event
+sending
+message sent
+Task created for: {'coin': 'POLYXUSDT', 'rate': '3.5060975609755998'}
+event
+sending
+message sent
+Task created for: {'coin': 'CREAMUSDT', 'rate': '3.4027089527585104'}
+event
+sending
+message sent
+Task created for: {'coin': 'TRUUSDT', 'rate': '3.1185860889395682'}
+event
+sending
+message sent
+Task created for: {'coin': 'MLNUSDT', 'rate': '4.453723034098822'}
+event
+sending
+message sent
+Task created for: {'coin': 'TUSDT', 'rate': '3.1589673913043486'}
+event
+sending
+message sent
+Task created for: {'coin': 'CLVUSDT', 'rate': '3.048975672215104'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '3.4360368524392073'}
+event
+sending
+message sent
+Task created for: {'coin': 'CLVUSDT', 'rate': '3.0284010670014143'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '4.294958401479051'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '3.820960698689952'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '4.449263932702418'}
+event
+sending
+message sent
+Task created for: {'coin': 'CLVUSDT', 'rate': '4.048495345312841'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '3.9130138387074944'}
+event
+sending
+Error processing message: Timed out
+event
+sending
+message sent
+Task created for: {'coin': 'WANUSDT', 'rate': '4.467532467532466'}
+event
+sending
+message sent
+Task created for: {'coin': 'VIBUSDT', 'rate': '4.140315372291084'}
+event
+sending
+message sent
+Task created for: {'coin': 'VIBUSDT', 'rate': '3.7176207227374602'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '4.011887072808333'}
+event
+sending
+message sent
+Task created for: {'coin': 'ETHFIUSDT', 'rate': '3.046103183315032'}
+event
+sending
+message sent
+Task created for: {'coin': 'FORUSDT', 'rate': '3.368983957219244'}
+event
+sending
+message sent
+Task created for: {'coin': 'ETHFIUSDT', 'rate': '3.0203045685279246'}
+event
+sending
+message sent
+Task created for: {'coin': 'ETHFIUSDT', 'rate': '5.446756425948596'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '4.959487715629891'}
+event
+sending
+message sent
+Task created for: {'coin': 'AEVOUSDT', 'rate': '3.2258064516128995'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '5.261172920988113'}
+event
+sending
+message sent
+Task created for: {'coin': 'GHSTUSDT', 'rate': '5.131414267834784'}
+event
+sending
+message sent
+Task created for: {'coin': 'FORUSDT', 'rate': '6.893030380393142'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '3.449541284403673'}
+event
+sending
+message sent
+Task created for: {'coin': 'FORUSDT', 'rate': '5.68426080726057'}
+event
+sending
+message sent
+Task created for: {'coin': 'AEVOUSDT', 'rate': '4.927536231884055'}
+event
+sending
+message sent
+Task created for: {'coin': 'WANUSDT', 'rate': '3.494006630961487'}
+event
+sending
+message sent
+Task created for: {'coin': 'KMDUSDT', 'rate': '3.4183673469387674'}
+event
+sending
+message sent
+Task created for: {'coin': 'GHSTUSDT', 'rate': '4.482323232323229'}
+event
+sending
+message sent
+Task created for: {'coin': 'SUIUSDT', 'rate': '3.4960327001683202'}
+event
+sending
+message sent
+Task created for: {'coin': 'AEVOUSDT', 'rate': '5.420054200542011'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '4.9186300704396375'}
+event
+sending
+message sent
+Task created for: {'coin': 'FORUSDT', 'rate': '5.067808708065667'}
+event
+sending
+message sent
+Task created for: {'coin': 'GHSTUSDT', 'rate': '3.3836858006042325'}
+event
+sending
+message sent
+Task created for: {'coin': 'GLMUSDT', 'rate': '3.9723355204823707'}
+event
+sending
+message sent
+Task created for: {'coin': 'TUSDT', 'rate': '5.150214592274679'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '4.907407407407398'}
+event
+sending
+message sent
+Task created for: {'coin': 'PDAUSDT', 'rate': '3.8405797101449264'}
+event
+sending
+message sent
+Task created for: {'coin': 'ETHFIUSDT', 'rate': '3.010633890346637'}
+event
+sending
+message sent
+Task created for: {'coin': 'GRTUSDT', 'rate': '3.115653040877371'}
+event
+sending
+message sent
+Task created for: {'coin': 'PORTALUSDT', 'rate': '3.4561894707853273'}
+event
+sending
+message sent
+Task created for: {'coin': 'BONDUSDT', 'rate': '4.624637080049769'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '7.3280073567446316'}
+event
+sending
+message sent
+Task created for: {'coin': 'PDAUSDT', 'rate': '5.080027835768964'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '4.957343786027212'}
+event
+sending
+message sent
+Task created for: {'coin': 'WANUSDT', 'rate': '5.428077966938075'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '18.035771661133136'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '3.3721441124780385'}
+event
+sending
+message sent
+Task created for: {'coin': 'PDAUSDT', 'rate': '4.912516823687753'}
+event
+sending
+message sent
+Task created for: {'coin': 'GHSTUSDT', 'rate': '3.119151590767314'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '6.549549549549548'}
+event
+sending
+message sent
+Task created for: {'coin': 'GLMUSDT', 'rate': '3.095866314863667'}
+event
+sending
+message sent
+Task created for: {'coin': 'WANUSDT', 'rate': '3.9163863527150364'}
+event
+sending
+message sent
+Task created for: {'coin': 'CLVUSDT', 'rate': '4.269710420629895'}
+event
+sending
+message sent
+Task created for: {'coin': 'FORUSDT', 'rate': '4.486215538847118'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '3.7916282191091435'}
+event
+sending
+message sent
+Task created for: {'coin': 'CLVUSDT', 'rate': '4.303142819254738'}
+event
+sending
+message sent
+Task created for: {'coin': 'FORUSDT', 'rate': '10.10051483206668'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '10.39272784511254'}
+event
+sending
+message sent
+Task created for: {'coin': 'FORUSDT', 'rate': '6.880427521710092'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '3.8712437172494853'}
+event
+sending
+message sent
+Task created for: {'coin': 'WANUSDT', 'rate': '3.5746201966041142'}
+event
+sending
+message sent
+Task created for: {'coin': 'FORUSDT', 'rate': '3.291666666666663'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '4.155755436638959'}
+event
+sending
+message sent
+Task created for: {'coin': 'DOCKUSDT', 'rate': '3.514450867052025'}
+event
+sending
+message sent
+Task created for: {'coin': 'FORUSDT', 'rate': '8.450988301734569'}
+event
+sending
+message sent
+Task created for: {'coin': 'GHSTUSDT', 'rate': '3.5469819539514584'}
+event
+sending
+message sent
+Task created for: {'coin': 'DFUSDT', 'rate': '3.783359497645204'}
+event
+sending
+message sent
+Task created for: {'coin': 'FORUSDT', 'rate': '5.651302605210427'}
+event
+sending
+message sent
+Task created for: {'coin': 'GHSTUSDT', 'rate': '6.430288461538461'}
+event
+sending
+message sent
+Task created for: {'coin': 'TROYUSDT', 'rate': '4.5296167247386725'}
+event
+sending
+message sent
+Task created for: {'coin': 'FORUSDT', 'rate': '12.201053911633558'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '7.072130091772674'}
+event
+sending
+message sent
+Task created for: {'coin': 'DFUSDT', 'rate': '4.502758312211115'}
+event
+sending
+message sent
+Task created for: {'coin': 'DFUSDT', 'rate': '3.267227849907263'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '3.112946585109283'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '3.9711327741253'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '4.738878143133469'}
+event
+sending
+message sent
+Task created for: {'coin': 'SCRTUSDT', 'rate': '3.199217658563849'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '6.378030847098253'}
+event
+sending
+message sent
+Task created for: {'coin': 'PDAUSDT', 'rate': '3.024453024453013'}
+event
+sending
+message sent
+Task created for: {'coin': 'CLVUSDT', 'rate': '5.26663146779304'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '3.5614853382507237'}
+event
+sending
+message sent
+Task created for: {'coin': 'WANUSDT', 'rate': '3.0776404756353437'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '3.0075187969924895'}
+event
+sending
+message sent
+Task created for: {'coin': 'LTOUSDT', 'rate': '5.000000000000004'}
+event
+sending
+message sent
+Task created for: {'coin': 'LTOUSDT', 'rate': '3.085714285714284'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '3.23383084577115'}
+event
+sending
+message sent
+Task created for: {'coin': 'WANUSDT', 'rate': '6.225769669327249'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '3.132530120481917'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '3.2884902840059698'}
+event
+sending
+message sent
+Task created for: {'coin': 'WANUSDT', 'rate': '4.360148245040335'}
+event
+sending
+message sent
+Task created for: {'coin': 'FORUSDT', 'rate': '4.327972999801473'}
+event
+sending
+message sent
+Task created for: {'coin': 'FORUSDT', 'rate': '3.615604186489056'}
+event
+sending
+message sent
+Task created for: {'coin': 'WANUSDT', 'rate': '3.100950656405611'}
+event
+sending
+message sent
+Task created for: {'coin': 'FORUSDT', 'rate': '5.391976444608027'}
+event
+sending
+message sent
+Task created for: {'coin': 'BONDUSDT', 'rate': '3.869209809264307'}
+event
+sending
+message sent
+Task created for: {'coin': 'YGGUSDT', 'rate': '3.0940294899685754'}
+event
+sending
+message sent
+Task created for: {'coin': 'KMDUSDT', 'rate': '3.790340047649993'}
+event
+sending
+message sent
+Task created for: {'coin': 'KMDUSDT', 'rate': '3.064373897707236'}
+event
+sending
+message sent
+Task created for: {'coin': 'KMDUSDT', 'rate': '3.781956475808161'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '3.8594170721337853'}
+event
+sending
+message sent
+Task created for: {'coin': 'KMDUSDT', 'rate': '6.9161920260374234'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '5.015050004854843'}
+event
+sending
+message sent
+Task created for: {'coin': 'VIDTUSDT', 'rate': '3.5222319093286854'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '3.5897660947031294'}
+event
+sending
+message sent
+Task created for: {'coin': 'STRAXUSDT', 'rate': '4.421768707482998'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '3.915353363989464'}
+event
+sending
+message sent
+Task created for: {'coin': 'STRAXUSDT', 'rate': '7.8469520103761345'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '3.4351145038167865'}
+event
+sending
+message sent
+Task created for: {'coin': 'STRAXUSDT', 'rate': '3.022670025188916'}
+event
+sending
+message sent
+Task created for: {'coin': 'OOKIUSDT', 'rate': '3.7026488180005797'}
+event
+sending
+message sent
+Task created for: {'coin': 'VIDTUSDT', 'rate': '4.710023466309085'}
+event
+sending
+message sent
+Task created for: {'coin': 'VANRYUSDT', 'rate': '3.4253769269862615'}
+event
+sending
+message sent
+Task created for: {'coin': 'STRAXUSDT', 'rate': '4.020421186981493'}
+event
+sending
+message sent
+Task created for: {'coin': 'BETAUSDT', 'rate': '3.5532994923857766'}
+event
+sending
+message sent
+Task created for: {'coin': 'SHIBUSDT', 'rate': '3.1111111111111134'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '4.850462693906745'}
+event
+sending
+message sent
+Task created for: {'coin': 'STRAXUSDT', 'rate': '5.833333333333331'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '8.685017826050919'}
+event
+sending
+message sent
+Task created for: {'coin': 'FISUSDT', 'rate': '4.733439063071863'}
+event
+sending
+message sent
+Task created for: {'coin': 'STRAXUSDT', 'rate': '3.213367609254502'}
+event
+sending
+message sent
+Task created for: {'coin': 'FISUSDT', 'rate': '7.207103321033211'}
+event
+sending
+message sent
+Task created for: {'coin': 'FISUSDT', 'rate': '7.421748951274612'}
+event
+sending
+message sent
+Task created for: {'coin': 'FISUSDT', 'rate': '6.90898167617904'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '5.1543517227643925'}
+event
+sending
+message sent
+Task created for: {'coin': 'VIDTUSDT', 'rate': '6.520648720949675'}
+event
+sending
+message sent
+Task created for: {'coin': 'VIDTUSDT', 'rate': '6.812117407000465'}
+event
+sending
+message sent
+Task created for: {'coin': 'FLOKIUSDT', 'rate': '3.0385128376125348'}
+event
+sending
+message sent
+Task created for: {'coin': 'BETAUSDT', 'rate': '18.404578787336778'}
+event
+sending
+message sent
+Task created for: {'coin': 'OOKIUSDT', 'rate': '3.1737035987531916'}
+event
+sending
+message sent
+Task created for: {'coin': 'FLOKIUSDT', 'rate': '3.0788763688303638'}
+event
+sending
+message sent
+Task created for: {'coin': 'BETAUSDT', 'rate': '3.978416686800354'}
+event
+sending
+message sent
+Task created for: {'coin': 'OOKIUSDT', 'rate': '5.860215053763426'}
+event
+sending
+message sent
+Task created for: {'coin': 'MDXUSDT', 'rate': '3.840860753159018'}
+event
+sending
+message sent
+Task created for: {'coin': 'OOKIUSDT', 'rate': '5.128205128205127'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '8.690919747142809'}
+event
+sending
+message sent
+Task created for: {'coin': 'VIDTUSDT', 'rate': '3.719599427753949'}
+event
+sending
+message sent
+Task created for: {'coin': 'VIDTUSDT', 'rate': '4.076628352490415'}
+event
+sending
+message sent
+Task created for: {'coin': 'VICUSDT', 'rate': '6.0087886893389335'}
+event
+sending
+message sent
+Task created for: {'coin': 'OOKIUSDT', 'rate': '3.18371607515658'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '3.22756685117331'}
+event
+sending
+message sent
+Task created for: {'coin': 'FORUSDT', 'rate': '3.4796823914058974'}
+event
+sending
+message sent
+Task created for: {'coin': 'BETAUSDT', 'rate': '3.9060483524047167'}
+event
+sending
+message sent
+Task created for: {'coin': 'FISUSDT', 'rate': '9.550056242969626'}
+event
+sending
+message sent
+Task created for: {'coin': 'BETAUSDT', 'rate': '5.288062427361781'}
+event
+sending
+message sent
+Task created for: {'coin': 'NULSUSDT', 'rate': '3.2048304691128737'}
+event
+sending
+message sent
+Task created for: {'coin': 'BETAUSDT', 'rate': '4.423243712055511'}
+event
+sending
+message sent
+Task created for: {'coin': 'WANUSDT', 'rate': '5.306921007581315'}
+event
+sending
+message sent
+Task created for: {'coin': 'BETAUSDT', 'rate': '4.553174282248289'}
+event
+sending
+message sent
+Task created for: {'coin': 'VICUSDT', 'rate': '3.6382536382536363'}
+event
+sending
+message sent
+Task created for: {'coin': 'VANRYUSDT', 'rate': '4.928806133625419'}
+event
+sending
+message sent
+Task created for: {'coin': 'FISUSDT', 'rate': '3.0619709478524397'}
+event
+sending
+message sent
+Task created for: {'coin': 'FORUSDT', 'rate': '3.825382538253826'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '3.042748473268822'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '3.601012026479052'}
+event
+sending
+message sent
+Task created for: {'coin': 'FORUSDT', 'rate': '4.095341278439876'}
+event
+sending
+message sent
+Task created for: {'coin': 'FISUSDT', 'rate': '3.765511339323921'}
+event
+sending
+message sent
+Task created for: {'coin': 'BICOUSDT', 'rate': '6.874999999999995'}
+event
+sending
+message sent
+Task created for: {'coin': 'FISUSDT', 'rate': '9.852064927059777'}
+event
+sending
+message sent
+Task created for: {'coin': 'BICOUSDT', 'rate': '6.31026899001861'}
+event
+sending
+message sent
+Task created for: {'coin': 'RADUSDT', 'rate': '3.042921204356188'}
+event
+sending
+message sent
+Task created for: {'coin': 'FISUSDT', 'rate': '3.4023668639053226'}
+event
+sending
+message sent
+Task created for: {'coin': 'BCHUSDT', 'rate': '3.6470378936132355'}
+event
+sending
+message sent
+Task created for: {'coin': 'KMDUSDT', 'rate': '3.447461629279812'}
+event
+sending
+message sent
+Task created for: {'coin': 'LTOUSDT', 'rate': '3.6657469452108913'}
+event
+sending
+message sent
+Task created for: {'coin': 'AUDIOUSDT', 'rate': '3.62929358392741'}
+event
+sending
+message sent
+Task created for: {'coin': 'ALTUSDT', 'rate': '3.550765740215539'}
+event
+sending
+message sent
+Task created for: {'coin': 'VICUSDT', 'rate': '3.329506314580957'}
+event
+sending
+message sent
+Task created for: {'coin': 'VICUSDT', 'rate': '9.907407407407405'}
+event
+sending
+message sent
+Task created for: {'coin': 'VICUSDT', 'rate': '9.62981284524693'}
+event
+sending
+message sent
+Task created for: {'coin': 'TROYUSDT', 'rate': '3.589743589743584'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '4.640804050710008'}
+event
+sending
+message sent
+Task created for: {'coin': 'FISUSDT', 'rate': '4.310162687513212'}
+event
+sending
+message sent
+Task created for: {'coin': 'VICUSDT', 'rate': '3.7648446054072235'}
+event
+sending
+message sent
+Task created for: {'coin': 'FORUSDT', 'rate': '3.2586087358446836'}
+event
+sending
+message sent
+Task created for: {'coin': 'BETAUSDT', 'rate': '4.849047056839257'}
+event
+sending
+message sent
+Task created for: {'coin': 'PIVXUSDT', 'rate': '3.1481481481481444'}
+event
+sending
+message sent
+Task created for: {'coin': 'PIVXUSDT', 'rate': '3.5507680031917093'}
+event
+sending
+message sent
+Task created for: {'coin': 'WIFUSDT', 'rate': '4.08098283227638'}
+event
+sending
+message sent
+Task created for: {'coin': 'VOXELUSDT', 'rate': '3.38288057406458'}
+event
+sending
+message sent
+Task created for: {'coin': 'LTOUSDT', 'rate': '3.7310532452390417'}
+event
+sending
+message sent
+Task created for: {'coin': 'VOXELUSDT', 'rate': '6.772120612951057'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '4.037861599546233'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '7.773755037912427'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '4.449515116942384'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '3.4255719400449123'}
+event
+sending
+message sent
+Task created for: {'coin': 'FISUSDT', 'rate': '4.249464995414243'}
+event
+sending
+message sent
+Task created for: {'coin': 'VOXELUSDT', 'rate': '3.6510659152168508'}
+event
+sending
+message sent
+Task created for: {'coin': 'SPELLUSDT', 'rate': '8.966669197479302'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '3.021769396278953'}
+event
+sending
+message sent
+Task created for: {'coin': 'ARDRUSDT', 'rate': '4.915627292736598'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '3.2428050263477974'}
+event
+sending
+message sent
+Task created for: {'coin': 'GLMUSDT', 'rate': '4.706486393975692'}
+event
+sending
+message sent
+Task created for: {'coin': 'ARDRUSDT', 'rate': '4.019404019404019'}
+event
+sending
+message sent
+Task created for: {'coin': 'FORUSDT', 'rate': '3.9115250291036108'}
+event
+sending
+message sent
+Task created for: {'coin': 'CTSIUSDT', 'rate': '3.067292644757426'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '4.1441713165435'}
+event
+sending
+message sent
+Task created for: {'coin': 'FIOUSDT', 'rate': '4.031394933999284'}
+event
+sending
+Error processing message: Timed out
+event
+sending
+message sent
+Task created for: {'coin': 'TRUUSDT', 'rate': '5.025881786445164'}
+event
+sending
+message sent
+Task created for: {'coin': 'FIROUSDT', 'rate': '3.161868806040572'}
+event
+sending
+message sent
+Task created for: {'coin': 'GFTUSDT', 'rate': '3.915984336062657'}
+event
+sending
+message sent
+Task created for: {'coin': 'FISUSDT', 'rate': '8.992278369660843'}
+event
+sending
+message sent
+Task created for: {'coin': 'FISUSDT', 'rate': '4.008609093354853'}
+event
+sending
+message sent
+Task created for: {'coin': 'VOXELUSDT', 'rate': '6.892261756655886'}
+event
+sending
+message sent
+Task created for: {'coin': 'ARPAUSDT', 'rate': '5.3036783575705755'}
+event
+sending
+message sent
+Task created for: {'coin': 'FISUSDT', 'rate': '4.782608695652188'}
+event
+sending
+message sent
+Task created for: {'coin': 'RVNUSDT', 'rate': '3.7538304392236954'}
+event
+sending
+message sent
+Task created for: {'coin': 'FIROUSDT', 'rate': '3.6562203228869876'}
+event
+sending
+message sent
+Task created for: {'coin': 'WLDUSDT', 'rate': '3.3939102178360816'}
+event
+sending
+message sent
+Task created for: {'coin': 'AVAUSDT', 'rate': '3.9898936730182175'}
+event
+sending
+message sent
+Task created for: {'coin': 'VICUSDT', 'rate': '3.058158034293792'}
+event
+sending
+message sent
+Task created for: {'coin': 'FISUSDT', 'rate': '3.4355374953823534'}
+event
+sending
+message sent
+Task created for: {'coin': 'REIUSDT', 'rate': '3.6514081834054357'}
+event
+sending
+message sent
+Task created for: {'coin': 'FISUSDT', 'rate': '4.196854567944876'}
+event
+sending
+message sent
+Task created for: {'coin': 'FIOUSDT', 'rate': '4.676985195154774'}
+event
+sending
+message sent
+Task created for: {'coin': 'FIOUSDT', 'rate': '4.146463802039786'}
+event
+sending
+message sent
+Task created for: {'coin': 'LQTYUSDT', 'rate': '3.1694695989650667'}
+event
+sending
+message sent
+Task created for: {'coin': 'LQTYUSDT', 'rate': '3.065603923973025'}
+event
+sending
+message sent
+Task created for: {'coin': 'DEXEUSDT', 'rate': '5.696287360943571'}
+event
+sending
+message sent
+Task created for: {'coin': 'FIOUSDT', 'rate': '3.8541306602143033'}
+event
+sending
+message sent
+Task created for: {'coin': 'FISUSDT', 'rate': '3.0829651448208244'}
+event
+sending
+Error processing message: Timed out
+event
+sending
+message sent
+Task created for: {'coin': 'FIROUSDT', 'rate': '3.380952380952368'}
+event
+sending
+message sent
+Task created for: {'coin': 'GMTUSDT', 'rate': '3.6222162597263248'}
+event
+sending
+message sent
+Task created for: {'coin': 'COMBOUSDT', 'rate': '7.049801348979029'}
+event
+sending
+message sent
+Task created for: {'coin': 'SCRTUSDT', 'rate': '3.3268973711569845'}
+event
+sending
+message sent
+Task created for: {'coin': 'FISUSDT', 'rate': '3.8067786502335754'}
+event
+sending
+message sent
+Task created for: {'coin': 'FISUSDT', 'rate': '3.4182305630026875'}
+event
+sending
+message sent
+Task created for: {'coin': 'SPELLUSDT', 'rate': '3.8679101054884604'}
+event
+sending
+message sent
+Task created for: {'coin': 'SPELLUSDT', 'rate': '3.465934392162684'}
+event
+sending
+message sent
+Task created for: {'coin': 'DEXEUSDT', 'rate': '4.117114788004151'}
+event
+sending
+message sent
+Task created for: {'coin': 'MDTUSDT', 'rate': '3.0596258409363224'}
+event
+sending
+message sent
+Task created for: {'coin': 'LTOUSDT', 'rate': '3.1153846153846136'}
+event
+sending
+message sent
+Task created for: {'coin': 'BAKEUSDT', 'rate': '8.412243999119138'}
+event
+sending
+message sent
+Task created for: {'coin': 'LTOUSDT', 'rate': '3.922301083302208'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '3.681885125184097'}
+event
+sending
+message sent
+Task created for: {'coin': 'XVGUSDT', 'rate': '4.979792147806002'}
+event
+sending
+message sent
+Task created for: {'coin': 'XVGUSDT', 'rate': '4.146442934405766'}
+event
+sending
+message sent
+Task created for: {'coin': 'WLDUSDT', 'rate': '5.114681712253156'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '5.360134003350074'}
+event
+sending
+message sent
+Task created for: {'coin': 'WIFUSDT', 'rate': '3.0851694496591304'}
+event
+sending
+message sent
+Task created for: {'coin': 'XVGUSDT', 'rate': '3.210227272727267'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '3.0595813204508837'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '10.810810810810821'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '11.729622266401595'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '25.31249999999999'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '4.092526690391465'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '5.361596009975078'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '14.427860696517412'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '7.350427350427335'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '23.7869822485207'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '3.821656050955413'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '10.516252390057359'}
+event
+sending
+message sent
+Task created for: {'coin': 'KMDUSDT', 'rate': '3.483245149911812'}
+event
+sending
+message sent
+Task created for: {'coin': 'KMDUSDT', 'rate': '4.686834256497661'}
+event
+sending
+message sent
+Task created for: {'coin': 'KMDUSDT', 'rate': '10.561660561660561'}
+event
+sending
+message sent
+Task created for: {'coin': 'KMDUSDT', 'rate': '8.524590163934418'}
+event
+sending
+message sent
+Task created for: {'coin': 'KMDUSDT', 'rate': '5.422314911366008'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '4.873294346978562'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '15.304798962386517'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '8.582574772431741'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '8.88638920134982'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '3.8461538461538414'}
+event
+sending
+message sent
+Task created for: {'coin': 'KMDUSDT', 'rate': '3.0369961347321848'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '4.648760330578517'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '3.980099502487555'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '6.811451135241859'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '9.21052631578949'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '8.596491228070166'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '17.560073937153422'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '4.600219058050378'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '8.239095315024244'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '9.59119496855345'}
+event
+sending
+message sent
+Task created for: {'coin': 'KMDUSDT', 'rate': '5.1781846820240185'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '5.685618729096983'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '8.7579617834395'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '12.29823212913145'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '9.42796610169492'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '18.97058823529411'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '5.227492739593418'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '3.584672435105068'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '23.428571428571423'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '6.8997240110395515'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '3.5799522673031063'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '15.567129629629617'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '3.098106712564549'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '8.75576036866359'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '16.124186279419135'}
+event
+sending
+message sent
+Task created for: {'coin': 'JTOUSDT', 'rate': '3.3987891213120935'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '13.109098749460967'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '11.799999999999992'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '7.000000000000006'}
+event
+sending
+message sent
+Task created for: {'coin': 'KMDUSDT', 'rate': '3.896103896103894'}
+event
+sending
+message sent
+Task created for: {'coin': 'KMDUSDT', 'rate': '5.616197183098599'}
+event
+sending
+message sent
+Task created for: {'coin': 'KMDUSDT', 'rate': '5.867644607434574'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '3.3149171270718223'}
+event
+sending
+message sent
+Task created for: {'coin': 'GHSTUSDT', 'rate': '6.223564954682778'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '16.57754010695186'}
+event
+sending
+message sent
+Task created for: {'coin': 'GHSTUSDT', 'rate': '4.209328782707626'}
+event
+sending
+message sent
+Task created for: {'coin': 'GHSTUSDT', 'rate': '3.930131004366803'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '4.432989690721648'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '12.684031710079276'}
+event
+sending
+message sent
+Task created for: {'coin': 'CVCUSDT', 'rate': '7.826932425862909'}
+event
+sending
+message sent
+Task created for: {'coin': 'KMDUSDT', 'rate': '5.28375733855185'}
+event
+sending
+message sent
+Task created for: {'coin': 'POLYXUSDT', 'rate': '4.9004295197188625'}
+event
+sending
+message sent
+Task created for: {'coin': 'AEVOUSDT', 'rate': '3.4810126582278436'}
+event
+sending
+message sent
+Task created for: {'coin': 'CVCUSDT', 'rate': '3.2010820559062196'}
+event
+sending
+message sent
+Task created for: {'coin': 'RAYUSDT', 'rate': '3.7992628296002278'}
+event
+sending
+message sent
+Task created for: {'coin': 'GHSTUSDT', 'rate': '3.081232492997208'}
+event
+sending
+message sent
+Task created for: {'coin': 'KMDUSDT', 'rate': '9.417953504157474'}
+event
+sending
+message sent
+Task created for: {'coin': 'CVCUSDT', 'rate': '3.059866962305982'}
+event
+sending
+message sent
+Task created for: {'coin': 'WANUSDT', 'rate': '3.4727143869596007'}
+event
+sending
+message sent
+Task created for: {'coin': 'KMDUSDT', 'rate': '8.431311881188117'}
+event
+sending
+message sent
+Task created for: {'coin': 'PDAUSDT', 'rate': '3.2165832737669793'}
+event
+sending
+message sent
+Task created for: {'coin': 'WANUSDT', 'rate': '5.662100456621002'}
+event
+sending
+message sent
+Task created for: {'coin': 'DCRUSDT', 'rate': '3.015427769985973'}
+event
+sending
+message sent
+Task created for: {'coin': 'KMDUSDT', 'rate': '16.76416036524469'}
+event
+sending
+message sent
+Task created for: {'coin': 'OOKIUSDT', 'rate': '3.337819650067294'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '5.310396409872845'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '11.203814064362327'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '15.100671140939587'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '17.52873563218391'}
+event
+sending
+message sent
+Task created for: {'coin': 'OOKIUSDT', 'rate': '6.578947368421047'}
+event
+sending
+message sent
+Task created for: {'coin': 'KMDUSDT', 'rate': '7.846970120078195'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '3.2854209445585205'}
+event
+sending
+message sent
+Task created for: {'coin': 'OOKIUSDT', 'rate': '9.668147373922134'}
+event
+sending
+message sent
+Task created for: {'coin': 'OOKIUSDT', 'rate': '3.0259709316178105'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '3.788373612018288'}
+event
+sending
+message sent
+Task created for: {'coin': 'WANUSDT', 'rate': '3.6013011152416388'}
+event
+sending
+message sent
+Task created for: {'coin': 'RAYUSDT', 'rate': '3.910836459942618'}
+event
+sending
+message sent
+Task created for: {'coin': 'WANUSDT', 'rate': '5.606638259699476'}
+event
+sending
+message sent
+Task created for: {'coin': 'KMDUSDT', 'rate': '6.401074306177251'}
+event
+sending
+message sent
+Task created for: {'coin': 'ADXUSDT', 'rate': '12.589316093909506'}
+event
+sending
+message sent
+Task created for: {'coin': 'KMDUSDT', 'rate': '3.6938202247191'}
+event
+sending
+message sent
+Task created for: {'coin': 'SKLUSDT', 'rate': '4.709576138147549'}
+event
+sending
+message sent
+Task created for: {'coin': 'WANUSDT', 'rate': '3.9802113784573856'}
+event
+sending
+message sent
+Task created for: {'coin': 'ADXUSDT', 'rate': '5.493093478959205'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '3.596021423106336'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '8.235294117647062'}
+event
+sending
+message sent
+Task created for: {'coin': 'WANUSDT', 'rate': '3.869113420296267'}
+event
+sending
+message sent
+Task created for: {'coin': 'GHSTUSDT', 'rate': '3.36950314106226'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '3.814262023217253'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '5.954323001631311'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '3.7170263788968727'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '8.670520231213882'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '3.51999999999999'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '16.983240223463696'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '9.32069510268563'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '12.623574144486692'}
+event
+sending
+message sent
+Task created for: {'coin': 'ADXUSDT', 'rate': '4.0732554467950814'}
+event
+sending
+message sent
+Task created for: {'coin': 'GHSTUSDT', 'rate': '3.116304952698946'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '4.883227176220799'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '4.6511627906976685'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '5.6103108415466405'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '4.3577981651376225'}
+event
+sending
+message sent
+Task created for: {'coin': 'GHSTUSDT', 'rate': '3.3898305084745797'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '3.730797366495992'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '4.131355932203391'}
+event
+sending
+message sent
+Task created for: {'coin': 'GHSTUSDT', 'rate': '3.7114479874542576'}
+event
+sending
+message sent
+Task created for: {'coin': 'OOKIUSDT', 'rate': '3.034979423868314'}
+event
+sending
+message sent
+Task created for: {'coin': 'GHSTUSDT', 'rate': '4.39072520966946'}
+event
+sending
+message sent
+Task created for: {'coin': 'GHSTUSDT', 'rate': '9.735349716446121'}
+event
+sending
+message sent
+Task created for: {'coin': 'GHSTUSDT', 'rate': '4.98354489891868'}
+event
+sending
+message sent
+Task created for: {'coin': 'PEOPLEUSDT', 'rate': '4.484418545730938'}
+event
+sending
+message sent
+Task created for: {'coin': 'GHSTUSDT', 'rate': '4.532839962997218'}
+event
+sending
+message sent
+Task created for: {'coin': 'GHSTUSDT', 'rate': '3.514938488576453'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '3.4341782502044116'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '3.3898305084745797'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '5.734485467399844'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '3.649068322981374'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '3.7878787878787907'}
+event
+sending
+message sent
+Task created for: {'coin': 'DEXEUSDT', 'rate': '4.920504385964912'}
+event
+sending
+message sent
+Task created for: {'coin': 'PDAUSDT', 'rate': '3.102453102453101'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '5.181347150259054'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '3.139013452914795'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '6.342364532019706'}
+event
+sending
+message sent
+Task created for: {'coin': 'PNTUSDT', 'rate': '3.4161490683229934'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '12.449334105385072'}
+event
+sending
+message sent
+Task created for: {'coin': 'CVCUSDT', 'rate': '3.7478705281090297'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '3.472222222222209'}
+event
+sending
+message sent
+Task created for: {'coin': 'GHSTUSDT', 'rate': '5.646630236794156'}
+event
+sending
+message sent
+Task created for: {'coin': 'KMDUSDT', 'rate': '4.294581446066108'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '6.973923590054586'}
+event
+sending
+message sent
+Task created for: {'coin': 'KMDUSDT', 'rate': '5.594629156010217'}
+event
+sending
+message sent
+Task created for: {'coin': 'KMDUSDT', 'rate': '3.2092037541628824'}
+event
+sending
+message sent
+Task created for: {'coin': 'ADXUSDT', 'rate': '3.187721369539561'}
+event
+sending
+message sent
+Task created for: {'coin': 'WANUSDT', 'rate': '3.149606299212604'}
+event
+sending
+message sent
+Task created for: {'coin': 'ADXUSDT', 'rate': '3.0034324942791626'}
+event
+sending
+message sent
+Task created for: {'coin': 'ACAUSDT', 'rate': '3.5077951002227175'}
+event
+sending
+message sent
+Task created for: {'coin': 'DREPUSDT', 'rate': '3.1652989449003446'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '3.4394904458598647'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '4.122423485321671'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '7.043949428055398'}
+event
+sending
+message sent
+Task created for: {'coin': 'KMDUSDT', 'rate': '3.049437856152786'}
+event
+sending
+message sent
+Task created for: {'coin': 'YGGUSDT', 'rate': '3.075564121095318'}
+event
+sending
+message sent
+Task created for: {'coin': 'MOBUSDT', 'rate': '3.714622641509434'}
+event
+sending
+message sent
+Task created for: 
