@@ -6,4 +6,3 @@ NFT_QUEUE: Final = "nft event"
 GAS_QUEUE: Final = "gas event"
 FUNDING_QUEUE: Final = "funding event"
 QUEUES: Final = ["coin change flag event", "coin change min event", "nft event", "gas event", "funding event"]
-
