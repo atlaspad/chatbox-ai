@@ -1,3 +1,176 @@
+"""
+First, a few callback functions are defined. Then, those functions are passed to
+the Application and registered at their respective places.
+Then, the bot is started and runs until we press Ctrl-C on the command line.
+
+Usage:
+Example of a bot-user conversation using ConversationHandler.
+Send /start to initiate the conversation.
+Press Ctrl-C on the command line or send a signal to the process to stop the
+bot.
+"""
+# here is telegram bot configuration to acquire user specifics
+# event handling and event sending is another matter's problem, message handler
+from functions import *
+
+
+def main() -> None:
+    """Run the bot."""
+    # Create the Application and pass it your bot's token.
+
+    my_persistence = PicklePersistence(filepath='persistence')
+
+    application = Application.builder().token("7192726917:AAHbXfJlu6dgb2IhdVTtozzQ1CM6t8tfcBo").persistence(persistence=my_persistence).build()
+
+    # Add conversation handler with the states CHOOSING, TYPING_CHOICE and TYPING_REPLY
+    # ConversationHandler()
+    conv_handler = ConversationHandler(
+        entry_points=[CommandHandler("start", start), MessageHandler(filters.TEXT, start)],
+        states={
+
+            # MessageHandler(),
+            # button clicked
+            CHOOSING: [
+                MessageHandler(
+                    filters.Regex("^/start$"), start
+                ),
+                MessageHandler(
+                    filters.Regex("^(NFT 🖼️)$"), select_nft
+                ),
+                # |Pool 🏊|Gas Price 🚰
+                MessageHandler(
+                    filters.Regex("^(Pool 🏊)$"), select_pool
+                ),
+                MessageHandler(
+                    filters.Regex("^(Gas Price 🚰)$"), select_gas
+                ),
+                MessageHandler(
+                    filters.Regex("^(Track 🐾)$"), select_track
+                ),
+                # |Pool 🏊|Gas Price 🚰
+                MessageHandler(
+                    filters.Regex("^(My Tracks 👞)$"), show_my_tracks
+                ),
+                # "Gas Price 🚰", "Funding 💰"],
+                #     ["Main Menu 📑"],
+                MessageHandler(
+                        filters.Regex("^Funding 💰$"), select_funding
+                ),
+                MessageHandler(
+                    filters.Regex("^Main Menu 📑$"), go_main_menu
+                ),
+            ],
+            # button returns
+            TYPING_CHOICE: [
+                MessageHandler(
+                    filters.TEXT & ~(filters.COMMAND | filters.Regex("^Done$")), select_nft
+                )
+            ],
+            BUTTON_WALLET: [
+                MessageHandler(filters.TEXT, wallet_button),
+            ],
+            BUTTON_NFT: [
+                MessageHandler(filters.TEXT, nft_button)
+            ],
+            TYPING_REPLY: [
+                MessageHandler(
+                    filters.TEXT & ~(filters.COMMAND | filters.Regex("^Done$")),
+                    received_information,
+                ),
+                CallbackQueryHandler(
+                    add_action, 'menu_add'
+                ),
+                CallbackQueryHandler(
+                    add_action, 'adder_coin'
+                ),
+                CallbackQueryHandler(
+                    wallet_button, 'adder_wallet'
+                ),
+                CallbackQueryHandler(
+                    add_action, 'adder_funding'
+                ),
+                CallbackQueryHandler(
+                    add_action, 'adder_nft'
+                ),
+                CallbackQueryHandler(
+                    add_action, 'adder_funding'
+                ),
+                CallbackQueryHandler(
+                    add_action, 'menu_who'
+                ),
+                CallbackQueryHandler(
+                    add_action, 'menu_settings'
+                ),
+                CallbackQueryHandler(
+                    add_action, 'menu_edit'
+                ),
+                CallbackQueryHandler(
+                    add_action, 'menu_profile'
+                ),
+                CallbackQueryHandler(
+                    add_action, 'menu_sub'
+                ),
+
+            ],
+            # CHOOSING, TYPING_REPLY, TYPING_CHOICE, TRACK_CHOICE, FUNDING_CHOICE, GAS_CHOICE, NFT_CHOICE, POOL_CHOICE
+            # --------- do_nothin part test. remove me with chaning them --------
+            POOL_CHOICE: [
+                MessageHandler(
+                    filters.TEXT & ~(filters.COMMAND | filters.Regex("^Done$")),
+                    do_nothin,
+                )
+            ],
+            TRACK_CHOICE: [
+                MessageHandler(
+                    filters.TEXT & ~(filters.COMMAND | filters.Regex("^Done$")),
+                    track_action,
+                ),
+                CallbackQueryHandler(
+                    conv_handle, 'm1'
+                ),
+                CallbackQueryHandler(
+                    conv_handle, 'm2'
+                ),
+                CallbackQueryHandler(
+                    conv_handle, 'm3'
+                ),
+
+            ],
+            FUNDING_CHOICE: [
+                MessageHandler(
+                    filters.TEXT & ~(filters.COMMAND | filters.Regex("^Done$")),
+                    do_nothin,
+                )
+            ],
+            GAS_CHOICE: [
+                MessageHandler(
+                    filters.TEXT & ~(filters.COMMAND | filters.Regex("^Done$")),
+                    do_nothin,
+                )
+            ],
+            NFT_CHOICE: [
+                MessageHandler(
+                    filters.TEXT & ~(filters.COMMAND | filters.Regex("^Done$")),
+                    do_nothin,
+                )
+            ],
+        },
+        fallbacks=[MessageHandler(filters.TEXT, pass_back)],
+    )
+
+    application.add_handler(conv_handler)
+    # asyncio.create_task(consume_coin())
+
+    # Run the bot until the user presses Ctrl-C
+    # asyncio.create_task(keep_funding_updated()) # can't make thread
+
+    application.run_polling(allowed_updates=Update.ALL_TYPES)
+
+
+if __name__ == "__main__":
+    main()
+
+
 """from typing import Final
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes, CallbackQueryHandler, Updater
@@ -80,127 +253,3 @@ import asyncio
 #!/usr/bin/env python
 # pylint: disable=unused-argument
 # This program is dedicated to the public domain under the CC0 license.
-
-"""
-First, a few callback functions are defined. Then, those functions are passed to
-the Application and registered at their respective places.
-Then, the bot is started and runs until we press Ctrl-C on the command line.
-
-Usage:
-Example of a bot-user conversation using ConversationHandler.
-Send /start to initiate the conversation.
-Press Ctrl-C on the command line or send a signal to the process to stop the
-bot.
-"""
-# here is telegram bot configuration to acquire user specifics
-# event handling and event sending is another matter's problem, message handler
-from functions import *
-
-
-def main() -> None:
-    """Run the bot."""
-    # Create the Application and pass it your bot's token.
-
-    my_persistence = PicklePersistence(filepath='persistence')
-
-    application = Application.builder().token("7192726917:AAHbXfJlu6dgb2IhdVTtozzQ1CM6t8tfcBo").persistence(persistence=my_persistence).build()
-
-    # Add conversation handler with the states CHOOSING, TYPING_CHOICE and TYPING_REPLY
-    # ConversationHandler()
-    conv_handler = ConversationHandler(
-        entry_points=[CommandHandler("start", start)],
-        states={
-            # MessageHandler(),
-            # button clicked
-            CHOOSING: [
-                MessageHandler(
-                    filters.Regex("^/start$"), start
-                ),
-                MessageHandler(
-                    filters.Regex("^(NFT 🖼️)$"), select_nft
-                ),
-                # |Pool 🏊|Gas Price 🚰
-                MessageHandler(
-                    filters.Regex("^(Pool 🏊)$"), select_pool
-                ),
-                MessageHandler(
-                    filters.Regex("^(Gas Price 🚰)$"), select_gas
-                ),
-                MessageHandler(
-                    filters.Regex("^(Track 🐾)$"), select_track
-                ),
-                # |Pool 🏊|Gas Price 🚰
-                MessageHandler(
-                    filters.Regex("^(My Tracks 👞)$"), show_my_tracks
-                ),
-                # "Gas Price 🚰", "Funding 💰"],
-                #     ["Main Menu 📑"],
-                MessageHandler(
-                        filters.Regex("^Funding 💰$"), select_funding
-                ),
-                MessageHandler(
-                    filters.Regex("^Main Menu 📑$"), go_main_menu
-                ),
-            ],
-            # button returns
-            TYPING_CHOICE: [
-                MessageHandler(
-                    filters.TEXT & ~(filters.COMMAND | filters.Regex("^Done$")), select_nft
-                )
-            ],
-            TYPING_REPLY: [
-                MessageHandler(
-                    filters.TEXT & ~(filters.COMMAND | filters.Regex("^Done$")),
-                    received_information,
-                )
-            ],
-            # CHOOSING, TYPING_REPLY, TYPING_CHOICE, TRACK_CHOICE, FUNDING_CHOICE, GAS_CHOICE, NFT_CHOICE, POOL_CHOICE
-            # --------- do_nothin part test. remove me with chaning them --------
-            POOL_CHOICE: [
-                MessageHandler(
-                    filters.TEXT & ~(filters.COMMAND | filters.Regex("^Done$")),
-                    do_nothin,
-                )
-            ],
-            TRACK_CHOICE: [
-                MessageHandler(
-                    filters.TEXT & ~(filters.COMMAND | filters.Regex("^Done$")),
-                    track_action,
-                ),
-                CallbackQueryHandler(
-                    conv_handle, 'm1'
-                )
-            ],
-            FUNDING_CHOICE: [
-                MessageHandler(
-                    filters.TEXT & ~(filters.COMMAND | filters.Regex("^Done$")),
-                    do_nothin,
-                )
-            ],
-            GAS_CHOICE: [
-                MessageHandler(
-                    filters.TEXT & ~(filters.COMMAND | filters.Regex("^Done$")),
-                    do_nothin,
-                )
-            ],
-            NFT_CHOICE: [
-                MessageHandler(
-                    filters.TEXT & ~(filters.COMMAND | filters.Regex("^Done$")),
-                    do_nothin,
-                )
-            ],
-        },
-        fallbacks=[MessageHandler(filters.Regex("^Done$"), done)],
-    )
-
-    application.add_handler(conv_handler)
-    # asyncio.create_task(consume_coin())
-
-    # Run the bot until the user presses Ctrl-C
-    # asyncio.create_task(keep_funding_updated()) # can't make thread
-
-    application.run_polling(allowed_updates=Update.ALL_TYPES)
-
-
-if __name__ == "__main__":
-    main()
