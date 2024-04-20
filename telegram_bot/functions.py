@@ -20,9 +20,14 @@ from changable_configs import *
 from key_configs import *
 from main_tasks.get_funding import *
 from json_imps import WritersJson
+from nft_json import *
+from balance_db_reg import *
 
 my_persistence = PicklePersistence(filepath='persistence')  # Django ORM...
 bot = Bot('7192726917:AAHbXfJlu6dgb2IhdVTtozzQ1CM6t8tfcBo')
+wallet_json = WalletJson()
+nft_json = NFTJson()
+
 # storage for testing -> get to db later on
 tracked_coins = []
 
@@ -34,7 +39,7 @@ logging.getLogger("httpx").setLevel(logging.WARNING)
 
 logger = logging.getLogger(__name__)
 
-CHOOSING, TYPING_REPLY, TYPING_CHOICE, TRACK_CHOICE, FUNDING_CHOICE, GAS_CHOICE, NFT_CHOICE, POOL_CHOICE = range(8)
+CHOOSING, TYPING_REPLY, TYPING_CHOICE, TRACK_CHOICE, FUNDING_CHOICE, GAS_CHOICE, NFT_CHOICE, POOL_CHOICE, BUTTON_WALLET, BUTTON_NFT = range(10)
 
 # different from inlinekeyboardmarkup not inline but reply
 markup = ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=False)
@@ -74,6 +79,19 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     return  CHOOSING # main_menu_keyboard()
 
 
+async def pass_back(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    """Ask the user for info about the selected predefined choice."""
+    text = update.message.text
+    chat_id = update.message.chat_id
+
+    context.user_data["choice"] = text
+
+    # return_text = nft_json.add_nft(text, str(chat_id), "5")
+    await update.message.reply_text(return_text)
+
+    return CHOOSING
+
+
 # after choosing an option, this function runs
 async def select_nft(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     """Ask the user for info about the selected predefined choice."""
@@ -81,7 +99,9 @@ async def select_nft(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     chat_id = update.message.chat_id
 
     context.user_data["choice"] = text
-    await update.message.reply_text(NFT_RETURN_TEXT)
+
+    return_text = nft_json.add_nft(text, str(chat_id), "5")
+    await update.message.reply_text(return_text)
 
     return CHOOSING
 
@@ -150,6 +170,22 @@ async def select_track(update: Update, context: ContextTypes.DEFAULT_TYPE) -> in
     await update.message.reply_text(TRACKER_RETURN_TEXT, reply_markup=track_keyboard())
 
     return TRACK_CHOICE
+
+
+async def add_action(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    callback_data = update.callback_query.data
+
+    await update.callback_query.answer()
+
+    chat_id = update.callback_query.message.chat_id
+    print('------------', chat_id)
+
+    bot = Bot('7192726917:AAHbXfJlu6dgb2IhdVTtozzQ1CM6t8tfcBo')
+    await bot.send_message(chat_id=chat_id, text=ADD_RETURN_TEXT, reply_markup=add_keyboard())
+
+    # await remove_last_message(bot, chat_id)
+
+    return CHOOSING
 
 
 # show my tracks
@@ -250,3 +286,55 @@ async def done(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
 
     user_data.clear()
     return ConversationHandler.END
+
+
+async def add_wallet(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    text = update.message.text
+    context.user_data["choice"] = text
+    print("text wallet")
+    await update.message.reply_text(WALLET_ADD_RETURN_TEXT, reply_markup=main_menu_keyboard())
+
+    return TYPING_REPLY
+
+
+async def add_nft(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    text = update.message.text
+    context.user_data["choice"] = text
+    print("text nft")
+    await update.message.reply_text(NFT_ADD_RETURN_TEXT, reply_markup=main_menu_keyboard())
+
+    return TYPING_REPLY
+
+
+async def wallet_button(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    """Ask the user for info about the selected predefined choice."""
+    text = update.message.text
+    context.user_data["choice"] = text
+    chat_id = update.message.chat_id
+
+    await update.message.reply_text(MAIN_MENU_BUTTON_TEXT, reply_markup=main_menu_keyboard())
+
+    return BUTTON_WALLET
+
+
+async def nft_button(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    """Ask the user for info about the selected predefined choice."""
+    callback_data = update.callback_query.data
+
+    await update.callback_query.answer()
+
+    chat_id = update.callback_query.message.chat_id
+    print('------------', chat_id)
+
+    bot = Bot('7192726917:AAHbXfJlu6dgb2IhdVTtozzQ1CM6t8tfcBo')
+    await bot.send_message(chat_id=chat_id, text=ADD_RETURN_TEXT, reply_markup=add_keyboard())
+
+    text = update.message.text
+    context.user_data["choice"] = text
+    chat_id = update.message.chat_id
+
+    status = nft_json.add_nft(text, str(chat_id), "5")
+
+    await update.message.reply_text(status)
+
+    return BUTTON_NFT
