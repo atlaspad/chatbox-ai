@@ -3,7 +3,9 @@
         "1359422473",
         "5050048682"
     ],
-    "ETHUSDT": [],
+    "ETHUSDT": [
+        "5050048682"
+    ],
     "BNBUSDT": [],
     "BCCUSDT": [],
     "NEOUSDT": [],
@@ -437,7 +439,9 @@
     "LQTYUSDT": [],
     "AMBUSDT": [],
     "BETHUSDT": [],
-    "USTCUSDT": [],
+    "USTCUSDT": [
+        "1359422473"
+    ],
     "GASUSDT": [],
     "GLMUSDT": [],
     "PROMUSDT": [],
@@ -461,7 +465,9 @@
     "PENDLEUSDT": [],
     "ARKMUSDT": [],
     "WBETHUSDT": [],
-    "WLDUSDT": [],
+    "WLDUSDT": [
+        "1359422473"
+    ],
     "FDUSDUSDT": [],
     "SEIUSDT": [],
     "CYBERUSDT": [],
@@ -485,16 +491,16 @@
     "ACEUSDT": [],
     "NFPUSDT": [],
     "AIUSDT": [],
-    "XAIUSDT": [
-        "5050048682"
-    ],
+    "XAIUSDT": [],
     "MANTAUSDT": [],
     "ALTUSDT": [],
     "JUPUSDT": [],
     "PYTHUSDT": [],
     "RONINUSDT": [],
     "DYMUSDT": [],
-    "PIXELUSDT": [],
+    "PIXELUSDT": [
+        "5050048682"
+    ],
     "STRKUSDT": [],
     "PORTALUSDT": [],
     "PDAUSDT": [],
