@@ -20,14 +20,13 @@ def main() -> None:
 
     my_persistence = PicklePersistence(filepath='persistence')
 
-    application = Application.builder().token("7192726917:AAHbXfJlu6dgb2IhdVTtozzQ1CM6t8tfcBo").persistence(persistence=my_persistence).build()
-
+    application = Application.builder().token("7122629170:AAGfAjv9kdKkAh0UiUdEkLIzdbPrjlzSA_8").persistence(persistence=my_persistence).build()
+    # 7122629170:AAGfAjv9kdKkAh0UiUdEkLIzdbPrjlzSA_8
     # Add conversation handler with the states CHOOSING, TYPING_CHOICE and TYPING_REPLY
     # ConversationHandler()
     conv_handler = ConversationHandler(
         entry_points=[CommandHandler("start", start), MessageHandler(filters.TEXT, start)],
         states={
-
             # MessageHandler(),
             # button clicked
             CHOOSING: [
@@ -39,7 +38,7 @@ def main() -> None:
                 ),
                 # |Pool 🏊|Gas Price 🚰
                 MessageHandler(
-                    filters.Regex("^(Pool 🏊)$"), select_pool
+                    filters.Regex("^(Wallet 💼)$"), select_pool
                 ),
                 MessageHandler(
                     filters.Regex("^(Gas Price 🚰)$"), select_gas
@@ -59,6 +58,56 @@ def main() -> None:
                 MessageHandler(
                     filters.Regex("^Main Menu 📑$"), go_main_menu
                 ),
+                CallbackQueryHandler(
+                    menu_button, 'menu_add'
+                ),
+                CallbackQueryHandler(
+                    coin_button, 'adder_coin'
+                ),
+                CallbackQueryHandler(
+                    wallet_button, 'adder_wallet'
+                ),
+                CallbackQueryHandler(
+                    act_coming_soon, 'adder_funding'
+                ),
+                CallbackQueryHandler(
+                    nft_button, 'adder_nft'
+                ),
+                CallbackQueryHandler(
+                    act_coming_soon, 'adder_gas'
+                ),
+                CallbackQueryHandler(
+                    act_coming_soon, 'menu_who'
+                ),
+                CallbackQueryHandler(
+                    act_coming_soon, 'menu_settings'
+                ),
+                CallbackQueryHandler(
+                    edit_button, 'menu_edit'
+                ),
+                CallbackQueryHandler(
+                    act_coming_soon, 'menu_profile'
+                ),
+                CallbackQueryHandler(
+                    act_coming_soon, 'menu_sub'
+                ),
+                CallbackQueryHandler(
+                    edit_rem_coin, 'edit_coin'
+                ),
+                CallbackQueryHandler(
+                    edit_rem_wallet, 'edit_wallet'
+                ),
+                CallbackQueryHandler(
+                    act_coming_soon, 'edit_funding'
+                ),
+                CallbackQueryHandler(
+                    edit_rem_nft, 'edit_nft'
+                ),
+                CallbackQueryHandler(
+                    act_coming_soon, 'edit_gas'
+                ),
+            ],
+            BUTTON_REMOVER: [MessageHandler(filters.TEXT, removetexthandler)
             ],
             # button returns
             TYPING_CHOICE: [
@@ -66,51 +115,14 @@ def main() -> None:
                     filters.TEXT & ~(filters.COMMAND | filters.Regex("^Done$")), select_nft
                 )
             ],
+            BUTTON_COIN: [
+                MessageHandler(filters.TEXT, add_coin)
+            ],
             BUTTON_WALLET: [
-                MessageHandler(filters.TEXT, wallet_button),
+                MessageHandler(filters.TEXT, add_wallet)
             ],
             BUTTON_NFT: [
-                MessageHandler(filters.TEXT, nft_button)
-            ],
-            TYPING_REPLY: [
-                MessageHandler(
-                    filters.TEXT & ~(filters.COMMAND | filters.Regex("^Done$")),
-                    received_information,
-                ),
-                CallbackQueryHandler(
-                    add_action, 'menu_add'
-                ),
-                CallbackQueryHandler(
-                    add_action, 'adder_coin'
-                ),
-                CallbackQueryHandler(
-                    wallet_button, 'adder_wallet'
-                ),
-                CallbackQueryHandler(
-                    add_action, 'adder_funding'
-                ),
-                CallbackQueryHandler(
-                    add_action, 'adder_nft'
-                ),
-                CallbackQueryHandler(
-                    add_action, 'adder_funding'
-                ),
-                CallbackQueryHandler(
-                    add_action, 'menu_who'
-                ),
-                CallbackQueryHandler(
-                    add_action, 'menu_settings'
-                ),
-                CallbackQueryHandler(
-                    add_action, 'menu_edit'
-                ),
-                CallbackQueryHandler(
-                    add_action, 'menu_profile'
-                ),
-                CallbackQueryHandler(
-                    add_action, 'menu_sub'
-                ),
-
+                MessageHandler(filters.TEXT, add_nft)
             ],
             # CHOOSING, TYPING_REPLY, TYPING_CHOICE, TRACK_CHOICE, FUNDING_CHOICE, GAS_CHOICE, NFT_CHOICE, POOL_CHOICE
             # --------- do_nothin part test. remove me with chaning them --------
