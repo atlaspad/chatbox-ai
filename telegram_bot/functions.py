@@ -1,6 +1,7 @@
 import asyncio
 import json
 import logging
+import time
 from typing import Dict
 from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove, Update, Bot
 from telegram.ext import (
@@ -24,7 +25,7 @@ from nft_json import *
 from balance_db_reg import *
 
 my_persistence = PicklePersistence(filepath='persistence')  # Django ORM...
-bot = Bot('7192726917:AAHbXfJlu6dgb2IhdVTtozzQ1CM6t8tfcBo')
+bot = Bot('7122629170:AAGfAjv9kdKkAh0UiUdEkLIzdbPrjlzSA_8')
 wallet_json = WalletJson()
 nft_json = NFTJson()
 
@@ -39,7 +40,7 @@ logging.getLogger("httpx").setLevel(logging.WARNING)
 
 logger = logging.getLogger(__name__)
 
-CHOOSING, TYPING_REPLY, TYPING_CHOICE, TRACK_CHOICE, FUNDING_CHOICE, GAS_CHOICE, NFT_CHOICE, POOL_CHOICE, BUTTON_WALLET, BUTTON_NFT = range(10)
+CHOOSING, TYPING_REPLY, TYPING_CHOICE, TRACK_CHOICE, FUNDING_CHOICE, GAS_CHOICE, NFT_CHOICE, POOL_CHOICE, BUTTON_WALLET, BUTTON_NFT, BUTTON_COIN, BUTTON_REMOVER = range(12)
 
 # different from inlinekeyboardmarkup not inline but reply
 markup = ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=False)
@@ -87,7 +88,7 @@ async def pass_back(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     context.user_data["choice"] = text
 
     # return_text = nft_json.add_nft(text, str(chat_id), "5")
-    await update.message.reply_text(return_text)
+    # await update.message.reply_text(return_text)
 
     return CHOOSING
 
@@ -98,10 +99,17 @@ async def select_nft(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     text = update.message.text
     chat_id = update.message.chat_id
 
+    nfts = nftalladder.get_wallets(str(chat_id))
+
+    text_return = "you track: "
+
+    for w in nfts:
+        text_return += " " + w
+
     context.user_data["choice"] = text
 
-    return_text = nft_json.add_nft(text, str(chat_id), "5")
-    await update.message.reply_text(return_text)
+    # return_text = nft_json.add_nft(text, str(chat_id), "5")
+    await update.message.reply_text(text_return)
 
     return CHOOSING
 
@@ -110,9 +118,26 @@ async def select_nft(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
 async def select_pool(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     """Ask the user for info about the selected predefined choice."""
     text = update.message.text
+    chat_id = update.message.chat_id
+
+    wallets = chatidwallet.get_chat_id_calling(str(chat_id))
+    text_return = "you track: "
+
+    for w in wallets:
+        text_return += " " + w
 
     context.user_data["choice"] = text
-    await update.message.reply_text(POOL_RETURN_TEXT)
+    await update.message.reply_text(text_return)
+
+    return CHOOSING
+
+
+async def removetexthandler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    """Ask the user for info about the selected predefined choice."""
+    text = update.message.text
+    chat_id = update.message.chat_id
+
+    await update.message.reply_text("It is successfully removed. ")
 
     return CHOOSING
 
@@ -122,7 +147,7 @@ async def select_gas(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     """Ask the user for info about the selected predefined choice."""
     text = update.message.text
     context.user_data["choice"] = text
-    await update.message.reply_text(GAS_PRICE_RETURN_TEXT, reply_markup=add_menu_keyboard())
+    await update.message.reply_text("Gas coming soon...")
 
     return CHOOSING
 
@@ -135,7 +160,7 @@ async def conv_handle(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = update.callback_query.message.chat_id
     print('------------', chat_id)
 
-    bot = Bot('7192726917:AAHbXfJlu6dgb2IhdVTtozzQ1CM6t8tfcBo')
+    bot = Bot('7122629170:AAGfAjv9kdKkAh0UiUdEkLIzdbPrjlzSA_8')
 
     await remove_last_message(bot, chat_id)
 
@@ -155,10 +180,7 @@ async def track_action(update: Update, context: ContextTypes.DEFAULT_TYPE) -> in
 
     await update.message.reply_text(result, reply_markup=track_keyboard())
 
-    if station:
-        return CHOOSING
-    else:
-        return TRACK_CHOICE
+    return CHOOSING
 
 
 # track selection
@@ -172,7 +194,7 @@ async def select_track(update: Update, context: ContextTypes.DEFAULT_TYPE) -> in
     return TRACK_CHOICE
 
 
-async def add_action(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+async def menu_button(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     callback_data = update.callback_query.data
 
     await update.callback_query.answer()
@@ -180,8 +202,72 @@ async def add_action(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     chat_id = update.callback_query.message.chat_id
     print('------------', chat_id)
 
-    bot = Bot('7192726917:AAHbXfJlu6dgb2IhdVTtozzQ1CM6t8tfcBo')
+    bot = Bot('7122629170:AAGfAjv9kdKkAh0UiUdEkLIzdbPrjlzSA_8')
     await bot.send_message(chat_id=chat_id, text=ADD_RETURN_TEXT, reply_markup=add_keyboard())
+
+    # await remove_last_message(bot, chat_id)
+
+    return CHOOSING
+
+
+async def edit_rem_coin(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    callback_data = update.callback_query.data
+
+    await update.callback_query.answer()
+
+    chat_id = update.callback_query.message.chat_id
+    print('------------', chat_id)
+
+    bot = Bot('7122629170:AAGfAjv9kdKkAh0UiUdEkLIzdbPrjlzSA_8')
+    await bot.send_message(chat_id=chat_id, text="Please write something to remove: ")
+
+    # await remove_last_message(bot, chat_id)
+
+    return BUTTON_REMOVER
+
+
+async def edit_rem_wallet(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    callback_data = update.callback_query.data
+
+    await update.callback_query.answer()
+
+    chat_id = update.callback_query.message.chat_id
+    print('------------', chat_id)
+
+    bot = Bot('7122629170:AAGfAjv9kdKkAh0UiUdEkLIzdbPrjlzSA_8')
+    await bot.send_message(chat_id=chat_id, text="Please write something to remove: ")
+
+    # await remove_last_message(bot, chat_id)
+
+    return BUTTON_REMOVER
+
+
+async def edit_rem_nft(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    callback_data = update.callback_query.data
+
+    await update.callback_query.answer()
+
+    chat_id = update.callback_query.message.chat_id
+    print('------------', chat_id)
+
+    bot = Bot('7122629170:AAGfAjv9kdKkAh0UiUdEkLIzdbPrjlzSA_8')
+    await bot.send_message(chat_id=chat_id, text="Please write something to remove: ")
+
+    # await remove_last_message(bot, chat_id)
+
+    return BUTTON_REMOVER
+
+
+async def edit_button(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    callback_data = update.callback_query.data
+
+    await update.callback_query.answer()
+
+    chat_id = update.callback_query.message.chat_id
+    print('------------', chat_id)
+
+    bot = Bot('7122629170:AAGfAjv9kdKkAh0UiUdEkLIzdbPrjlzSA_8')
+    await bot.send_message(chat_id=chat_id, text="Please choose something to edit: ", reply_markup=add_keyboard_edit())
 
     # await remove_last_message(bot, chat_id)
 
@@ -193,9 +279,18 @@ async def show_my_tracks(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
     """Ask the user for info about the selected predefined choice."""
     text = update.message.text
     context.user_data["choice"] = text
-    await update.message.reply_text(MY_TRACKS_RETURN_TEXT)
+    chat_id = update.message.chat_id
 
-    return TYPING_REPLY
+    coins = cik.get_coins(str(chat_id))
+
+    text_return = "you track: "
+
+    for w in coins:
+        text_return += " " + w
+
+    await update.message.reply_text(text_return)
+
+    return CHOOSING
 
 
 async def remove_last_message(bot1, chat_id):
@@ -210,12 +305,14 @@ async def select_funding(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
     """Ask the user for info about the selected predefined choice."""
     text = update.message.text
     context.user_data["choice"] = text
+    chat_id = update.message.chat_id
+
     await update.message.reply_text(FUNDING_RETURN_TEXT)
 
     funding: list = get_funding()
     print(' got funding ')
     for i in funding:
-        await bot.send_message(chat_id=1359422473, text=i)
+        await bot.send_message(chat_id=chat_id, text=i)
 
     return CHOOSING
 
@@ -231,7 +328,7 @@ async def selection_over(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
 
     print(tracked_coins)
 
-    return TYPING_REPLY
+    return CHOOSING
 
 
 async def custom_choice(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
@@ -270,7 +367,7 @@ async def go_main_menu(update: Update, context: ContextTypes.DEFAULT_TYPE) -> in
 
     await update.message.reply_text(MAIN_MENU_BUTTON_TEXT, reply_markup=main_menu_keyboard())
 
-    return TYPING_REPLY
+    return CHOOSING
 
 
 async def done(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
@@ -289,52 +386,98 @@ async def done(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
 
 
 async def add_wallet(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+
     text = update.message.text
-    context.user_data["choice"] = text
-    print("text wallet")
-    await update.message.reply_text(WALLET_ADD_RETURN_TEXT, reply_markup=main_menu_keyboard())
-
-    return TYPING_REPLY
-
-
-async def add_nft(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
-    text = update.message.text
-    context.user_data["choice"] = text
-    print("text nft")
-    await update.message.reply_text(NFT_ADD_RETURN_TEXT, reply_markup=main_menu_keyboard())
-
-    return TYPING_REPLY
-
-
-async def wallet_button(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
-    """Ask the user for info about the selected predefined choice."""
-    text = update.message.text
+    print('text ', text)
     context.user_data["choice"] = text
     chat_id = update.message.chat_id
 
-    await update.message.reply_text(MAIN_MENU_BUTTON_TEXT, reply_markup=main_menu_keyboard())
+    returned = wallet_json.add_wallet(text, str(chat_id), 'def')
 
-    return BUTTON_WALLET
+    await update.message.reply_text(returned[0])
+
+    return CHOOSING
 
 
-async def nft_button(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
-    """Ask the user for info about the selected predefined choice."""
-    callback_data = update.callback_query.data
-
-    await update.callback_query.answer()
-
-    chat_id = update.callback_query.message.chat_id
-    print('------------', chat_id)
-
-    bot = Bot('7192726917:AAHbXfJlu6dgb2IhdVTtozzQ1CM6t8tfcBo')
-    await bot.send_message(chat_id=chat_id, text=ADD_RETURN_TEXT, reply_markup=add_keyboard())
+async def add_nft(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
 
     text = update.message.text
+    print('text ', text)
     context.user_data["choice"] = text
     chat_id = update.message.chat_id
 
     status = nft_json.add_nft(text, str(chat_id), "5")
 
-    await update.message.reply_text(status)
+    # await update.message.reply_text(status)
+
+    text = update.message.text
+    context.user_data["choice"] = text
+    print("text nft")
+    await update.message.reply_text(status[0])
+
+    return CHOOSING
+
+
+async def coin_button(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    await update.callback_query.answer()
+
+    chat_id = update.callback_query.message.chat_id
+    # await update.message.reply_text(MAIN_MENU_BUTTON_TEXT)
+
+    bot = Bot('7122629170:AAGfAjv9kdKkAh0UiUdEkLIzdbPrjlzSA_8')
+    await bot.send_message(chat_id=chat_id, text="Please input a coin")
+
+    return BUTTON_COIN
+
+
+async def wallet_button(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    await update.callback_query.answer()
+
+    chat_id = update.callback_query.message.chat_id
+    # await update.message.reply_text(MAIN_MENU_BUTTON_TEXT)
+
+    bot = Bot('7122629170:AAGfAjv9kdKkAh0UiUdEkLIzdbPrjlzSA_8')
+    await bot.send_message(chat_id=chat_id, text="Please input an Wallet")
+
+    return BUTTON_WALLET
+
+
+async def nft_button(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    # callback_data = update.callback_query.data
+
+    await update.callback_query.answer()
+
+    chat_id = update.callback_query.message.chat_id
+
+    bot = Bot('7122629170:AAGfAjv9kdKkAh0UiUdEkLIzdbPrjlzSA_8')
+    await bot.send_message(chat_id=chat_id, text="Please input an NFT")
 
     return BUTTON_NFT
+
+
+async def act_coming_soon(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    # callback_data = update.callback_query.data
+
+    await update.callback_query.answer()
+
+    chat_id = update.callback_query.message.chat_id
+
+    bot = Bot('7122629170:AAGfAjv9kdKkAh0UiUdEkLIzdbPrjlzSA_8')
+    await bot.send_message(chat_id=chat_id, text="Coming soon... ")
+
+    return CHOOSING
+
+
+async def add_coin(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    # callback_data = update.callback_query.data
+
+    text = update.message.text
+    print('text ', text)
+    context.user_data["choice"] = text
+    chat_id = update.message.chat_id
+
+    result, station = writer_json.add_into_tracked_coins(text, str(chat_id))
+
+    await update.message.reply_text(result, reply_markup=track_keyboard())
+
+    return CHOOSING
