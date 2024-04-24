@@ -1,9 +1,10 @@
 import json
 from follow_floor_price import *
+from nft_all_adder import *
 
 FOLLOWS_PATH = "nft.json"
 fp = FloorPrices()
-
+nftalladder = ChatIdAsKeyNFT()
 
 # add exception handling
 # split coin_follows and coins
@@ -17,7 +18,7 @@ class NFTJson:
         self.all_coins = all_coin"""
 
     @staticmethod
-    def create_indict(self, chat_id, period):
+    def create_indict(chat_id, period):
         return {"chat_id": chat_id, "track_period": period}
 
     # json reader
@@ -69,35 +70,52 @@ class NFTJson:
 
     # data generally coin, private function
     def _add_into_json(self, key, chat_id, period):
-        # get followed coins file
+
+        key = key.lower()
+
         in_file: dict = self._read_from_attribute_json()
+        print((list(in_file.keys())))
 
-        for raw in in_file[key]:
+        if key not in list(in_file.keys()):
+            print('nft if')
+            in_file[key] = [self.create_indict(chat_id, period)]
+            nftalladder.add_NFT(key, chat_id)
 
-            if chat_id == raw["chat_id"]:
-                return 'You already saved it. '
-            else:
-                in_file[key].append(self.create_indict(chat_id, period))
+        else:
+            print('nft else')
+
+            for raw in in_file[key]:
+
+                print(raw)
+
+                if str(chat_id) == (raw["chat_id"]):
+                    return 'You already saved it. '
+
+
+            in_file[key].append(self.create_indict(chat_id, period))
+            nftalladder.add_NFT(key, chat_id)
 
         self._write_into_attribute_json(in_file)
-        return 'coin started being tracked successfully. '
+        return 'NFT started being tracked successfully. '
 
-    def _check_input(self, coin_cap):
+    def _check_input(self, collection):
 
-        # check if wallet ok here
+        # check if NFT found here
 
-        # !#############################!#############################!################################!
-        # in dc bot there will be a limitation of input to prevent brute force after applying remove me
-        # !#############################!#############################!################################!
+        collection = collection.lower()
 
-        relevant = ...
+        url = f"https://api.opensea.io/api/v2/collections/{collection}/stats"
 
-        if relevant:
-            print('its in', coin_cap)
-            return True
-        else:
-            print('not in', coin_cap)
+        headers = {"accept": "application/json",
+                   "x-api-key": "79d9f612887948faa06cd69bc0255a26"
+                   }
+
+        response = requests.get(url, headers=headers)
+
+        if response.status_code != 200:
             return False
+        else:
+            return True
 
     # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
