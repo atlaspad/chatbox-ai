@@ -11,7 +11,7 @@ nj = NFTJson()
 
 async def send_data(chat_id, message):
     # reassign bot for preventing error after object change
-    bot = Bot('7192726917:AAHbXfJlu6dgb2IhdVTtozzQ1CM6t8tfcBo')
+    bot = Bot('7122629170:AAGfAjv9kdKkAh0UiUdEkLIzdbPrjlzSA_8')
     print('sending')
 
     # create send text
@@ -45,31 +45,35 @@ def fetch_floor_price(collection):
 
 data = fp.get_floor()  # fetch last
 
-for collection in collections:
+while True:
 
-    floor_price = fetch_floor_price(collection)
+    for collection in collections:
 
-    if floor_price:
-        old = data[collection]
+        floor_price = fetch_floor_price(collection)
 
-        if old >= floor_price * (105/100):
-            fp.add_change_floor(collection, floor_price)
-            chat_and_calling = nj.get_chat_id_calling(collection)
+        if floor_price:
+            old = data[collection]
 
-            for cc in chat_and_calling:
-                asyncio.run(send_data(cc["chat_id"], collection + " %5 down"))
+            if old >= floor_price * (105/100):
+                fp.add_change_floor(collection, floor_price)
+                chat_and_calling = nj.get_chat_id_calling(collection)
 
-            print(1)
+                for cc in chat_and_calling:
+                    asyncio.run(send_data(cc["chat_id"], collection + " %5 down"))
 
-        if floor_price >= old * (105/100):
-            fp.add_change_floor(collection, floor_price)
-            chat_and_calling = nj.get_chat_id_calling(collection)
+                print(1)
 
-            for cc in chat_and_calling:
-                asyncio.run(send_data(cc["chat_id"], collection + " %5 up"))
+            if floor_price >= old * (105/100):
+                fp.add_change_floor(collection, floor_price)
+                chat_and_calling = nj.get_chat_id_calling(collection)
 
-        print(2)
+                for cc in chat_and_calling:
+                    asyncio.run(send_data(cc["chat_id"], collection + " %5 up"))
 
-        data[collection] = floor_price
+            print(2)
 
-    time.sleep(5)
+            data[collection] = floor_price
+
+        time.sleep(5)
+
+    time.sleep(60)
