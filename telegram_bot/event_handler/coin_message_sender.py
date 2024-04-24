@@ -4,17 +4,19 @@ import os
 # Add the root directory of your project to the Python path to import from parent directory
 # to fix configs import problem
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 
 from configs import *
 from telegram import Bot
 import asyncio
 import pika
 import json
+from json_imps import *
 
-bot = Bot('7192726917:AAHbXfJlu6dgb2IhdVTtozzQ1CM6t8tfcBo')
+bot = Bot('7122629170:AAGfAjv9kdKkAh0UiUdEkLIzdbPrjlzSA_8')
 
 # asyncio.run(consume_messages())
-
+wj = WritersJson()
 
 async def consume_gas():
     ...
@@ -22,13 +24,18 @@ async def consume_gas():
 
 async def send_mes(data):
     # reassign bot for preventing error after object change
-    bot = Bot('7192726917:AAHbXfJlu6dgb2IhdVTtozzQ1CM6t8tfcBo')
+    bot = Bot('7122629170:AAGfAjv9kdKkAh0UiUdEkLIzdbPrjlzSA_8')
     print('sending')
 
     # create send text
     text = data['coin'] + 'change rate: ' + data['rate']
     # Assuming bot is an asynchronous object that can send messages
-    await bot.send_message(chat_id=1359422473, text=text)
+
+    ids = wj.get_chat_ids_of_coin(data['coin'])
+
+    for i in ids:
+        await bot.send_message(chat_id=i, text=text)
+
     print('message sent')
 
 
