@@ -1,3 +1,56 @@
 {
-  "remy-boys": [{"chat_id": "1359422473", "track_period": 5}]
+    "remy-boys": [
+        {
+            "chat_id": "1359422473",
+            "track_period": 5
+        }
+    ],
+    "punkapepen-orig": [
+        {
+            "chat_id": "1359422473",
+            "track_period": "5"
+        },
+        {
+            "chat_id": "5050048682",
+            "track_period": "5"
+        }
+    ],
+    "degods": [
+        {
+            "chat_id": "1359422473",
+            "track_period": "5"
+        },
+        {
+            "chat_id": "5050048682",
+            "track_period": "5"
+        }
+    ],
+    "coolmans-universe": [
+        {
+            "chat_id": "1359422473",
+            "track_period": "5"
+        },
+        {
+            "chat_id": "5050048682",
+            "track_period": "5"
+        }
+    ],
+    "DeGods": [
+        {
+            "chat_id": "5050048682",
+            "track_period": "5"
+        }
+    ],
+    "mypethooligan": [
+        {
+            "chat_id": "1359422473",
+            "track_period": "5"
+        }
+    ],
+    "bomefers": [
+        {
+            "chat_id": "1359422473",
+            "track_period": "5"
+        }
+    ]
 }
