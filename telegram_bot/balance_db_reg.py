@@ -1,7 +1,8 @@
 import json
+from walet_all_adder import *
 
 FOLLOWS_PATH = "balance.json"
-
+chatidwallet = ChatIdAsKeyWallet()
 
 # add exception handling
 # split coin_follows and coins
@@ -15,7 +16,7 @@ class WalletJson:
         self.all_coins = all_coin"""
 
     @staticmethod
-    def create_indict(self, chat_id, call_name):
+    def create_indict(chat_id, call_name):
         return {"chat_id": chat_id, "call_name": call_name}
 
     # json reader
@@ -66,39 +67,47 @@ class WalletJson:
             res = self._add_into_json(wallet, chat_id, call_name)
             return res, True
         else:
-            return "please input a relevant coin", False
+            return "please input a relevant Wallet", False
 
     # data generally coin, private function
     def _add_into_json(self, key, chat_id, call_name):
-        # get followed coins file
         in_file: dict = self._read_from_attribute_json()
+        print((list(in_file.keys())))
 
-        for raw in in_file[key]:
+        if key not in list(in_file.keys()):
+            in_file[key] = [self.create_indict(chat_id, call_name)]
+            chatidwallet.add_Wallet(key, chat_id)
 
-            if chat_id == raw["chat_id"]:
-                return 'You already saved it. '
-            else:
-                in_file[key].append(self.create_indict(chat_id, call_name))
+        else:
+
+            for raw in in_file[key]:
+
+                if chat_id == raw["chat_id"]:
+                    return 'You already saved it. '
+
+            in_file[key].append(self.create_indict(chat_id, call_name))
+            chatidwallet.add_Wallet(key, chat_id)
 
         self._write_into_attribute_json(in_file)
-        return 'coin started being tracked successfully. '
+        return 'wallet started being tracked successfully. '
 
-    def _check_input(self, coin_cap):
+    def _check_input(self, wallet):
 
-        # check if wallet ok here
+        url = f"https://api.etherscan.io/api?module=account&action=balance&address={wallet}&tag=latest&apikey=XVV6BYU65ZK14IMFQWIEUCBIKMZD46ZN8U"
+        return_data = requests.get(url).json()
 
-        # !#############################!#############################!################################!
-        # in dc bot there will be a limitation of input to prevent brute force after applying remove me
-        # !#############################!#############################!################################!
+        print(return_data)
 
-        relevant = ...
+        status = return_data['status']
+        result = return_data['result']
 
-        if relevant:
-            print('its in', coin_cap)
-            return True
-        else:
-            print('not in', coin_cap)
+        if status == '0':
             return False
+        else:
+            if result == '0':
+                return False
+            else:
+                return True
 
     # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
