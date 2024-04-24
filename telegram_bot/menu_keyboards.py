@@ -19,6 +19,15 @@ def add_keyboard():
     return InlineKeyboardMarkup(keyboard)
 
 
+def add_keyboard_edit():
+  # main menu buttons
+    keyboard = [[InlineKeyboardButton('coin ₿', callback_data='edit_coin'), InlineKeyboardButton('NFT 🖼️', callback_data='edit_nft')],
+              [InlineKeyboardButton('Wallet 💼', callback_data='edit_wallet'), InlineKeyboardButton('Gas Alert 🚰', callback_data='edit_gas')],
+              [InlineKeyboardButton('Funding alert️ 💰', callback_data='edit_funding')]]
+
+    return InlineKeyboardMarkup(keyboard)
+
+
 def track_keyboard():
     # cancel plus cross emoji
     keyboard = [[InlineKeyboardButton('Cancel', callback_data='m1')]]
