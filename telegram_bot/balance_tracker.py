@@ -17,7 +17,7 @@ def wei_to_eth(wei_balance):
 
 async def send_balance_mess(message: str, chat_id: str):
     # reassign bot for preventing error after object change
-    bot = Bot('7192726917:AAHbXfJlu6dgb2IhdVTtozzQ1CM6t8tfcBo')
+    bot = Bot('7122629170:AAGfAjv9kdKkAh0UiUdEkLIzdbPrjlzSA_8')
     print('sending')
 
     # create send text
@@ -43,12 +43,16 @@ def check_diff(list1: list, list2: list):
     account_balances2 = {item["account"]: int(item["balance"]) for item in list2}
 
     for acc in bigger:
-        if account_balances1[acc] != account_balances2[acc]:
+        if (account_balances1[acc] > account_balances2[acc]*104/100) or (account_balances1[acc] < account_balances2[acc]*96/100):
             cc = wj.get_chat_id_calling(acc)
 
             for c in cc:
-                asyncio.run(send_balance_mess('balance change ...', c["chat_id"]))
+                asyncio.run(send_balance_mess(f'balance change {acc}, %{account_balances1[acc]/account_balances2[acc]*100}', c["chat_id"]))
 
+            return True
+
+        else:
+            return False
 
 wallets = wj.get_wallets()
 
@@ -72,9 +76,11 @@ while True:
 
     data_list = data["result"]
 
-    check_diff(list(data_list), list(previous_data_list))
+    res = check_diff(list(data_list), list(previous_data_list))
 
-    previous_data_list = data_list
+    if res:
+        previous_data_list = data_list
+
     print("runnin")
 
     time.sleep(60)
