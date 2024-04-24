@@ -8,7 +8,9 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')
 
 import json
 from configs import ALL_COINS_PATH, FOLLOWS_PATH
+from key_chatid import *
 
+cik = ChatIdAsKey()
 
 # add exception handling
 # split coin_follows and coins
@@ -70,7 +72,10 @@ class WritersJson:
 
         # if coin name to be added is a relevant coin name
         if self._check_if_input_a_coin(coin_cap):
+
             res = self._add_into_json(coin_cap, key)
+            cik.add_coin(coin_cap, key)
+
             return res, True
         else:
             return "please input a relevant coin", False
