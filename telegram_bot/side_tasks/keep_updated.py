@@ -100,6 +100,7 @@ class UpdatedKeeper:
 
     def halt(self):
         ... # stop threads
+        self.thread.cancel()
 
 
 # keep_coin_updated()
