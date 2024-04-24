@@ -6,7 +6,7 @@ import json
 from json_imps import WritersJson
 
 
-bot = Bot('7192726917:AAHbXfJlu6dgb2IhdVTtozzQ1CM6t8tfcBo')
+bot = Bot('7122629170:AAGfAjv9kdKkAh0UiUdEkLIzdbPrjlzSA_8')
 wj = WritersJson()
 # asyncio.run(consume_messages())
 
@@ -17,7 +17,7 @@ async def consume_gas():
 
 async def send_mes(data):
     # reassign bot for preventing error after object change
-    bot = Bot('7192726917:AAHbXfJlu6dgb2IhdVTtozzQ1CM6t8tfcBo')
+    bot = Bot('7122629170:AAGfAjv9kdKkAh0UiUdEkLIzdbPrjlzSA_8')
     print('sending')
 
     # create send text
