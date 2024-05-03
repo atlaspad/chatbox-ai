@@ -49,5 +49,11 @@
             "chat_id": "5050048682",
             "call_name": "def"
         }
+    ],
+    "0x93c34E4Eec90B579093523a938d1B2ac1C3E3d8C": [
+        {
+            "chat_id": "1321911669",
+            "call_name": "def"
+        }
     ]
 }

@@ -13,4 +13,3 @@ python3 keep_updated.py &
 
 cd ../../data_handler
 python3 tracker.py
-

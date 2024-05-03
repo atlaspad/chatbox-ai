@@ -1,12 +1,17 @@
 {
     "BTCUSDT": [
         "1359422473",
-        "5050048682"
+        "5050048682",
+        "1316816601",
+        "1321911669"
     ],
     "ETHUSDT": [
+        "5050048682",
+        "1316816601"
+    ],
+    "BNBUSDT": [
         "5050048682"
     ],
-    "BNBUSDT": [],
     "BCCUSDT": [],
     "NEOUSDT": [],
     "LTCUSDT": [
@@ -14,7 +19,9 @@
     ],
     "QTUMUSDT": [],
     "ADAUSDT": [],
-    "XRPUSDT": [],
+    "XRPUSDT": [
+        "5050048682"
+    ],
     "EOSUSDT": [],
     "TUSDUSDT": [],
     "IOTAUSDT": [],
@@ -51,7 +58,9 @@
     "ENJUSDT": [],
     "MITHUSDT": [],
     "MATICUSDT": [],
-    "ATOMUSDT": [],
+    "ATOMUSDT": [
+        "1316816601"
+    ],
     "TFUELUSDT": [],
     "ONEUSDT": [],
     "FTMUSDT": [],
@@ -59,7 +68,9 @@
     "USDSBUSDT": [],
     "GTOUSDT": [],
     "ERDUSDT": [],
-    "DOGEUSDT": [],
+    "DOGEUSDT": [
+        "5050048682"
+    ],
     "DUSKUSDT": [],
     "ANKRUSDT": [],
     "WINUSDT": [],
@@ -83,7 +94,9 @@
     "BEAMUSDT": [],
     "XTZUSDT": [],
     "RENUSDT": [],
-    "RVNUSDT": [],
+    "RVNUSDT": [
+        "5050048682"
+    ],
     "HCUSDT": [],
     "HBARUSDT": [],
     "NKNUSDT": [],
@@ -127,7 +140,9 @@
     ],
     "DATAUSDT": [],
     "XZCUSDT": [],
-    "SOLUSDT": [],
+    "SOLUSDT": [
+        "5050048682"
+    ],
     "CTSIUSDT": [],
     "HIVEUSDT": [],
     "CHRUSDT": [],
@@ -370,7 +385,9 @@
     "JASMYUSDT": [],
     "AMPUSDT": [],
     "PLAUSDT": [],
-    "PYRUSDT": [],
+    "PYRUSDT": [
+        "1316816601"
+    ],
     "RNDRUSDT": [],
     "ALCXUSDT": [],
     "SANTOSUSDT": [],
@@ -457,7 +474,9 @@
     "SUIUSDT": [],
     "AERGOUSDT": [],
     "PEPEUSDT": [],
-    "FLOKIUSDT": [],
+    "FLOKIUSDT": [
+        "5050048682"
+    ],
     "ASTUSDT": [],
     "SNTUSDT": [],
     "COMBOUSDT": [],
@@ -490,8 +509,12 @@
     "BONKUSDT": [],
     "ACEUSDT": [],
     "NFPUSDT": [],
-    "AIUSDT": [],
-    "XAIUSDT": [],
+    "AIUSDT": [
+        "5050048682"
+    ],
+    "XAIUSDT": [
+        "5050048682"
+    ],
     "MANTAUSDT": [],
     "ALTUSDT": [],
     "JUPUSDT": [],

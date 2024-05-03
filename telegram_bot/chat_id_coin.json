@@ -6,6 +6,23 @@
     ],
     "5050048682": [
         "MINAUSDT",
-        "PIXELUSDT"
-    ]
+        "PIXELUSDT",
+        "BTCUSDT",
+        "RVNUSDT",
+        "ETHUSDT",
+        "XAIUSDT",
+        "SOLUSDT",
+        "AIUSDT",
+        "BNBUSDT",
+        "XRPUSDT",
+        "FLOKIUSDT",
+        "DOGEUSDT"
+    ],
+    "1316816601": [
+        "ATOMUSDT",
+        "BTCUSDT",
+        "ETHUSDT",
+        "PYRUSDT"
+    ],
+    "1321911669": []
 }

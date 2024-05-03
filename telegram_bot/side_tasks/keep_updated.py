@@ -40,8 +40,9 @@ class UpdatedKeeper:
         self.funding_data = []
         self.thread = None
 
-    def get_funding(self):
-        return self.funding_data
+    def get_funding(self, titles):
+        text = titles + self.funding_data[0]
+        return [text]
 
     def keep_funding_mem(self):
 
@@ -64,27 +65,17 @@ class UpdatedKeeper:
                 send_text = ""
 
                 text_holder = []
-                ct = 0
-
+                
                 for data_raw in premium_index_data:
-                    """send_text += ('symbol: ' + data_raw['symbol'] + '| funding rate: ' +
-                                  data_raw['lastFundingRate'] + ' | interest rate: ' + data_raw['interestRate'] +
-                                  ' | estimated price: '+ data_raw['estimatedSettlePrice']) + '\n'"""
+                    if data_raw['symbol'] == "MINAUSDT":
+                        print(data_raw)
 
-                    if ct == 30:
-                        ct = 0
-                        text_holder.append(send_text)
-                        send_text = ""
-
-                    send_text += (data_raw['symbol'] + '| ' +
-                                  data_raw['lastFundingRate'] + ' | ' + data_raw['interestRate'] +
+                        send_text += (data_raw['symbol'] + ' | ' + 
+                                    data_raw['lastFundingRate'] + ' | ' + data_raw['interestRate'] +
                                   ' | ' + data_raw['estimatedSettlePrice']) + '\n'
-
-                    ct += 1
-                    # + ' | funding time: ' +
-                    # datetime.fromtimestamp(data_raw['time'])
-
-                # print(send_text)
+                        send_text += 'ATLASUSDT (coming soon)'
+                        text_holder.append(send_text)
+                        break
 
             self.funding_data = text_holder
 

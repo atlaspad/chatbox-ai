@@ -16,6 +16,45 @@ class NFTJson:
     """def __init__(self, file_name, all_coin):
         self.fName = file_name
         self.all_coins = all_coin"""
+    def __init__(self):
+        self.texts_lang = {
+            "tr": {
+                "SALES": "satışlar",
+                "average_price": "ortalama fiyat",
+                "floor_price": "taban fiyatı",
+                "VOLUME": "hacim"
+            },
+            "en": {
+                "SALES": "sales",
+                "average_price": "average_price",
+                "floor_price": "floor_price",
+                "VOLUME": "volume"
+            },
+            "es":{
+                "SALES": "ventas",
+                "average_price": "precio promedio",
+                "floor_price":"precio mínimo",
+                "VOLUME":"volumen"
+            },
+            "fr":{
+                "SALES": "ventes",
+                "average_price": "prix moyen",
+                "floor_price": "prix plancher",
+                "VOLUME": "volume"
+            },
+            "ru":{
+                "SALES": "продажи",
+                "average_price": "средняя цена",
+                "floor_price": "минимальная цена",
+                "VOLUME": "объем"
+            },
+            "de":{
+                "SALES": "Verkäufe",
+                "average_price": "Durchschnittspreis",
+                "floor_price": "Mindestpreis"
+                ,"VOLUME": "Volumen"
+            }
+        }
 
     @staticmethod
     def create_indict(chat_id, period):
@@ -55,23 +94,32 @@ class NFTJson:
         return data[nft]
 
     # key is generally going to be chat id
-    def add_nft(self, nft: str, chat_id: str, period: str):
+    def add_nft(self, nft: str, chat_id: str, period: str, lang = "en", return_relevant = "please input a relevant NFT",
+                already_saved_err="You already saved it. ", success='NFT started being tracked successfully. '):
 
         print(nft)
         # add suggestion system in further versions
         ...
-
+        res, response_nft = self._check_input(nft)
         # if coin name to be added is a relevant coin name
-        if self._check_input(nft):
-            res = self._add_into_json(nft, chat_id, period)
-            return res, True
+        if res:
+            try:
+                res = self._add_into_json(nft, chat_id, period, already_saved_err, success)
+                vol_text = self.texts_lang[lang]["VOLUME"]
+                sales_text = self.texts_lang[lang]["SALES"]
+                aver_price_text = self.texts_lang[lang]["average_price"],
+                floor_price_text = self.texts_lang[lang]["floor_price"]
+
+                res += f"\n {vol_text}: {response_nft['total']['volume']}\n {sales_text}: {response_nft['total']['sales']} \n {aver_price_text}: {response_nft['total']['average_price']} \n {floor_price_text}: {response_nft['total']['floor_price']}"
+                return res, True
+            except:
+                return return_relevant, False
         else:
-            return "please input a relevant coin", False
+            return return_relevant, False
 
     # data generally coin, private function
-    def _add_into_json(self, key, chat_id, period):
+    def _add_into_json(self, key, chat_id, period, already_saved_err="You already saved it. ", success='NFT started being tracked successfully. '):
 
-        key = key.lower()
 
         in_file: dict = self._read_from_attribute_json()
         print((list(in_file.keys())))
@@ -89,14 +137,13 @@ class NFTJson:
                 print(raw)
 
                 if str(chat_id) == (raw["chat_id"]):
-                    return 'You already saved it. '
-
+                    return already_saved_err
 
             in_file[key].append(self.create_indict(chat_id, period))
             nftalladder.add_NFT(key, chat_id)
 
         self._write_into_attribute_json(in_file)
-        return 'NFT started being tracked successfully. '
+        return success
 
     def _check_input(self, collection):
 
@@ -108,17 +155,19 @@ class NFTJson:
 
         headers = {"accept": "application/json",
                    "x-api-key": "79d9f612887948faa06cd69bc0255a26"
-                   }
+        }
 
         response = requests.get(url, headers=headers)
 
         if response.status_code != 200:
-            return False
+            return False, None
         else:
-            return True
+            return True, response.json()
 
     # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
     # !!!!!!!!! when new key added, add in literal too. Maybe done auto in upcoming updates. !!!!!!!
 
     # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+

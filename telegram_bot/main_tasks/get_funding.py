@@ -13,9 +13,9 @@ from side_tasks.keep_updated import *
 uk = UpdatedKeeper()
 uk.run()
 
-def get_funding():
+def get_funding(titles):
 
-    return uk.get_funding()
+    return uk.get_funding(titles)
 
 
 # asyncio.run(get_funding())

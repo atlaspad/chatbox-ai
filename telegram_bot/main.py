@@ -34,30 +34,138 @@ def main() -> None:
                     filters.Regex("^/start$"), start
                 ),
                 MessageHandler(
-                    filters.Regex("^(NFT 🖼️)$"), select_nft
+                    filters.Regex("^(NFT 🌆)$"), select_nft
                 ),
-                # |Pool 🏊|Gas Price 🚰
+
+
+                # wallets
                 MessageHandler(
-                    filters.Regex("^(Wallet 💼)$"), select_pool
+                    filters.Regex("^(Wallet 👜)$"), select_pool
                 ),
+                MessageHandler(
+                    filters.Regex("^(Cüzdan 👜)$"), select_pool
+                ),
+                MessageHandler(
+                    filters.Regex("^(Brieftasche 👜)$"), select_pool
+                ),
+                MessageHandler(
+                    filters.Regex("^(Billetera 👜)$"), select_pool
+                ),
+                MessageHandler(
+                    filters.Regex("^(Portefeuille 👜)$"), select_pool
+                ),
+                MessageHandler(
+                    filters.Regex("^(Кошелек 👜)$"), select_pool
+                ),
+
+
+                # gas prices
                 MessageHandler(
                     filters.Regex("^(Gas Price 🚰)$"), select_gas
                 ),
                 MessageHandler(
+                    filters.Regex("^(Gaz Fiyatı 🚰)$"), select_gas
+                ),
+                MessageHandler(
+                    filters.Regex("^(Gaspreis 🚰)$"), select_gas
+                ),
+                MessageHandler(
+                    filters.Regex("^(Precio del Gas 🚰)$"), select_gas
+                ),
+                MessageHandler(
+                    filters.Regex("^(Prix du Gaz 🚰)$"), select_gas
+                ),
+                MessageHandler(
+                    filters.Regex("^(Цена Газа 🚰)$"), select_gas
+                ),
+
+
+                # tracks
+                MessageHandler(
                     filters.Regex("^(Track 🐾)$"), select_track
                 ),
-                # |Pool 🏊|Gas Price 🚰
+                MessageHandler(
+                    filters.Regex("^(Takip Et 🐾)$"), select_track
+                ),
+                MessageHandler(
+                    filters.Regex("^(Verfolgen 🐾)$"), select_track
+                ),
+                MessageHandler(
+                    filters.Regex("^(Seguir 🐾)$"), select_track
+                ),
+                MessageHandler(
+                    filters.Regex("^(Suivre 🐾)$"), select_track
+                ),
+                MessageHandler(
+                    filters.Regex("^(Отслеживать 🐾)$"), select_track
+                ),
+
+
+                # my tracks
                 MessageHandler(
                     filters.Regex("^(My Tracks 👞)$"), show_my_tracks
                 ),
-                # "Gas Price 🚰", "Funding 💰"],
-                #     ["Main Menu 📑"],
+                MessageHandler(
+                    filters.Regex("^(Takip Ettiklerim 👞)$"), show_my_tracks
+                ),
+                MessageHandler(
+                    filters.Regex("^(Meine Verfolgungen 👞)$"), show_my_tracks
+                ),
+                MessageHandler(
+                    filters.Regex("^(Mis Seguimientos 👞)$"), show_my_tracks
+                ),
+                MessageHandler(
+                    filters.Regex("^(Mes Suivis 👞)$"), show_my_tracks
+                ),
+                MessageHandler(
+                    filters.Regex("^(Мои Отслеживания 👞)$"), show_my_tracks
+                ),
+
+
+
+                # fundings
                 MessageHandler(
                         filters.Regex("^Funding 💰$"), select_funding
                 ),
                 MessageHandler(
-                    filters.Regex("^Main Menu 📑$"), go_main_menu
+                    filters.Regex("^Finansman 💰$"), select_funding
                 ),
+                MessageHandler(
+                    filters.Regex("^Financement 💰$"), select_funding
+                ),
+                MessageHandler(
+                    filters.Regex("^Finanzierung 💰$"), select_funding
+                ),
+                MessageHandler(
+                    filters.Regex("^Financiamiento 💰$"), select_funding
+                ),
+                MessageHandler(
+                    filters.Regex("^Финансирование 💰$"), select_funding
+                ),
+
+
+                # main menu
+                MessageHandler(
+                    filters.Regex("^Main Menu 📋$"), go_main_menu
+                ),
+                MessageHandler(
+                    filters.Regex("^Ana Menü 📋$"), go_main_menu
+                ),
+                MessageHandler(
+                    filters.Regex("^Hauptmenü 📋$"), go_main_menu
+                ),
+                MessageHandler(
+                    filters.Regex("^Menú Principal 📋$"), go_main_menu
+                ),
+                MessageHandler(
+                    filters.Regex("^Menu Principal 📋$"), go_main_menu
+                ),
+                MessageHandler(
+                    filters.Regex("^Главное Меню 📋$"), go_main_menu
+                ),
+
+
+                # buttons
                 CallbackQueryHandler(
                     menu_button, 'menu_add'
                 ),
@@ -80,7 +188,7 @@ def main() -> None:
                     act_coming_soon, 'menu_who'
                 ),
                 CallbackQueryHandler(
-                    act_coming_soon, 'menu_settings'
+                    change_settings_button, 'menu_settings'
                 ),
                 CallbackQueryHandler(
                     edit_button, 'menu_edit'
@@ -106,6 +214,27 @@ def main() -> None:
                 CallbackQueryHandler(
                     act_coming_soon, 'edit_gas'
                 ),
+                CallbackQueryHandler(
+                    act_settings_button, 'add_settings_keyboard'
+                ),
+                CallbackQueryHandler(
+                    change_language_button, 'en'
+                ),
+                CallbackQueryHandler(
+                    change_language_button, 'es'
+                ),
+                CallbackQueryHandler(
+                    change_language_button, 'tr'
+                ),
+                CallbackQueryHandler(
+                    change_language_button, 'de'
+                ),
+                CallbackQueryHandler(
+                    change_language_button, 'fr'
+                ),
+                CallbackQueryHandler(
+                    change_language_button, 'ru'
+                ),
             ],
             BUTTON_REMOVER: [MessageHandler(filters.TEXT, removetexthandler)
             ],
@@ -123,6 +252,9 @@ def main() -> None:
             ],
             BUTTON_NFT: [
                 MessageHandler(filters.TEXT, add_nft)
+            ],
+            BUTTON_SETTINGS: [
+                MessageHandler(filters.TEXT, act_settings)
             ],
             # CHOOSING, TYPING_REPLY, TYPING_CHOICE, TRACK_CHOICE, FUNDING_CHOICE, GAS_CHOICE, NFT_CHOICE, POOL_CHOICE
             # --------- do_nothin part test. remove me with chaning them --------
@@ -265,3 +397,4 @@ import asyncio
 #!/usr/bin/env python
 # pylint: disable=unused-argument
 # This program is dedicated to the public domain under the CC0 license.
+
