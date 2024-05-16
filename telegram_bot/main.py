@@ -18,9 +18,9 @@ def main() -> None:
     """Run the bot."""
     # Create the Application and pass it your bot's token.
 
-    my_persistence = PicklePersistence(filepath='persistence')
+    # my_persistence = PicklePersistence(filepath='persistence')
 
-    application = Application.builder().token("7122629170:AAGfAjv9kdKkAh0UiUdEkLIzdbPrjlzSA_8").persistence(persistence=my_persistence).build()
+    application = Application.builder().token("7122629170:AAGfAjv9kdKkAh0UiUdEkLIzdbPrjlzSA_8").build()
     # 7122629170:AAGfAjv9kdKkAh0UiUdEkLIzdbPrjlzSA_8
     # Add conversation handler with the states CHOOSING, TYPING_CHOICE and TYPING_REPLY
     # ConversationHandler()
@@ -57,7 +57,12 @@ def main() -> None:
                 MessageHandler(
                     filters.Regex("^(Кошелек 👜)$"), select_pool
                 ),
-
+                MessageHandler(
+                    filters.Regex("^(钱包 👜)$"), select_pool
+                ),
+                MessageHandler(
+                    filters.Regex("^(वॉलेट 👜)$"), select_pool
+                ),
 
                 # gas prices
                 MessageHandler(
@@ -78,7 +83,12 @@ def main() -> None:
                 MessageHandler(
                     filters.Regex("^(Цена Газа 🚰)$"), select_gas
                 ),
-
+                MessageHandler(
+                    filters.Regex("^(气价 🚰)$"), select_gas
+                ),
+                MessageHandler(
+                    filters.Regex("^(गैस कीमत 🚰)$"), select_gas
+                ),
 
                 # tracks
                 MessageHandler(
@@ -99,7 +109,13 @@ def main() -> None:
                 MessageHandler(
                     filters.Regex("^(Отслеживать 🐾)$"), select_track
                 ),
+                MessageHandler(
+                    filters.Regex("^(跟踪 🐾)$"), select_track
+                ),
 
+                MessageHandler(
+                    filters.Regex("^(ट्रैक करें 🐾)$"), select_track
+                ),
 
                 # my tracks
                 MessageHandler(
@@ -120,7 +136,12 @@ def main() -> None:
                 MessageHandler(
                     filters.Regex("^(Мои Отслеживания 👞)$"), show_my_tracks
                 ),
-
+                MessageHandler(
+                    filters.Regex("^(我的跟踪 👞)$"), show_my_tracks
+                ),
+                MessageHandler(
+                    filters.Regex("^(मेरी ट्रैक की हुई 👞)$"), show_my_tracks
+                ),
 
 
                 # fundings
@@ -142,7 +163,13 @@ def main() -> None:
                 MessageHandler(
                     filters.Regex("^Финансирование 💰$"), select_funding
                 ),
+                MessageHandler(
+                    filters.Regex("^资金 💰$"), select_funding
+                ),
 
+                MessageHandler(
+                    filters.Regex("^वित्त पोषण 💰$"), select_funding
+                ),
 
                 # main menu
                 MessageHandler(
@@ -163,11 +190,25 @@ def main() -> None:
                 MessageHandler(
                     filters.Regex("^Главное Меню 📋$"), go_main_menu
                 ),
+                MessageHandler(
+                    filters.Regex("^主菜单 📋$"),go_main_menu
+                ),
+                MessageHandler(
+                    filters.Regex("^मुख्य मेनू 📋$"),go_main_menu),
 
 
                 # buttons
                 CallbackQueryHandler(
                     menu_button, 'menu_add'
+                ),
+                CallbackQueryHandler(
+                    create_nft_button, 'create_sticker'
+                ),
+                CallbackQueryHandler(
+                    create_sticker_button, 'create_nft'
+                ),
+                CallbackQueryHandler(
+                    create_button, 'menu_create'
                 ),
                 CallbackQueryHandler(
                     coin_button, 'adder_coin'
@@ -235,6 +276,13 @@ def main() -> None:
                 CallbackQueryHandler(
                     change_language_button, 'ru'
                 ),
+                CallbackQueryHandler(
+                    change_language_button, 'in'
+                ),
+                CallbackQueryHandler(
+                    change_language_button, 'ch'
+                ),
+
             ],
             BUTTON_REMOVER: [MessageHandler(filters.TEXT, removetexthandler)
             ],
@@ -310,6 +358,7 @@ def main() -> None:
 
     application.run_polling(allowed_updates=Update.ALL_TYPES)
 
+    stop_funding_thread()
 
 if __name__ == "__main__":
     main()

@@ -39,6 +39,7 @@ class UpdatedKeeper:
     def __init__(self):
         self.funding_data = []
         self.thread = None
+        self.over = False
 
     def get_funding(self, titles):
         text = titles + self.funding_data[0]
@@ -47,6 +48,7 @@ class UpdatedKeeper:
     def keep_funding_mem(self):
 
         while True:
+
             premium_index_data = requests.get('https://fapi.binance.com/fapi/v1/premiumIndex')
 
             if premium_index_data.status_code == 200:
@@ -80,7 +82,20 @@ class UpdatedKeeper:
             self.funding_data = text_holder
 
             print('stayin aliiive')
-            time.sleep(15)
+            time.sleep(5)
+
+            if self.over:
+                break
+
+            time.sleep(5)
+
+            if self.over:
+                break
+
+            time.sleep(5)
+
+            if self.over:
+                break
 
     def run(self):
 
@@ -91,7 +106,6 @@ class UpdatedKeeper:
 
     def halt(self):
         ... # stop threads
-        self.thread.cancel()
-
+        self.over = True
 
 # keep_coin_updated()

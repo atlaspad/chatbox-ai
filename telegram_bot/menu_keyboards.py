@@ -4,57 +4,146 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 def main_menu_keyboard(lang = "en"):
     # main menu buttons
     if lang == "en":
-        keyboard = [[InlineKeyboardButton('add ➕', callback_data='menu_add'), InlineKeyboardButton('edit 📝', callback_data='menu_edit')],
-                  [InlineKeyboardButton('Who is 👤', callback_data='menu_who'), InlineKeyboardButton('profiles 😎', callback_data='menu_profile')],
-                  [InlineKeyboardButton('Settings ⚙️', callback_data='menu_settings'), InlineKeyboardButton('subscription 🎫', callback_data='menu_sub')]]
+        keyboard = [[InlineKeyboardButton('add ➕', callback_data='menu_add'),
+                   InlineKeyboardButton('edit 📝', callback_data='menu_edit')],
+                  [InlineKeyboardButton('Who is 👤', callback_data='menu_who'),
+                   InlineKeyboardButton('profiles 😎', callback_data='menu_profile')],
+                  [InlineKeyboardButton('Settings ⚙', callback_data='menu_settings'),
+                   InlineKeyboardButton('subscription 🎫', callback_data='menu_sub')],
+                  [InlineKeyboardButton('Create 🖊', callback_data='menu_create')]]
 
     elif lang == "tr":
-        keyboard = [[InlineKeyboardButton('ekle ➕', callback_data='menu_add'),
-                     InlineKeyboardButton('düzenle 📝', callback_data='menu_edit')],
-                    [InlineKeyboardButton('Kim 👤', callback_data='menu_who'),
-                     InlineKeyboardButton('Profiller 😎', callback_data='menu_profile')],
-                    [InlineKeyboardButton('Ayarlar ⚙️', callback_data='menu_settings'),
-                     InlineKeyboardButton('abonelik 🎫', callback_data='menu_sub')]]
+         keyboard = [[InlineKeyboardButton('ekle ➕', callback_data='menu_add'),
+                 InlineKeyboardButton('düzenle 📝', callback_data='menu_edit')],
+                [InlineKeyboardButton('Kim 👤', callback_data='menu_who'),
+                 InlineKeyboardButton('Profiller 😎', callback_data='menu_profile')],
+                [InlineKeyboardButton('Ayarlar ⚙', callback_data='menu_settings'),
+                 InlineKeyboardButton('abonelik 🎫', callback_data='menu_sub')],
+                [InlineKeyboardButton('oluştur 🖊', callback_data='menu_create')]]
+
 
     elif lang == "es":
         keyboard = [[InlineKeyboardButton('añadir ➕', callback_data='menu_add'),
-                     InlineKeyboardButton('editar 📝', callback_data='menu_edit')],
-                    [InlineKeyboardButton('¿Quién es 👤', callback_data='menu_who'),
-                     InlineKeyboardButton('perfiles 😎', callback_data='menu_profile')],
-                    [InlineKeyboardButton('Configuración ⚙️', callback_data='menu_settings'),
-                     InlineKeyboardButton('suscripción 🎫', callback_data='menu_sub')]]
+                 InlineKeyboardButton('editar 📝', callback_data='menu_edit')],
+                [InlineKeyboardButton('¿Quién es 👤', callback_data='menu_who'),
+                 InlineKeyboardButton('perfiles 😎', callback_data='menu_profile')],
+                [InlineKeyboardButton('Configuración ⚙', callback_data='menu_settings'),
+                 InlineKeyboardButton('suscripción 🎫', callback_data='menu_sub')],
+                [InlineKeyboardButton('crear 🖊', callback_data='menu_create')]]
+
 
     elif lang == "fr":
         keyboard = [[InlineKeyboardButton('ajouter ➕', callback_data='menu_add'),
-                     InlineKeyboardButton('modifier 📝', callback_data='menu_edit')],
-                    [InlineKeyboardButton('Qui est 👤', callback_data='menu_who'),
-                     InlineKeyboardButton('profils 😎', callback_data='menu_profile')],
-                    [InlineKeyboardButton('Paramètres ⚙️', callback_data='menu_settings'),
-                     InlineKeyboardButton('abonnement 🎫', callback_data='menu_sub')]]
+                 InlineKeyboardButton('modifier 📝', callback_data='menu_edit')],
+                [InlineKeyboardButton('Qui est 👤', callback_data='menu_who'),
+                 InlineKeyboardButton('profils 😎', callback_data='menu_profile')],
+                [InlineKeyboardButton('Réglages ⚙', callback_data='menu_settings'),
+                 InlineKeyboardButton('abonnement 🎫', callback_data='menu_sub')],
+                [InlineKeyboardButton('créer 🖊', callback_data='menu_create')]]
+
 
     elif lang == "de":
-        keyboard = [[InlineKeyboardButton('Hinzufügen ➕', callback_data='menu_add'),
-                     InlineKeyboardButton('Bearbeiten 📝', callback_data='menu_edit')],
-                    [InlineKeyboardButton('Wer ist 👤', callback_data='menu_who'),
-                     InlineKeyboardButton('Profile 😎', callback_data='menu_profile')],
-                    [InlineKeyboardButton('Einstellungen ⚙️', callback_data='menu_settings'),
-                     InlineKeyboardButton('Abonnement 🎫', callback_data='menu_sub')]]
+        keyboard = [[InlineKeyboardButton('hinzufügen ➕', callback_data='menu_add'),
+                 InlineKeyboardButton('bearbeiten 📝', callback_data='menu_edit')],
+                [InlineKeyboardButton('Wer ist 👤', callback_data='menu_who'),
+                 InlineKeyboardButton('Profile 😎', callback_data='menu_profile')],
+                [InlineKeyboardButton('Einstellungen ⚙', callback_data='menu_settings'),
+                 InlineKeyboardButton('Abonnement 🎫', callback_data='menu_sub')],
+                [InlineKeyboardButton('erstellen 🖊', callback_data='menu_create')]]
+
 
     elif lang == "ru":
-        keyboard = [[InlineKeyboardButton('Добавить ➕', callback_data='menu_add'),
-                     InlineKeyboardButton('Редактировать 📝', callback_data='menu_edit')],
-                    [InlineKeyboardButton('Кто это 👤', callback_data='menu_who'),
-                     InlineKeyboardButton('Профили 😎', callback_data='menu_profile')],
-                    [InlineKeyboardButton('Настройки ⚙️', callback_data='menu_settings'),
-                     InlineKeyboardButton('Подписка 🎫', callback_data='menu_sub')]]
+        keyboard = [[InlineKeyboardButton('добавить ➕', callback_data='menu_add'),
+                 InlineKeyboardButton('редактировать 📝', callback_data='menu_edit')],
+                [InlineKeyboardButton('Кто 👤', callback_data='menu_who'),
+                 InlineKeyboardButton('профили 😎', callback_data='menu_profile')],
+                [InlineKeyboardButton('Настройки ⚙', callback_data='menu_settings'),
+                 InlineKeyboardButton('подписка 🎫', callback_data='menu_sub')],
+                [InlineKeyboardButton('создать 🖊', callback_data='menu_create')]]
+
+
+    elif lang == "hi":
+        keyboard = [[InlineKeyboardButton('जोड़ें ➕', callback_data='menu_add'),
+                 InlineKeyboardButton('संपादित करें 📝', callback_data='menu_edit')],
+                [InlineKeyboardButton('कौन है 👤', callback_data='menu_who'),
+                 InlineKeyboardButton('प्रोफ़ाइल 😎', callback_data='menu_profile')],
+                [InlineKeyboardButton('सेटिंग्स ⚙', callback_data='menu_settings'),
+                 InlineKeyboardButton('सब्सक्रिप्शन 🎫', callback_data='menu_sub')],
+                [InlineKeyboardButton('बनाएं 🖊', callback_data='menu_create')]]
+
+
+    elif lang == "ch":
+        keyboard = [[InlineKeyboardButton('添加 ➕', callback_data='menu_add'),
+                 InlineKeyboardButton('编辑 📝', callback_data='menu_edit')],
+                [InlineKeyboardButton('谁 👤', callback_data='menu_who'),
+                 InlineKeyboardButton('档案 😎', callback_data='menu_profile')],
+                [InlineKeyboardButton('设置 ⚙', callback_data='menu_settings'),
+                 InlineKeyboardButton('订阅 🎫', callback_data='menu_sub')],
+                [InlineKeyboardButton('创建 🖊', callback_data='menu_create')]]
+
 
     else:
         keyboard = [[InlineKeyboardButton('add ➕', callback_data='menu_add'),
                      InlineKeyboardButton('edit 📝', callback_data='menu_edit')],
                     [InlineKeyboardButton('Who is 👤', callback_data='menu_who'),
                      InlineKeyboardButton('profiles 😎', callback_data='menu_profile')],
-                    [InlineKeyboardButton('Settings ⚙️', callback_data='menu_settings'),
+                    [InlineKeyboardButton('Settings ⚙', callback_data='menu_settings'),
                      InlineKeyboardButton('subscription 🎫', callback_data='menu_sub')]]
+
+    return InlineKeyboardMarkup(keyboard)
+
+
+def create_keyboard(lang="en"):
+
+    if lang == "en":
+        keyboard = [[InlineKeyboardButton('Create NFT 🌆', callback_data='create_nft')],
+                      [InlineKeyboardButton('Create Sticker 🀚', callback_data='create_sticker')]]
+
+    elif lang == "tr":
+
+        keyboard = [[InlineKeyboardButton('NFT Oluştur 🌆', callback_data='create_nft')],
+
+                    [InlineKeyboardButton('Sticker Oluştur 🀚', callback_data='create_sticker')]]
+
+    elif lang == "es":
+
+        keyboard = [[InlineKeyboardButton('Crear NFT 🌆', callback_data='create_nft')],
+
+                    [InlineKeyboardButton('Crear sticker 🀚', callback_data='create_sticker')]]
+
+    elif lang == "fr":
+
+        keyboard = [[InlineKeyboardButton('Créer un NFT 🌆', callback_data='create_nft')],
+
+                    [InlineKeyboardButton('Créer un autocollant 🀚', callback_data='create_sticker')]]
+
+    elif lang == "de":
+
+        keyboard = [[InlineKeyboardButton('NFT erstellen 🌆', callback_data='create_nft')],
+
+                    [InlineKeyboardButton('Aufkleber erstellen 🀚', callback_data='create_sticker')]]
+
+    elif lang == "ru":
+
+        keyboard = [[InlineKeyboardButton('Создать NFT 🌆', callback_data='create_nft')],
+
+                    [InlineKeyboardButton('Создать стикер 🀚', callback_data='create_sticker')]]
+
+    elif lang == "hi":
+
+        keyboard = [[InlineKeyboardButton('NFT बनाएं 🌆', callback_data='create_nft')],
+
+                    [InlineKeyboardButton('स्टिकर बनाएं 🀚', callback_data='create_sticker')]]
+
+    elif lang == "zh":
+
+        keyboard = [[InlineKeyboardButton('创建NFT 🌆', callback_data='create_nft')],
+
+                    [InlineKeyboardButton('创建贴纸 🀚', callback_data='create_sticker')]]
+
+    else:
+        keyboard = [[InlineKeyboardButton('Create NFT 🌆', callback_data='create_nft')],
+                    [InlineKeyboardButton('Create Sticker 🀚', callback_data='create_sticker')]]
 
     return InlineKeyboardMarkup(keyboard)
 
@@ -62,9 +151,9 @@ def main_menu_keyboard(lang = "en"):
 def add_keyboard(lang = "en"):
     # main menu buttons
     if lang == "en":
-        keyboard = [[InlineKeyboardButton('coin ₿', callback_data='adder_coin'), InlineKeyboardButton('NFT 🌆', callback_data='adder_nft')],
-                  [InlineKeyboardButton('Wallet 👜', callback_data='adder_wallet'), InlineKeyboardButton('Gas Alert 🚰', callback_data='adder_gas')],
-                  [InlineKeyboardButton('Funding alert️ 💰', callback_data='adder_funding')]]
+            keyboard = [[InlineKeyboardButton('coin ₿', callback_data='adder_coin'), InlineKeyboardButton('NFT 🌆', callback_data='adder_nft')],
+                      [InlineKeyboardButton('Wallet 👜', callback_data='adder_wallet'), InlineKeyboardButton('Gas Alert 🚰', callback_data='adder_gas')],
+                      [InlineKeyboardButton('Funding alert️ 💰', callback_data='adder_funding')]]
 
     elif lang == "tr":
         keyboard = [[InlineKeyboardButton('Kripto Para ₿', callback_data='adder_coin'),
@@ -94,6 +183,22 @@ def add_keyboard(lang = "en"):
                      InlineKeyboardButton('Alerte gaz 🚰', callback_data='adder_gas')],
                     [InlineKeyboardButton('Alerte de financement 💰', callback_data='adder_funding')]]
 
+    elif lang == "ch":
+        keyboard = [[InlineKeyboardButton('币 ₿', callback_data='adder_coin'),
+          InlineKeyboardButton('NFT 🌆', callback_data='adder_nft')],
+         [InlineKeyboardButton('钱包 👜', callback_data='adder_wallet'),
+          InlineKeyboardButton('气体警报 🚰', callback_data='adder_gas')],
+         [InlineKeyboardButton('资金警报 💰', callback_data='adder_funding')]]
+
+
+    elif lang == "in":
+        keyboard = [[InlineKeyboardButton('सिक्का ₿', callback_data='adder_coin'),
+          InlineKeyboardButton('NFT 🌆', callback_data='adder_nft')],
+         [InlineKeyboardButton('वॉलेट 👜', callback_data='adder_wallet'),
+          InlineKeyboardButton('गैस अलर्ट 🚰', callback_data='adder_gas')],
+         [InlineKeyboardButton('वित्त पोषण अलर्ट 💰', callback_data='adder_funding')]]
+
+
     else:
         keyboard = [[InlineKeyboardButton('coin ₿', callback_data='adder_coin'),
                      InlineKeyboardButton('NFT 🌆', callback_data='adder_nft')],
@@ -111,6 +216,20 @@ def add_keyboard_edit(lang = "en"):
         keyboard = [[InlineKeyboardButton('coin ₿', callback_data='edit_coin'), InlineKeyboardButton('NFT 🌆', callback_data='edit_nft')],
                   [InlineKeyboardButton('Wallet 👜', callback_data='edit_wallet'), InlineKeyboardButton('Gas Alert 🚰', callback_data='edit_gas')],
                   [InlineKeyboardButton('Funding alert️ 💰', callback_data='edit_funding')]]
+
+    elif lang == "in":
+        keyboard = [[InlineKeyboardButton('सिक्का ₿', callback_data='edit_coin'),
+                     InlineKeyboardButton('NFT 🌆', callback_data='edit_nft')],
+                    [InlineKeyboardButton('वॉलेट 👜', callback_data='edit_wallet'),
+                     InlineKeyboardButton('गैस अलर्ट 🚰', callback_data='edit_gas')],
+                    [InlineKeyboardButton('वित्त पोषण अलर्ट 💰', callback_data='edit_funding')]]
+
+    elif lang == "ch":
+        keyboard = [[InlineKeyboardButton('币 ₿', callback_data='edit_coin'),
+                     InlineKeyboardButton('NFT 🌆', callback_data='edit_nft')],
+                    [InlineKeyboardButton('钱包 👜', callback_data='edit_wallet'),
+                     InlineKeyboardButton('气体警报 🚰', callback_data='edit_gas')],
+                    [InlineKeyboardButton('资金警报 💰', callback_data='edit_funding')]]
 
     elif lang == "tr":
         keyboard = [[InlineKeyboardButton('Kripto Para ₿', callback_data='edit_coin'),
@@ -176,6 +295,10 @@ def track_keyboard(lang = "en"):
 
     elif lang == "ru":
         keyboard = [[InlineKeyboardButton('Cancel', callback_data='m1')]]
+    elif lang == "ch":
+        keyboard = [[InlineKeyboardButton('取消', callback_data='m1')]]
+    elif lang == "in":
+        keyboard = [[InlineKeyboardButton('रद्द करें', callback_data='m1')]]
 
     else:
         keyboard = [[InlineKeyboardButton('Cancel', callback_data='m1')]]
@@ -200,12 +323,14 @@ def change_language(lang = "en"):
     if lang == "en":
         keyboard = [[InlineKeyboardButton('Turkish', callback_data='tr'), InlineKeyboardButton('English', callback_data='en')],
                   [InlineKeyboardButton('French', callback_data='fr'), InlineKeyboardButton('Russian', callback_data='ru')],
-                  [InlineKeyboardButton('German', callback_data='de'), InlineKeyboardButton('Spanish', callback_data='es')]]
+                  [InlineKeyboardButton('German', callback_data='de'), InlineKeyboardButton('Spanish', callback_data='es')],
+                    [InlineKeyboardButton('Indian', callback_data='in'), InlineKeyboardButton('Chinese', callback_data='ch')]]
 
     else:
         keyboard = [
             [InlineKeyboardButton('Turkish', callback_data='tr'), InlineKeyboardButton('English', callback_data='en')],
             [InlineKeyboardButton('French', callback_data='fr'), InlineKeyboardButton('Russian', callback_data='ru')],
-            [InlineKeyboardButton('German', callback_data='de'), InlineKeyboardButton('Spanish', callback_data='es')]]
+            [InlineKeyboardButton('German', callback_data='de'), InlineKeyboardButton('Spanish', callback_data='es')],
+        [InlineKeyboardButton('Indian', callback_data='in'), InlineKeyboardButton('Chinese', callback_data='ch')]]
 
     return InlineKeyboardMarkup(keyboard)

@@ -18,4 +18,6 @@ def get_funding(titles):
     return uk.get_funding(titles)
 
 
+def stop_funding_thread():
+    uk.halt()
 # asyncio.run(get_funding())

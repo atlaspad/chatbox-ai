@@ -3,6 +3,7 @@ import time
 from telegram import Bot
 import requests
 from balance_db_reg import WalletJson
+from pymongo import MongoClient
 
 
 wj = WalletJson()

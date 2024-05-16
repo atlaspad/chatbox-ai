@@ -1,8 +1,11 @@
-reply_keyboard = {"en": [
-    ["Track 🐾", "My Tracks 👞", "NFT 🌆"],
-    ["Wallet 👜", "Gas Price 🚰", "Funding 💰"],
-    ["Main Menu 📋"],
-],
+# change language location 1
+
+reply_keyboard = {
+    "en": [
+        ["Track 🐾", "My Tracks 👞", "NFT 🌆"],
+        ["Wallet 👜", "Gas Price 🚰", "Funding 💰"],
+        ["Main Menu 📋"],
+    ],
     "tr": [
         ["Takip Et 🐾", "Takip Ettiklerim 👞", "NFT 🌆"],
         ["Cüzdan 👜", "Gaz Fiyatı 🚰", "Finansman 💰"],
@@ -27,7 +30,13 @@ reply_keyboard = {"en": [
         ["Отслеживать 🐾", "Мои Отслеживания 👞", "NFT 🌆"],
         ["Кошелек 👜", "Цена Газа 🚰", "Финансирование 💰"],
         ["Главное Меню 📋"],
-    ]
+    ],
+    "ch": [["跟踪 🐾", "我的跟踪 👞", "NFT 🌆"],
+           ["钱包 👜", "气价 🚰", "资金 💰"],
+           ["主菜单 📋"]],
+    "in": [["ट्रैक करें 🐾", "मेरी ट्रैक की हुई 👞", "NFT 🌆"],
+           ["वॉलेट 👜", "गैस कीमत 🚰", "वित्त 💰"],
+           ["मुख्य मेनू 📋"]]
 }
 
 # RETURN TEXTS, Don't leave blank it creates error
@@ -38,7 +47,7 @@ FUNDING_RETURN_TEXT = "Funding On the Way..."
 POOL_RETURN_TEXT = "Coming soon..."
 GAS_PRICE_RETURN_TEXT = "Coming soon..."
 MY_TRACKS_RETURN_TEXT = "Your tracks :"
-MAIN_MENU_BUTTON_TEXT = "How to use bot?\nTwitter: https://twitter.com/Atlaspad\nWeb site and FAQ: www.google.com\nYoutube Tutorial: www.youtube.com\nDetailed Guide: www.detail.com"
+MAIN_MENU_BUTTON_TEXT = "How to use bot?\nTwitter: https://twitter.com/Atlaspad\nWeb site and FAQ: https://www.atlaspad.io/\nDiscord: https://discord.gg/atlaspad\nDocs: https://docs.atlaspad.io/"
 ADD_RETURN_TEXT = "Please choose something to add: "
 NFT_ADD_RETURN_TEXT = "NFT added successfully!"
 WALLET_ADD_RETURN_TEXT = "Wallet added successfully"
@@ -50,7 +59,7 @@ FUNDING_RETURN_TEXT = "Finansman Yolunda.."
 POOL_RETURN_TEXT = "Yakında gelecek..."
 GAS_PRICE_RETURN_TEXT = "Yakında gelecek..."
 MY_TRACKS_RETURN_TEXT = "Takip ettikleriniz:"
-MAIN_MENU_BUTTON_TEXT = "Botu nasıl kullanırız?\nTwitter: https://twitter.com/Atlaspad\nWeb sitesi ve SSS: www.google.com\nYoutube Tutorial: www.youtube.com\nDetaylandırılmış Rehber: www.detail.com"
+MAIN_MENU_BUTTON_TEXT = "Botu nasıl kullanırız?\nTwitter: https://twitter.com/Atlaspad\nWeb sitesi ve SSS: https://www.atlaspad.io/\nDiscord: https://discord.gg/atlaspad\nDetaylandırılmış Rehber: https://docs.atlaspad.io/"
 ADD_RETURN_TEXT = "Lütfen ekleyecek bir şey seçin:"
 NFT_ADD_RETURN_TEXT = "NFT başarıyla eklendi!"
 WALLET_ADD_RETURN_TEXT = "Cüzdan başarıyla eklendi"
@@ -64,7 +73,7 @@ language_data = {
         "POOL_RETURN_TEXT": "Yakında gelecek...",
         "GAS_PRICE_RETURN_TEXT": "Yakında gelecek...",
         "MY_TRACKS_RETURN_TEXT": "Takip ettikleriniz:",
-        "MAIN_MENU_BUTTON_TEXT": "Botu nasıl kullanırız?\nTwitter: https://twitter.com/Atlaspad\nWeb sitesi ve SSS: www.google.com\nYoutube Tutorial: www.youtube.com\nDetaylandırılmış Rehber: www.detail.com",
+        "MAIN_MENU_BUTTON_TEXT": "Botu nasıl kullanırız?\nTwitter: https://twitter.com/Atlaspad\nWeb sitesi ve SSS: https://www.atlaspad.io/\nDiscord: https://discord.gg/atlaspad\nDökümasyon: https://docs.atlaspad.io/",
         "ADD_RETURN_TEXT": "Lütfen ekleyecek bir şey seçin:",
         "NFT_ADD_RETURN_TEXT": "NFT başarıyla eklendi!",
         "WALLET_ADD_RETURN_TEXT": "Cüzdan başarıyla eklendi",
@@ -86,6 +95,11 @@ language_data = {
         "ADD_NFT_TEXT_ERR_YOU_ALREADY": "Zaten kaydedilmiş.",
         "ADD_NFT_TEXT_SUCCESS": "NFT başarıyla izlenmeye başlandı.",
         "ADD_NFT_TEXT_ERR_RELEVANT": "Lütfen ilgili bir NFT girin.",
+        "ADD_WALLET_ERR_RELEVANT": "lütfen ilgili bir Cüzdan girin",
+        "ADD_WALLET_SUCCESS": "cüzdan başarıyla izlenmeye başlandı.",
+        "ADD_COIN_ERR_RELEVANT": "lütfen ilgili bir kripto para girin",
+        "ADD_COIN_SUCCESS": "kripto para başarıyla izlenmeye başlandı.",
+        "CREATE_TEXT": "Lütfen bir NFT veya Sticker seçin: "
 
     },
     'en': {
@@ -96,7 +110,7 @@ language_data = {
         "POOL_RETURN_TEXT": "Coming soon...",
         "GAS_PRICE_RETURN_TEXT": "Coming soon...",
         "MY_TRACKS_RETURN_TEXT": "Your tracks :",
-        "MAIN_MENU_BUTTON_TEXT": "How to use bot?\nTwitter: https://twitter.com/Atlaspad\nWeb site and FAQ: www.google.com\nYoutube Tutorial: www.youtube.com\nDetailed Guide: www.detail.com",
+        "MAIN_MENU_BUTTON_TEXT": "How to use bot?\nTwitter: https://twitter.com/Atlaspad\nWeb site and FAQ: https://www.atlaspad.io/\nDiscord: https://discord.gg/atlaspad\nDocumentation: https://docs.atlaspad.io/",
         "ADD_RETURN_TEXT": "Please choose something to add: ",
         "NFT_ADD_RETURN_TEXT": "NFT added successfully!",
         "WALLET_ADD_RETURN_TEXT": "Wallet added successfully",
@@ -122,10 +136,17 @@ language_data = {
         ####
         "OUT_ALL_TEXT": "Please just select a button",
         ####
-        "SALES": "sales",
-        "average_price": "average_price",
-        "floor_price": "floor_price",
-
+        "ADD_WALLET_ERR_RELEVANT": "please input a relevant Wallet",
+        "ADD_WALLET_SUCCESS": "wallet started being tracked successfully. ",
+        "ADD_COIN_ERR_RELEVANT": "please input a relevant coin",
+        "ADD_COIN_SUCCESS": 'coin started being tracked successfully. ',
+        ####
+        ### !!!! CHANGE BELOW AFTER CHANGING COMING SOON !!!! ###
+        # "CREATE_STICKER_TEXT": ...,
+        # "CREATE_NFT_TEXT": ...,
+        ### add that
+        # "CREATE_BUTTON_TEXT": ...
+        "CREATE_TEXT": "Please select NFT or Sticker to crate one: "
     },
     'fr': {
         "START_RETURN_TEXT": "Salut, gagnons un peu d'argent ensemble !",
@@ -135,7 +156,7 @@ language_data = {
         "POOL_RETURN_TEXT": "Bientôt disponible...",
         "GAS_PRICE_RETURN_TEXT": "Bientôt disponible...",
         "MY_TRACKS_RETURN_TEXT": "Vos pièces :",
-        "MAIN_MENU_BUTTON_TEXT": "How to use bot?\nTwitter: https://twitter.com/Atlaspad\nWeb site and FAQ: www.google.com\nYoutube Tutorial: www.youtube.com\nDetailed Guide: www.detail.com",
+        "MAIN_MENU_BUTTON_TEXT": "How to use bot?\nTwitter: https://twitter.com/Atlaspad\nWeb site and FAQ: https://www.atlaspad.io/\nDiscord: https://discord.gg/atlaspad\nDocumentation: https://docs.atlaspad.io/",
         "ADD_RETURN_TEXT": "Veuillez sélectionner quelque chose à ajouter :",
         "NFT_ADD_RETURN_TEXT": "NFT ajouté avec succès !",
         "WALLET_ADD_RETURN_TEXT": "Portefeuille ajouté avec succès",
@@ -157,6 +178,11 @@ language_data = {
         "ADD_NFT_TEXT_ERR_YOU_ALREADY": "Vous l'avez déjà enregistré.",
         "ADD_NFT_TEXT_SUCCESS": "NFT a commencé à être suivi avec succès.",
         "ADD_NFT_TEXT_ERR_RELEVANT": "veuillez saisir un NFT pertinent.",
+        "ADD_WALLET_ERR_RELEVANT": "veuillez entrer un portefeuille pertinent",
+        "ADD_WALLET_SUCCESS": "portefeuille commencé à être suivi avec succès.",
+        "ADD_COIN_ERR_RELEVANT": "veuillez entrer une pièce pertinente",
+        "ADD_COIN_SUCCESS": "pièce commencé à être suivi avec succès.",
+        "CREATE_TEXT": "Veuillez sélectionner un NFT ou un sticker à créer : "
 
     },
     "es": {
@@ -167,7 +193,7 @@ language_data = {
         "POOL_RETURN_TEXT": "Próximamente...",
         "GAS_PRICE_RETURN_TEXT": "Próximamente...",
         "MY_TRACKS_RETURN_TEXT": "Tus seguimientos:",
-        "MAIN_MENU_BUTTON_TEXT": "¿Cómo usar el bot?\nTwitter: https://twitter.com/Atlaspad\nSitio web y preguntas frecuentes: www.google.com\nTutorial en YouTube: www.youtube.com\nGuía detallada: www.detail.com",
+        "MAIN_MENU_BUTTON_TEXT": "¿Cómo usar el bot?\nTwitter: https://twitter.com/Atlaspad\nSitio web y preguntas frecuentes: https://www.atlaspad.io/\nDiscord: https://discord.gg/atlaspad\nDocumentación https://docs.atlaspad.io/",
         "ADD_RETURN_TEXT": "Por favor, elige algo para añadir:",
         "NFT_ADD_RETURN_TEXT": "¡NFT añadido exitosamente!",
         "WALLET_ADD_RETURN_TEXT": "Billetera añadida exitosamente",
@@ -188,7 +214,12 @@ language_data = {
         "ADD_NFT_TEXT_ERR_YOU_ALREADY": "Ya lo has guardado.",
         "ADD_NFT_TEXT_SUCCESS": "NFT comenzó a ser rastreado exitosamente.",
         "ADD_NFT_TEXT_ERR_RELEVANT": "por favor ingrese un NFT relevante.",
-        "VOLUME": "volumen"
+        "VOLUME": "volumen",
+        "ADD_WALLET_ERR_RELEVANT": "por favor ingrese una Billetera relevante",
+        "ADD_WALLET_SUCCESS": "billetera comenzó a ser rastreada con éxito.",
+        "ADD_COIN_ERR_RELEVANT": "por favor ingrese una Moneda relevante",
+        "ADD_COIN_SUCCESS": "moneda comenzó a ser rastreada con éxito.",
+        "CREATE_TEXT": "Por favor, seleccione un NFT o un sticker para crear: "
 
     },
     "de": {
@@ -199,7 +230,7 @@ language_data = {
         "POOL_RETURN_TEXT": "Kommt bald...",
         "GAS_PRICE_RETURN_TEXT": "Kommt bald...",
         "MY_TRACKS_RETURN_TEXT": "Deine Tracks:",
-        "MAIN_MENU_BUTTON_TEXT": "Wie benutzt man den Bot?\nTwitter: https://twitter.com/Atlaspad\nWebseite und FAQ: www.google.com\nYouTube Tutorial: www.youtube.com\nDetaillierte Anleitung: www.detail.com",
+        "MAIN_MENU_BUTTON_TEXT": "Wie benutzt man den Bot?\nTwitter: https://twitter.com/Atlaspad\nWebseite und FAQ: https://www.atlaspad.io/\nDiscord: https://discord.gg/atlaspad\nDokumentation: https://docs.atlaspad.io/",
         "ADD_RETURN_TEXT": "Bitte wähle etwas zum Hinzufügen aus:",
         "NFT_ADD_RETURN_TEXT": "NFT erfolgreich hinzugefügt!",
         "WALLET_ADD_RETURN_TEXT": "Brieftasche erfolgreich hinzugefügt",
@@ -220,6 +251,11 @@ language_data = {
         "ADD_NFT_TEXT_ERR_YOU_ALREADY": "Du hast es bereits gespeichert.",
         "ADD_NFT_TEXT_SUCCESS": "NFT wurde erfolgreich begonnen zu verfolgen.",
         "ADD_NFT_TEXT_ERR_RELEVANT": "bitte gib einen relevanten NFT ein.",
+        "ADD_WALLET_ERR_RELEVANT": "bitte geben Sie eine relevante Brieftasche ein",
+        "ADD_WALLET_SUCCESS": "Brieftasche wurde erfolgreich verfolgt.",
+        "ADD_COIN_ERR_RELEVANT": "bitte geben Sie eine relevante Münze ein",
+        "ADD_COIN_SUCCESS": "Münze wurde erfolgreich verfolgt.",
+        "CREATE_TEXT": "Bitte wählen Sie ein NFT oder einen Aufkleber zum Erstellen aus: "
 
     },
     "ru": {
@@ -230,7 +266,7 @@ language_data = {
         "POOL_RETURN_TEXT": "Скоро...",
         "GAS_PRICE_RETURN_TEXT": "Скоро...",
         "MY_TRACKS_RETURN_TEXT": "Ваши треки:",
-        "MAIN_MENU_BUTTON_TEXT": "Как использовать бота?\nTwitter: https://twitter.com/Atlaspad\nВеб-сайт и ЧаВО: www.google.com\nОбучающее видео на YouTube: www.youtube.com\nПодробное руководство: www.detail.com",
+        "MAIN_MENU_BUTTON_TEXT": "Как использовать бота?\nTwitter: https://twitter.com/Atlaspad\nВеб-сайт и ЧаВО: https://www.atlaspad.io/\nDiscord: https://discord.gg/atlaspad\nдокументация (dokumentatsiya): https://docs.atlaspad.io/",
         "ADD_RETURN_TEXT": "Пожалуйста, выберите что-то для добавления:",
         "NFT_ADD_RETURN_TEXT": "NFT успешно добавлен!",
         "WALLET_ADD_RETURN_TEXT": "Бумажник успешно добавлен",
@@ -251,7 +287,85 @@ language_data = {
         "ADD_NFT_TEXT_ERR_YOU_ALREADY": "Вы уже сохранены.",
         "ADD_NFT_TEXT_SUCCESS": "NFT успешно начал отслеживаться.",
         "ADD_NFT_TEXT_ERR_RELEVANT": "введите соответствующий NFT.",
+        "ADD_WALLET_ERR_RELEVANT": "пожалуйста, введите соответствующий кошелек",
+        "ADD_WALLET_SUCCESS": "кошелек успешно начал отслеживаться.",
+        "ADD_COIN_ERR_RELEVANT": "пожалуйста, введите соответствующую монету",
+        "ADD_COIN_SUCCESS": "монета успешно начала отслеживаться.",
+        "CREATE_TEXT": "Пожалуйста, выберите NFT или стикер для создания: "
 
     },
+    "in": {
+        "START_RETURN_TEXT": "नमस्ते, चलो साथ में पैसे कमाते हैं!",
+        "TRACKER_RETURN_TEXT": "कृपया एक कोइन दर्ज करें:",
+        "NFT_RETURN_TEXT": "कृपया एक NFT संग्रह नाम दर्ज करें:",
+        "FUNDING_RETURN_TEXT": "फंडिंग रास्ते में...",
+        "POOL_RETURN_TEXT": "जल्द ही आ रहा है...",
+        "GAS_PRICE_RETURN_TEXT": "जल्द ही आ रहा है...",
+        "MY_TRACKS_RETURN_TEXT": "आपके ट्रैक:",
+        "MAIN_MENU_BUTTON_TEXT": "बॉट कैसे उपयोग करें?\nTwitter: https://twitter.com/Atlaspad\nवेबसाइट और FAQ: https://www.atlaspad.io/\nDiscord: https://discord.gg/atlaspad\nदस्तावेज़ीकरण (dastāvezīkaraṇ): https://docs.atlaspad.io/",
+        "ADD_RETURN_TEXT": "कृपया कुछ जोड़ने का चयन करें: ",
+        "NFT_ADD_RETURN_TEXT": "NFT सफलतापूर्वक जोड़ा गया!",
+        "WALLET_ADD_RETURN_TEXT": "वॉलेट सफलतापूर्वक जोड़ा गया",
+        "REMOVE_ONE_TEXT": "कृपया हटाने के लिए कुछ लिखें: ",
+        "EDIT_ONE_TEXT": "कृपया एक बटन चुनें",
+        "COIN_ADDING_BUTTON_TEXT": "कृपया एक कोइन दर्ज करें",
+        "WALLET_ADDING_BUTTON_TEXT": "कृपया एक वॉलेट पता दर्ज करें",
+        "NFT_ADDING_BUTTON_TEXT": "कृपया एक NFT नाम दर्ज करें",
+        "CHANGE_BUTTON_TEXT": "कृपया एक बटन चुनें",
+        "SETTINGS_LANGUAGE_BUTTON_TEXT": "कृपया एक भाषा चुनें",
+        "CHANGE_LANGUAGE_RESPONSE_TEXT": "आपकी भाषा सफलतापूर्वक बदल दी गई है",
+        "COMING_SOON_TEXT": "जल्द ही आ रहा है...",
+        "ACT_SETTINGS_TEXT": "कृपया एक भाषा चुनें",
+        "FUNDING_TITLES": "सिम्बल | फंडिंग | ब्याज | सेटलमेंट मूल्य \n",
+        "TRACK_INFO": "आप ट्रैक कर रहे हैं: ",
+        "REMOVE_SUCCESS_TEXT": "सफलतापूर्वक हटा दिया गया है।",
+        "ADD_NFT_TEXT_ERR_YOU_ALREADY": "आपने पहले से ही इसे सहेज रखा है।",
+        "ADD_NFT_TEXT_SUCCESS": "NFT सफलतापूर्वक जोड़ा गया।",
+        "ADD_NFT_TEXT_ERR_RELEVANT": "कृपया एक संबंधित NFT दर्ज करें",
+        "VOLUME": "आयतन",
+        "OUT_ALL_TEXT": "कृपया केवल एक बटन चुनें",
+        "ADD_WALLET_ERR_RELEVANT": "कृपया एक संबंधित वॉलेट दर्ज करें",
+        "ADD_WALLET_SUCCESS": "वॉलेट सफलतापूर्वक जोड़ा गया।",
+        "ADD_COIN_ERR_RELEVANT": "कृपया एक संबंधित कोइन दर्ज करें",
+        "ADD_COIN_SUCCESS": "कोइन सफलतापूर्वकजोड़ागया।",
+        "CREATE_TEXT": "Lütfen bir NFT veya Sticker seçin: "
 
+    },
+    "ch": {
+        "START_RETURN_TEXT": "问候，让我们一起赚点钱吧！",
+        "TRACKER_RETURN_TEXT": "请输入一个加密货币：",
+        "NFT_RETURN_TEXT": "请输入一个NFT收藏名称：",
+        "FUNDING_RETURN_TEXT": "资金正在路上...",
+        "POOL_RETURN_TEXT": "即将推出...",
+        "GAS_PRICE_RETURN_TEXT": "即将推出...",
+        "MY_TRACKS_RETURN_TEXT": "您的跟踪：",
+        "MAIN_MENU_BUTTON_TEXT": "如何使用机器人？\nTwitter: https://twitter.com/Atlaspad\n网站和常见问题解答: https://www.atlaspad.io/\nDiscord: https://discord.gg/atlaspad\n 文件 (wénjiàn): https://docs.atlaspad.io/",
+        "ADD_RETURN_TEXT": "请选择要添加的内容：",
+        "NFT_ADD_RETURN_TEXT": "NFT成功添加！",
+        "WALLET_ADD_RETURN_TEXT": "钱包成功添加",
+        "REMOVE_ONE_TEXT": "请写下要删除的内容：",
+        "EDIT_ONE_TEXT": "请选择一个按钮",
+        "COIN_ADDING_BUTTON_TEXT": "请输入一个加密货币",
+        "WALLET_ADDING_BUTTON_TEXT": "请输入一个钱包地址",
+        "NFT_ADDING_BUTTON_TEXT": "请输入一个NFT名称",
+        "CHANGE_BUTTON_TEXT": "请选择一个按钮",
+        "SETTINGS_LANGUAGE_BUTTON_TEXT": "请选择一种语言",
+        "CHANGE_LANGUAGE_RESPONSE_TEXT": "您的语言已成功更改",
+        "COMING_SOON_TEXT": "即将推出...",
+        "ACT_SETTINGS_TEXT": "请选择一种语言",
+        "FUNDING_TITLES": "符号 | 资金 | 利息 | 结算价格 \n",
+        "TRACK_INFO": "您正在跟踪：",
+        "REMOVE_SUCCESS_TEXT": "已成功删除。",
+        "ADD_NFT_TEXT_ERR_YOU_ALREADY": "您已保存。",
+        "ADD_NFT_TEXT_SUCCESS": "NFT成功开始跟踪。",
+        "ADD_NFT_TEXT_ERR_RELEVANT": "请输入相关的NFT",
+        "VOLUME": "交易量",
+        "OUT_ALL_TEXT": "请只选择一个按钮",
+        "ADD_WALLET_ERR_RELEVANT": "请输入相关的钱包",
+        "ADD_WALLET_SUCCESS": "钱包开始成功跟踪。",
+        "ADD_COIN_ERR_RELEVANT": "请输入相关的加密货币",
+        "ADD_COIN_SUCCESS": "加密货币开始成功跟踪。",
+        "CREATE_TEXT": "请选择要创建的 NFT 或 Sticker："
+
+    }
 }

@@ -5,13 +5,13 @@ import os
 # to fix configs import problem
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
-
 from configs import *
 from telegram import Bot
 import asyncio
 import pika
 import json
 from json_imps import *
+
 
 bot = Bot('7122629170:AAGfAjv9kdKkAh0UiUdEkLIzdbPrjlzSA_8')
 

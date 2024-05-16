@@ -12,6 +12,7 @@ from key_chatid import *
 
 cik = ChatIdAsKey()
 
+
 # add exception handling
 # split coin_follows and coins
 # json functions are for testing but not production
@@ -62,7 +63,7 @@ class WritersJson:
         self._write_into_attribute_json(data, ALL_COINS_PATH)
 
     # key is generally going to be chat id
-    def add_into_tracked_coins(self, coin: str, key: str):
+    def add_into_tracked_coins(self, coin: str, key: str, mes_already='you already saved it. ', mes_success='you already saved it. ', err_relevant="please input a relevant coin"):
 
         print(coin)
         coin_cap = coin.upper() + 'USDT'
@@ -73,31 +74,31 @@ class WritersJson:
         # if coin name to be added is a relevant coin name
         if self._check_if_input_a_coin(coin_cap):
 
-            res = self._add_into_json(coin_cap, key)
+            res = self._add_into_json(coin_cap, key, mes_already, mes_success)
             cik.add_coin(coin_cap, key)
 
             return res, True
         else:
-            return "please input a relevant coin", False
+            return err_relevant, False
 
     def get_chat_ids_of_coin(self, coin):
         track_info = self._read_from_attribute_json()
         return track_info[coin]
 
     # data generally coin, private function
-    def _add_into_json(self, data, chat_id):
+    def _add_into_json(self, data, chat_id, mes_already, mes_success):
         # get followed coins file
         in_file: dict = self._read_from_attribute_json()
 
         if chat_id in in_file[data]:
-            return 'you already saved it. '
+            return mes_already
 
         else:
             print('else')
             in_file[data].append(chat_id)
 
         self._write_into_attribute_json(in_file)
-        return 'coin started being tracked successfully. '
+        return mes_success
 
     def _check_if_input_a_coin(self, coin_cap):
         coin_json = self._read_from_attribute_json(ALL_COINS_PATH)

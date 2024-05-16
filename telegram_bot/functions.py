@@ -14,7 +14,6 @@ from telegram.ext import (
     filters,
     CallbackQueryHandler
 )
-from telegram.ext import PicklePersistence
 
 # local imports
 from menu_keyboards import *
@@ -25,7 +24,7 @@ from json_imps import WritersJson
 from nft_json import *
 from balance_db_reg import *
 
-my_persistence = PicklePersistence(filepath='persistence')  # Django ORM...
+# my_persistence = PicklePersistence(filepath='persistence')  # Django ORM...
 bot = Bot('7122629170:AAGfAjv9kdKkAh0UiUdEkLIzdbPrjlzSA_8')
 wallet_json = WalletJson()
 nft_json = NFTJson()
@@ -74,6 +73,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     print(update.message.chat_id)
 
     lang = coin_tracker.get_selected_language(update.message.chat_id)
+
+    print(lang)
 
     await update.message.reply_text(
         language_data[lang]["START_RETURN_TEXT"],
@@ -190,7 +191,8 @@ async def track_action(update: Update, context: ContextTypes.DEFAULT_TYPE) -> in
     lang = coin_tracker.get_selected_language(chat_id)
 
     print(text)
-    result, station = writer_json.add_into_tracked_coins(text, str(chat_id))
+
+    result, station = writer_json.add_into_tracked_coins(text, str(chat_id), language_data[lang]["ADD_NFT_TEXT_ERR_YOU_ALREADY"], language_data[lang]["ADD_COIN_SUCCESS"], language_data[lang]["ADD_COIN_ERR_RELEVANT"])
 
     await update.message.reply_text(result, reply_markup=track_keyboard(lang))
 
@@ -268,7 +270,7 @@ async def edit_rem_nft(update: Update, context: ContextTypes.DEFAULT_TYPE) -> in
 
     chat_id = update.callback_query.message.chat_id
     print('------------', chat_id)
-    lang = coin_tracker.get_selected_language(update.message.chat_id)
+    lang = coin_tracker.get_selected_language(chat_id)
 
     remove_text = language_data[lang]["REMOVE_ONE_TEXT"]
 
@@ -294,6 +296,25 @@ async def edit_button(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int
 
     bot = Bot('7122629170:AAGfAjv9kdKkAh0UiUdEkLIzdbPrjlzSA_8')
     await bot.send_message(chat_id=chat_id, text=edit_text, reply_markup=add_keyboard_edit(lang))
+
+    # await remove_last_message(bot, chat_id)
+
+    return CHOOSING
+
+
+async def create_button(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+
+    await update.callback_query.answer()
+
+    chat_id = update.callback_query.message.chat_id
+    print('------------', chat_id)
+    print("asdasdas")
+    lang = coin_tracker.get_selected_language(chat_id)
+
+    bot = Bot('7122629170:AAGfAjv9kdKkAh0UiUdEkLIzdbPrjlzSA_8')
+    # CREATE_BUTTON_TEXT ekle language dataya
+
+    await bot.send_message(chat_id=chat_id, text=language_data[lang]["CREATE_TEXT"], reply_markup=create_keyboard(lang))
 
     # await remove_last_message(bot, chat_id)
 
@@ -367,10 +388,11 @@ async def add_wallet(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     print('text ', text)
     context.user_data["choice"] = text
     chat_id = update.message.chat_id
+    lang = coin_tracker.get_selected_language(chat_id)
 
-    returned = wallet_json.add_wallet(text, str(chat_id), 'def')
+    returned = wallet_json.add_wallet(text, str(chat_id), 'def', language_data[lang]["ADD_NFT_TEXT_ERR_YOU_ALREADY"], language_data[lang]["ADD_WALLET_SUCCESS"], mes_rel=language_data[lang]["ADD_WALLET_ERR_RELEVANT"])
 
-    await update.message.reply_text(returned[0])
+    await update.message.reply_text(returned)
 
     return CHOOSING
 
@@ -497,6 +519,41 @@ async def change_language_button(update: Update, context: ContextTypes.DEFAULT_T
     return CHOOSING
 
 
+async def create_nft_button(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+
+    await update.callback_query.answer()
+
+    chat_id = update.callback_query.message.chat_id
+    lang = coin_tracker.get_selected_language(chat_id)
+
+    CHANGE_LANGUAGE_RESPONSE_TEXT = language_data[lang][
+        "COMING_SOON_TEXT"]  # CREATE_NFT_TEXT
+
+    bot = Bot('7122629170:AAGfAjv9kdKkAh0UiUdEkLIzdbPrjlzSA_8')
+    # await bot.edit_message_reply_markup(chat_id=chat_id, reply_markup=ReplyKeyboardMarkup(reply_keyboard[lang], one_time_keyboard=False))
+
+    await bot.send_message(chat_id=chat_id, text=CHANGE_LANGUAGE_RESPONSE_TEXT)
+
+    return CHOOSING
+
+
+async def create_sticker_button(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+
+    await update.callback_query.answer()
+
+    chat_id = update.callback_query.message.chat_id
+    lang = coin_tracker.get_selected_language(chat_id)
+
+    CHANGE_LANGUAGE_RESPONSE_TEXT = language_data[lang]["COMING_SOON_TEXT"]  # CREATE_STICKER_TEXT
+
+    bot = Bot('7122629170:AAGfAjv9kdKkAh0UiUdEkLIzdbPrjlzSA_8')
+    # await bot.edit_message_reply_markup(chat_id=chat_id, reply_markup=ReplyKeyboardMarkup(reply_keyboard[lang], one_time_keyboard=False))
+
+    await bot.send_message(chat_id=chat_id, text=CHANGE_LANGUAGE_RESPONSE_TEXT)
+
+    return CHOOSING
+
+
 async def act_coming_soon(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     # callback_data = update.callback_query.data
 
@@ -522,7 +579,7 @@ async def add_coin(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     chat_id = update.message.chat_id
     lang = coin_tracker.get_selected_language(chat_id)
 
-    result, station = writer_json.add_into_tracked_coins(text, str(chat_id))
+    result, station = writer_json.add_into_tracked_coins(text, str(chat_id), language_data[lang]["ADD_NFT_TEXT_ERR_YOU_ALREADY"], language_data[lang]["ADD_COIN_SUCCESS"], language_data[lang]["ADD_COIN_ERR_RELEVANT"])
 
     await update.message.reply_text(result, reply_markup=track_keyboard(lang))
 

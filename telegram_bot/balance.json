@@ -55,5 +55,27 @@
             "chat_id": "1321911669",
             "call_name": "def"
         }
+    ],
+    "0x8315177aB297bA92A06054cE80a67Ed4DBd7ed3a": [
+        {
+            "chat_id": "1359422473",
+            "call_name": "def"
+        }
+    ],
+    "0xb34017911950c77c60D53Aa5e9085A049E577D64": [
+        {
+            "chat_id": "1359422473",
+            "call_name": "def"
+        },
+        {
+            "chat_id": "5050048682",
+            "call_name": "def"
+        }
+    ],
+    "0xadsaas": [
+        {
+            "chat_id": "1359422473",
+            "call_name": "def"
+        }
     ]
 }

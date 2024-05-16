@@ -506,7 +506,9 @@
     "AEURUSDT": [],
     "JTOUSDT": [],
     "1000SATSUSDT": [],
-    "BONKUSDT": [],
+    "BONKUSDT": [
+        "5050048682"
+    ],
     "ACEUSDT": [],
     "NFPUSDT": [],
     "AIUSDT": [

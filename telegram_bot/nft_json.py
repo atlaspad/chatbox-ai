@@ -1,3 +1,5 @@
+# change language location 2
+
 import json
 from follow_floor_price import *
 from nft_all_adder import *
@@ -53,6 +55,20 @@ class NFTJson:
                 "average_price": "Durchschnittspreis",
                 "floor_price": "Mindestpreis"
                 ,"VOLUME": "Volumen"
+            },
+            "in": {
+                "SALES": "बिक्री",
+                "average_price": "औसत मूल्य",
+                "floor_price": "निम्न मूल्य",
+                "VOLUME": "आयतन"
+
+            },
+            "ch":{
+                "SALES": "销量",
+                "average_price": "平均价格",
+                "floor_price": "底价",
+                "VOLUME": "交易量"
+
             }
         }
 

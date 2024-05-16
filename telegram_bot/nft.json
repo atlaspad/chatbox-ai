@@ -3,6 +3,10 @@
         {
             "chat_id": "1359422473",
             "track_period": 5
+        },
+        {
+            "chat_id": "5050048682",
+            "track_period": "5"
         }
     ],
     "punkapepen-orig": [
@@ -84,24 +88,6 @@
     "lilpudgys": [
         {
             "chat_id": "5050048682",
-            "track_period": "5"
-        }
-    ],
-    "main menu \ud83d\udccb": [
-        {
-            "chat_id": "5050048682",
-            "track_period": "5"
-        }
-    ],
-    "asfasf": [
-        {
-            "chat_id": "1359422473",
-            "track_period": "5"
-        }
-    ],
-    "sadasf": [
-        {
-            "chat_id": "1359422473",
             "track_period": "5"
         }
     ]

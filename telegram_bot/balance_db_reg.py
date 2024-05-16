@@ -1,5 +1,7 @@
 import json
 from walet_all_adder import *
+from pymongo import MongoClient
+from typing import Literal
 
 FOLLOWS_PATH = "balance.json"
 chatidwallet = ChatIdAsKeyWallet()
@@ -8,16 +10,17 @@ chatidwallet = ChatIdAsKeyWallet()
 # split coin_follows and coins
 # json functions are for testing but not production
 # in production, there will be concurrent databases
+# add exception handling
+# split coin_follows and coins
+# json functions are for testing but not production
+# in production, there will be concurrent databases
 class WalletJson:
 
-    # absolute file path is better here
-    """def __init__(self, file_name, all_coin):
-        self.fName = file_name
-        self.all_coins = all_coin"""
-
-    @staticmethod
-    def create_indict(chat_id, call_name):
-        return {"chat_id": chat_id, "call_name": call_name}
+    def __init__(self):
+        self.client = MongoClient('mongodb://localhost:27017/')
+        self.db = self.client["TelegramBot"]
+        self.wallet_collection = self.db["wallet_data"]
+        self.wallets_all = self.db["wallets_all"]
 
     # json reader
     @staticmethod
@@ -49,48 +52,65 @@ class WalletJson:
         eval_write_file.close()
 
     def get_wallets(self):
-        return self._read_from_attribute_json()['wallets']
+        wallet_record = self.wallets_all.find_one({"keyholder": "hold"})
+        return wallet_record["wallets"]
+        # return self._read_from_attribute_json()['wallets']
 
     def get_chat_id_calling(self, wallet):
         data = self._read_from_attribute_json()
         return data[wallet]
 
-    # key is generally going to be chat id
-    def add_wallet(self, wallet: str, chat_id: str, call_name: str):
+    def _add_into_all_wallet(self, wallet):
 
-        print(wallet)
-        # add suggestion system in further versions
-        ...
+        wallet_record = self.wallets_all.find_one({"keyholder": "hold"})
 
-        # if coin name to be added is a relevant coin name
-        if self._check_input(wallet):
-            res = self._add_into_json(wallet, chat_id, call_name)
-            return res, True
+        if wallet_record:
+            self.wallets_all.update_one(
+                {"keyholder": "hold"},
+                {"$addToSet": {"wallets": wallet}},
+            )
+
         else:
-            return "please input a relevant Wallet", False
+            self.wallets_all.insert_one(
+                {"keyholder": "hold", "wallets": [wallet]}
+            )
+
+    # key is generally going to be chat id
+    def add_wallet(self, wallet: str, chat_id: str, call_name: str, mes_already= 'You already saved it. ', mes_success= 'wallet started being tracked successfully. ', mes_rel ="please input a relevant Wallet"):
+
+        if not self._check_input(wallet):
+            print("irrelevcant")
+            return mes_rel
+
+        wallet_record = self.wallet_collection.find_one({"wallet": wallet})
+
+        if wallet_record:
+
+            if chat_id in wallet_record["chat_id"]:
+                return mes_already # , False
+
+            else:
+
+                self.wallet_collection.update_one(
+                    {"wallet": wallet},
+                    {"$addToSet": {"chat_id": chat_id}},
+                )
+
+                self._add_into_all_wallet(wallet)
+
+                return mes_success # , True
+
+        else:
+            self.wallet_collection.insert_one(
+                {"wallet": wallet, "chat_id": [chat_id]}
+            )
+            print("saved")
+
+            self._add_into_all_wallet(wallet)
+
+            return mes_success # , True
 
     # data generally coin, private function
-    def _add_into_json(self, key, chat_id, call_name):
-        in_file: dict = self._read_from_attribute_json()
-        print((list(in_file.keys())))
-
-        if key not in list(in_file.keys()):
-            in_file[key] = [self.create_indict(chat_id, call_name)]
-            chatidwallet.add_Wallet(key, chat_id)
-
-        else:
-
-            for raw in in_file[key]:
-
-                if chat_id == raw["chat_id"]:
-                    return 'You already saved it. '
-
-            in_file[key].append(self.create_indict(chat_id, call_name))
-            chatidwallet.add_Wallet(key, chat_id)
-
-        self._write_into_attribute_json(in_file)
-        return 'wallet started being tracked successfully. '
-
     def _check_input(self, wallet):
 
         url = f"https://api.etherscan.io/api?module=account&action=balance&address={wallet}&tag=latest&apikey=XVV6BYU65ZK14IMFQWIEUCBIKMZD46ZN8U"
